@@ -147,77 +147,243 @@ kbd{font:600 .76rem ui-monospace,Menlo,monospace;padding:2px 6px;border-radius:6
 <script>
 /* Guion por diapositiva. El orden y los títulos coinciden con index.html. s = segundos sugeridos. */
 const SLIDES=[
- {t:'Portada',sec:'Inicio',s:10,
-  say:['Buenos días. Hoy voy a hablar del dolor nocturno idiopático de miembros inferiores en niños, lo que muchos conocen como «dolores de crecimiento».'],
-  cue:'Termines de presentar el tema.'},
- {t:'La pregunta clínica',sec:'Introducción',s:40,
-  say:['Empiezo con una pregunta práctica: un niño llega con dolor de piernas por la noche, ¿es benigno o hay algo más?','Es una de las causas más comunes de dolor musculoesquelético recurrente en niños. Pero se diagnostica por exclusión, sin estándar de oro, y la literatura usa 15 criterios distintos.','Ni siquiera hay guías: un panel Delphi australiano lo priorizó entre las diez condiciones que más las necesitan.'],
-  cue:'Hayas dicho que no existen guías.'},
- {t:'Definición y nomenclatura',sec:'Introducción',s:40,
-  say:['Lo definimos como dolor benigno, bilateral e intermitente en miembros inferiores, sin hallazgos en el examen ni en el laboratorio.','Ojo con el nombre: no hay evidencia de que esté asociado al crecimiento rápido. En la CIE-10 no tiene código propio; la CIE-11 sí lo reconoce, con el código SE32.','Y el problema de fondo: una revisión de 61 registros encontró 15 criterios diagnósticos distintos.'],
-  cue:'Menciones los 15 criterios distintos.'},
- {t:'Epidemiología en el mundo',sec:'Epidemiología',s:45,
-  say:['La prevalencia reportada va del 2,6 % al 36,9 %. Esa dispersión es el mensaje: depende de la edad, el país, el ámbito y, sobre todo, de la definición.','A la derecha, de dónde vienen los datos: 37 estudios de 16 países, sobre todo China, Australia e Israel. Ninguno es colombiano.','En deportistas jóvenes en España, entre el 78 y el 93 % reportó dolor musculoesquelético, pero solo el 13,7 % usaba analgésicos.'],
-  cue:'Digas que ninguno de los estudios es colombiano: eso abre la siguiente.'},
- {t:'Epidemiología en Colombia',sec:'Epidemiología',s:40,
-  say:['En Colombia no hay cifras propias de dolores de crecimiento. Ninguno de los 37 estudios es colombiano y mi búsqueda en PubMed de 2025 y 2026 no encontró estudios.','Como excepción de fecha, usé tres fuentes colombianas anteriores a 2025: un estudio de Bucaramanga con 54 % de dolor musculoesquelético en adolescentes, que no es dolor de crecimiento, y dos revisiones nacionales que repiten cifras internacionales.','Además, la CIE-10 que usamos en las historias no tiene código propio para este cuadro.'],
-  cue:'Termines de explicar las tres fuentes colombianas.',
-  act:'Toca «Camargo et al., 2007» en la lista de referencias para mostrar la fuente y la parte resaltada.'},
- {t:'Fisiopatología: hipótesis',sec:'Fisiopatología',s:50,
-  say:['¿Por qué ocurre? No lo sabemos. Hay asociaciones, no causas demostradas.','Los niños tienden a tener menor umbral del dolor, una densidad ósea algo menor, más hipermovilidad y actividad física, y antecedente familiar. También se proponen mecanismos compartidos con el síndrome de piernas inquietas, como serotonina y hierro.','Y no hay evidencia para crecimiento rápido, colecho, perfusión vascular ni ácidos grasos.'],
-  cue:'Hayas dicho que no hay evidencia del crecimiento rápido.',
-  act:'Toca las tarjetas para abrir el detalle de cada hipótesis.'},
- {t:'Vitamina D: evidencia en conflicto',sec:'Fisiopatología',s:45,
-  say:['La vitamina D es el mejor ejemplo de evidencia en conflicto.','El meta-análisis de 2026 encuentra niveles más bajos en los niños con dolor. Pero un caso-control de 2025 no halló diferencia con los controles: casi todos tenían déficit.','Y el único estudio de tratamiento, con 30 niños, no tiene grupo control. Falta un ensayo aleatorizado.'],
-  cue:'Concluyas que falta un ensayo aleatorizado.'},
- {t:'Factores de riesgo y protectores',sec:'Fisiopatología',s:30,
-  say:['En un caso-control con 290 niños, tardar entre 30 y 60 minutos en dormirse, la fatiga extrema tras el ejercicio y el humo de tabaco materno en el embarazo se asociaron a más riesgo; las legumbres y los deportes, a menos.','Son asociaciones observacionales con cuestionarios a los padres: no demuestran causalidad.'],
-  cue:'Recalques que asociación no es causalidad.'},
- {t:'Cuadro clínico típico',sec:'Manifestaciones clínicas',s:50,
-  say:['El perfil típico: entre 3 y 12 años, dolor intermitente una o dos veces por semana, de 30 minutos a 2 horas, en muslos, huecos poplíteos o pantorrillas, en ambas piernas, al final del día o de noche, y con examen normal.','En un estudio con 201 niños, casi el 90 % de los que tenían dolor de crecimiento refería dolor vespertino o nocturno; el grupo con enfermedad orgánica refería más dolor matutino y punzante.'],
-  cue:'Contrastes el dolor vespertino con el matutino y punzante.'},
- {t:'Sueño y entorno familiar',sec:'Manifestaciones clínicas',s:30,
-  say:['Estos niños duermen peor: el 76 % supera el punto de corte del cuestionario de sueño, frente al 52 % de los controles. A mayor dolor, peor sueño.','La ansiedad materna no explicó la diferencia. Por eso conviene preguntar siempre por el sueño.'],
-  cue:'Recomiendes evaluar el sueño.'},
- {t:'Diagnóstico: clínico y sin consenso',sec:'Diagnóstico',s:50,
-  say:['El diagnóstico es clínico y por exclusión. En un estudio de 2026 se pedían al menos 4 de 7 ítems y examen, laboratorio e imagen normales.','Pero en la literatura solo el 37,8 % usó los criterios de Peterson, el 43 % usó otras variantes o criterios propios, y casi una cuarta parte diagnosticó sin criterios explícitos.','La CIE-11 le da código propio; la CIE-10 no.'],
-  cue:'Termines de explicar que no hay un criterio único.'},
- {t:'Diferencial: síndrome de piernas inquietas',sec:'Diagnóstico',s:35,
-  say:['El gran imitador es el síndrome de piernas inquietas: comparte edad, horario y patrón intermitente.','Lo distingue la urgencia de mover las piernas, el alivio con el movimiento, que puede ser unilateral y que puede dar síntomas por la mañana. No son intercambiables, pero la evidencia aún no permite unificarlos.'],
-  cue:'Menciones que no son intercambiables.',
-  act:'Activa «Mostrar solo lo que distingue» para ver únicamente las diferencias.'},
- {t:'Banderas rojas',sec:'Diagnóstico',s:60,
-  say:['Esta es la parte más práctica: las banderas rojas. Es una checklist pedagógica, no validada.','Dolor unilateral, cojera, dolor diurno o mecánico, dolor de más de tres semanas, dolor nocturno con palidez o fiebre, examen anormal, laboratorio anormal. Con dos o más banderas es poco probable que sea benigno.','Y cuidado con el sesgo de anclaje: una serie publicada mostró enfermedad celiaca, síndrome compartimental y una masa vertebral rotulados al inicio como dolor de crecimiento.'],
-  cue:'Hayas demostrado la checklist y mencionado el sesgo de anclaje.',
-  act:'Marca dos o tres casillas para mostrar cómo cambian el medidor y el mensaje.'},
- {t:'Lo que imita el cuadro',sec:'Diagnóstico',s:45,
-  say:['Tres imitadores que no se pueden perder. Leucemia: el dolor puede ser el único síntoma y el 35 % tenía hemograma normal al inicio; un hemograma normal no debe retrasar la evaluación.','Osteoma osteoide de cadera: 83 % con dolor nocturno y una mediana de 12 meses hasta el diagnóstico.','Y el hipoparatiroidismo: una niña con dolor bilateral de piernas, CK elevada y calcio bajo.'],
-  cue:'Cierres con el hipoparatiroidismo.'},
- {t:'Tratamiento y evidencia',sec:'Tratamiento',s:60,
-  say:['Sobre el tratamiento: una vez excluidas otras causas, es sintomático. Explicar, tranquilizar, masaje local y analgesia puntual. No hay ensayos robustos que lo validen.','Los estiramientos tienen un ensayo antiguo a favor; la vitamina D es contradictoria; las plantillas son observacionales sin control; y el láser con ultrasonido es un piloto con nueve niños, donde ocho de diecisiete se excluyeron porque el diagnóstico no se confirmó.','Ante cualquier bandera roja, derivar.'],
-  cue:'Digas que, ante una bandera roja, se deriva.'},
- {t:'Caso publicado: hemangioma epitelioide',sec:'Casos',s:45,
-  say:['Pasemos a los casos. Primer caso publicado, BMJ Case Reports 2025: una niña con dolor y cojera en una pierna durante un mes, etiquetada como dolores de crecimiento.','La radiografía mostró lesiones líticas múltiples; la resonancia, lesiones en ambos miembros; la biopsia, un hemangioma epitelioide.','Lo que no encajaba: la cojera, que fuera unilateral y que fuera persistente.'],
-  cue:'Enumeres lo que no encajaba.'},
- {t:'Caso publicado: epifisiolisis no reconocida',sec:'Casos',s:45,
-  say:['Segundo caso publicado, de 2026: un adolescente de 16 años con cojera de meses; los estudios previos no mostraron nada hasta que se identificó una epifisiolisis femoral.','A la derecha, una cohorte suiza: el 41 % se diagnosticó después de 12 semanas, y cada semana de retraso se asoció con más probabilidad de osteotomía; es un hallazgo observacional.','La lección: ante cojera o dolor mal localizado de miembro inferior en un adolescente, pensar en la cadera y pedir una radiografía de pelvis.'],
-  cue:'Des la lección de pensar en la cadera.'},
- {t:'Caso de ronda · Paciente A',sec:'Casos',s:60,
-  say:['Ahora dos casos de ronda, anonimizados. Paciente A: niña de 10 años con dolor inguinal de unos dos meses y cojera de tipo mecánico, diaria, peor al caminar y correr.','El examen y la ecografía fueron normales, así que se dio una prueba con AINE. Ocho semanas después, la radiografía mostró un deslizamiento fisario de unos 10 milímetros y quedó programada para fijación in situ.','La lectura: el dolor diario y mecánico no es el patrón vespertino intermitente, y un examen normal ese día no excluye patología de cadera.'],
-  cue:'Des la lectura del caso.'},
- {t:'Caso de ronda · Paciente B',sec:'Casos',s:60,
-  say:['Paciente B: niño de 3 años con antecedente de sinovitis transitoria y de artritis séptica de cadera tratada con lavado en dos tiempos.','Ahora, dolor de cadera irradiado al muslo tras diarrea y fiebre, con derrame en la ecografía. En la clínica de origen tenía 18 460 leucocitos y recibió antibiótico; al ingreso, 8 460, con PCR y VSG que no concuerdan. Se pidió resonancia bajo sedación; la evolución final no está en el registro.','La literatura reciente: marcadores normales y antibiótico previo no descartan artritis séptica, y con dos o más criterios de Kocher hay que pensar en resonancia.'],
-  cue:'Cites que los marcadores normales no descartan infección.'},
- {t:'Comparativo: típico vs pacientes A y B',sec:'Casos',s:60,
-  say:['Para cerrar los casos, el comparativo. La edad no ayuda: 3 y 10 años caen dentro del rango típico.','Lo que los separa es el patrón: dolor unilateral en la cadera, diario o agudo, con cojera e imagen anormal, frente al dolor bilateral, vespertino y con examen normal.','Aplicando los siete criterios, ninguno de los dos llega a cuatro, ni siquiera asumiendo favorables los datos que no están documentados. El dolor nocturno no está documentado en ninguno.'],
-  cue:'Des la conclusión de los siete criterios.',
-  act:'Activa «Mostrar solo diferencias» para quitar las filas iguales.'},
- {t:'Mensajes clave y vacíos',sec:'Cierre',s:45,
-  say:['Cinco mensajes: es un diagnóstico clínico y de exclusión; el perfil típico es bilateral, vespertino e intermitente con examen normal; si es unilateral, diurno, con cojera o con examen anormal, no es dolor de crecimiento; ante dolor poco localizado con cojera, pensar en la cadera; y los marcadores normales no excluyen infección ni leucemia.','Y lo que aún no sabemos: no hay definición consensuada, hay un solo ensayo aleatorizado entre 37 estudios y no hay guías.'],
-  cue:'Termines los cinco mensajes y los vacíos.'},
- {t:'Referencias',sec:'Cierre',s:10,
-  say:['Todas las referencias están aquí. Cada diapositiva tiene su lista abajo y, al tocar una, se ve la parte donde se usó. Gracias.'],
-  cue:'Fin: abre la ronda de preguntas.'}
+ {
+  "t": "Portada",
+  "sec": "Inicio",
+  "s": 10,
+  "say": [
+   "Buenos días. Hoy voy a hablar del dolor nocturno idiopático de miembros inferiores en niños, lo que muchos conocen como «dolores de crecimiento»."
+  ],
+  "cue": "Termines de presentar el tema."
+ },
+ {
+  "t": "La pregunta clínica",
+  "sec": "Introducción",
+  "s": 40,
+  "say": [
+   "Empiezo con una pregunta práctica: un niño llega con dolor de piernas por la noche, ¿es benigno o hay algo más?",
+   "Es una de las causas más comunes de dolor musculoesquelético recurrente en niños. Pero se diagnostica por exclusión, sin estándar de oro, y la literatura usa 15 criterios distintos.",
+   "Ni siquiera hay guías: un panel Delphi australiano lo priorizó entre las diez condiciones que más las necesitan."
+  ],
+  "cue": "Hayas dicho que no existen guías."
+ },
+ {
+  "t": "Definición y nomenclatura",
+  "sec": "Introducción",
+  "s": 40,
+  "say": [
+   "Lo definimos como dolor benigno, bilateral e intermitente en miembros inferiores, sin hallazgos en el examen ni en el laboratorio.",
+   "Ojo con el nombre: no hay evidencia de que esté asociado al crecimiento rápido. En la CIE-10 no tiene código propio; la CIE-11 sí lo reconoce, con el código SE32.",
+   "Y el problema de fondo: una revisión de 61 registros encontró 15 criterios diagnósticos distintos."
+  ],
+  "cue": "Menciones los 15 criterios distintos."
+ },
+ {
+  "t": "Epidemiología en el mundo",
+  "sec": "Epidemiología",
+  "s": 45,
+  "say": [
+   "La prevalencia reportada va del 2,6 % al 36,9 %. Esa dispersión es el mensaje: depende de la edad, el país, el ámbito y, sobre todo, de la definición.",
+   "A la derecha, de dónde vienen los datos: 37 estudios de 16 países, sobre todo China, Australia e Israel. Ninguno es colombiano.",
+   "En deportistas jóvenes en España, entre el 78 y el 93 % reportó dolor musculoesquelético, pero solo el 13,7 % usaba analgésicos."
+  ],
+  "cue": "Digas que ninguno de los estudios es colombiano: eso abre la siguiente."
+ },
+ {
+  "t": "Epidemiología en Colombia",
+  "sec": "Epidemiología",
+  "s": 40,
+  "say": [
+   "En Colombia no hay cifras propias de dolores de crecimiento. Ninguno de los 37 estudios es colombiano y mi búsqueda en PubMed de 2025 y 2026 no encontró estudios.",
+   "Como excepción de fecha, usé tres fuentes colombianas anteriores a 2025: un estudio de Bucaramanga con 54 % de dolor musculoesquelético en adolescentes, que no es dolor de crecimiento, y dos revisiones nacionales que repiten cifras internacionales.",
+   "Además, la CIE-10 que usamos en la historia del caso de ronda no tiene código propio para este cuadro."
+  ],
+  "cue": "Termines de explicar las tres fuentes colombianas.",
+  "act": "Toca «Camargo et al., 2007» en la lista de referencias para mostrar la fuente y la parte resaltada."
+ },
+ {
+  "t": "Fisiopatología: hipótesis",
+  "sec": "Fisiopatología",
+  "s": 50,
+  "say": [
+   "¿Por qué ocurre? No lo sabemos. Hay asociaciones, no causas demostradas.",
+   "Los niños tienden a tener menor umbral del dolor, una densidad ósea algo menor, más hipermovilidad y actividad física, y antecedente familiar. También se proponen mecanismos compartidos con el síndrome de piernas inquietas, como serotonina y hierro.",
+   "Y no hay evidencia para crecimiento rápido, colecho, perfusión vascular ni ácidos grasos."
+  ],
+  "cue": "Hayas dicho que no hay evidencia del crecimiento rápido.",
+  "act": "Toca las tarjetas para abrir el detalle de cada hipótesis."
+ },
+ {
+  "t": "Vitamina D: evidencia en conflicto",
+  "sec": "Fisiopatología",
+  "s": 45,
+  "say": [
+   "La vitamina D es el mejor ejemplo de evidencia en conflicto.",
+   "El meta-análisis de 2026 encuentra niveles más bajos en los niños con dolor. Pero un caso-control de 2025 no halló diferencia con los controles: casi todos tenían déficit.",
+   "Y el único estudio de tratamiento, con 30 niños, no tiene grupo control. Falta un ensayo aleatorizado."
+  ],
+  "cue": "Concluyas que falta un ensayo aleatorizado."
+ },
+ {
+  "t": "Factores de riesgo y protectores",
+  "sec": "Fisiopatología",
+  "s": 30,
+  "say": [
+   "En un caso-control con 290 niños, tardar entre 30 y 60 minutos en dormirse, la fatiga extrema tras el ejercicio y el humo de tabaco materno en el embarazo se asociaron a más riesgo; las legumbres y los deportes, a menos.",
+   "Son asociaciones observacionales con cuestionarios a los padres: no demuestran causalidad."
+  ],
+  "cue": "Recalques que asociación no es causalidad."
+ },
+ {
+  "t": "Cuadro clínico típico",
+  "sec": "Manifestaciones clínicas",
+  "s": 50,
+  "say": [
+   "El perfil típico: entre 3 y 12 años, dolor intermitente una o dos veces por semana, de 30 minutos a 2 horas, en muslos, huecos poplíteos o pantorrillas, en ambas piernas, al final del día o de noche, y con examen normal.",
+   "En un estudio con 201 niños, casi el 90 % de los que tenían dolor de crecimiento refería dolor vespertino o nocturno; el grupo con enfermedad orgánica refería más dolor matutino y punzante."
+  ],
+  "cue": "Contrastes el dolor vespertino con el matutino y punzante."
+ },
+ {
+  "t": "Sueño y entorno familiar",
+  "sec": "Manifestaciones clínicas",
+  "s": 30,
+  "say": [
+   "Estos niños duermen peor: el 76 % supera el punto de corte del cuestionario de sueño, frente al 52 % de los controles. A mayor dolor, peor sueño.",
+   "La ansiedad materna no explicó la diferencia. Por eso conviene preguntar siempre por el sueño."
+  ],
+  "cue": "Recomiendes evaluar el sueño."
+ },
+ {
+  "t": "Diagnóstico: clínico y sin consenso",
+  "sec": "Diagnóstico",
+  "s": 50,
+  "say": [
+   "El diagnóstico es clínico y por exclusión. En un estudio de 2026 se pedían al menos 4 de 7 ítems y examen, laboratorio e imagen normales.",
+   "Pero en la literatura solo el 37,8 % usó los criterios de Peterson, el 43 % usó otras variantes o criterios propios, y casi una cuarta parte diagnosticó sin criterios explícitos.",
+   "La CIE-11 le da código propio; la CIE-10 no."
+  ],
+  "cue": "Termines de explicar que no hay un criterio único."
+ },
+ {
+  "t": "Diferencial: síndrome de piernas inquietas",
+  "sec": "Diagnóstico",
+  "s": 35,
+  "say": [
+   "El gran imitador es el síndrome de piernas inquietas: comparte edad, horario y patrón intermitente.",
+   "Lo distingue la urgencia de mover las piernas, el alivio con el movimiento, que puede ser unilateral y que puede dar síntomas por la mañana. No son intercambiables, pero la evidencia aún no permite unificarlos."
+  ],
+  "cue": "Menciones que no son intercambiables.",
+  "act": "Activa «Mostrar solo lo que distingue» para ver únicamente las diferencias."
+ },
+ {
+  "t": "Banderas rojas",
+  "sec": "Diagnóstico",
+  "s": 60,
+  "say": [
+   "Esta es la parte más práctica: las banderas rojas. Es una checklist pedagógica, no validada.",
+   "Dolor unilateral, cojera, dolor diurno o mecánico, dolor de más de tres semanas, dolor nocturno con palidez o fiebre, examen anormal, laboratorio anormal. Con dos o más banderas es poco probable que sea benigno.",
+   "Y cuidado con el sesgo de anclaje: una serie publicada mostró enfermedad celiaca, síndrome compartimental y una masa vertebral rotulados al inicio como dolor de crecimiento."
+  ],
+  "cue": "Hayas demostrado la checklist y mencionado el sesgo de anclaje.",
+  "act": "Marca dos o tres casillas para mostrar cómo cambian el medidor y el mensaje."
+ },
+ {
+  "t": "Lo que imita el cuadro",
+  "sec": "Diagnóstico",
+  "s": 45,
+  "say": [
+   "Tres imitadores que no se pueden perder. Leucemia: el dolor puede ser el único síntoma y el 35 % tenía hemograma normal al inicio; un hemograma normal no debe retrasar la evaluación.",
+   "Osteoma osteoide de cadera: 83 % con dolor nocturno y una mediana de 12 meses hasta el diagnóstico.",
+   "Y el hipoparatiroidismo: una niña con dolor bilateral de piernas, CK elevada y calcio bajo."
+  ],
+  "cue": "Cierres con el hipoparatiroidismo."
+ },
+ {
+  "t": "Tratamiento y evidencia",
+  "sec": "Tratamiento",
+  "s": 50,
+  "say": [
+   "Sobre el tratamiento: una vez excluidas otras causas, es sintomático. Explicar, tranquilizar, masaje local y analgesia puntual. No hay ensayos robustos que lo validen.",
+   "Los estiramientos tienen un ensayo antiguo a favor; la vitamina D es contradictoria; y las plantillas son observacionales sin control.",
+   "Ante cualquier bandera roja, derivar."
+  ],
+  "cue": "Digas que, ante una bandera roja, se deriva."
+ },
+ {
+  "t": "Caso publicado: hemangioma epitelioide",
+  "sec": "Casos",
+  "s": 45,
+  "say": [
+   "Pasemos a los casos. Primer caso publicado, BMJ Case Reports 2025: una niña con dolor y cojera en una pierna durante un mes, etiquetada como dolores de crecimiento.",
+   "La radiografía mostró lesiones líticas múltiples (las imágenes están en el artículo original); la resonancia, lesiones en ambos miembros; la biopsia, un hemangioma epitelioide.",
+   "Lo que no encajaba: la cojera, que fuera unilateral y que fuera persistente."
+  ],
+  "cue": "Enumeres lo que no encajaba."
+ },
+ {
+  "t": "Caso publicado: epifisiolisis no reconocida",
+  "sec": "Casos",
+  "s": 50,
+  "say": [
+   "Segundo caso publicado, de 2026: un adolescente de 16 años con cojera de meses; los estudios previos no mostraron nada hasta que se identificó una epifisiolisis femoral.",
+   "En la imagen, las radiografías preoperatorias del caso.",
+   "A la derecha, una cohorte suiza: el 41 % se diagnosticó después de 12 semanas, y cada semana de retraso se asoció con más probabilidad de osteotomía; es un hallazgo observacional.",
+   "La lección: ante cojera o dolor mal localizado de miembro inferior en un adolescente, pensar en la cadera y pedir una radiografía de pelvis."
+  ],
+  "cue": "Des la lección de pensar en la cadera."
+ },
+ {
+  "t": "Caso de ronda: niña de 10 años",
+  "sec": "Casos",
+  "s": 90,
+  "say": [
+   "Ahora el caso de ronda, anonimizado: una niña de 10 años con dolor inguinal de unos dos meses y cojera de tipo mecánico, diaria, peor al caminar y correr, que mejora sentada. Sin pérdida de peso ni sudoración nocturna.",
+   "En la consulta externa el examen era normal: sin dolor a la movilización de la cadera, Trendelenburg negativo y marcha normal ese día, y la ecografía también. Sin signos de alarma evidentes, se dio una prueba con AINE y control en dos semanas.",
+   "Unas ocho semanas después, en otra institución, la radiografía mostró un deslizamiento fisario de unos 10 milímetros. Al ingreso tenía limitación severa de los arcos de movimiento y dificultad para la marcha; estaba afebril, sin leucocitosis y con PCR normal. Ortopedia programó fijación in situ con tornillos canulados. El resultado de la cirugía no consta en el registro.",
+   "La lectura: el dolor diario y mecánico no es el patrón vespertino intermitente, la cojera con dolor de ingle es motivo de imagen de la cadera, y un examen normal ese día no excluye patología. La literatura muestra que este retraso es habitual: casi la mitad se diagnostica entre 3 y 12 semanas."
+  ],
+  "cue": "Des la lectura del caso."
+ },
+ {
+  "t": "Comparativo: dolor típico vs caso de ronda",
+  "sec": "Casos",
+  "s": 60,
+  "say": [
+   "Comparemos el caso con el cuadro típico. La edad no ayuda: 10 años cae dentro del rango de 3 a 12.",
+   "Lo que separa el caso es el patrón: dolor unilateral en la ingle o la cadera, diario y mecánico, con cojera e imagen anormal, frente al dolor bilateral, vespertino y con examen normal.",
+   "Aplicando los siete criterios operativos, el caso no llega a cuatro, ni siquiera asumiendo favorables los datos que no están documentados. El dolor nocturno no está documentado."
+  ],
+  "cue": "Des la conclusión de los siete criterios."
+ },
+ {
+  "t": "Mensajes clave y vacíos",
+  "sec": "Cierre",
+  "s": 45,
+  "say": [
+   "Cinco mensajes: es un diagnóstico clínico y de exclusión; el perfil típico es bilateral, vespertino e intermitente con examen normal; si es unilateral, diurno, con cojera o con examen anormal, no es dolor de crecimiento; ante dolor poco localizado con cojera, pensar en la cadera; y los marcadores normales no excluyen infección ni leucemia.",
+   "Y lo que aún no sabemos: no hay definición consensuada, hay un solo ensayo aleatorizado entre 37 estudios y no hay guías."
+  ],
+  "cue": "Termines los cinco mensajes y los vacíos."
+ },
+ {
+  "t": "Referencias",
+  "sec": "Cierre",
+  "s": 10,
+  "say": [
+   "Todas las referencias están aquí, en estilo Vancouver. Cada diapositiva tiene su lista abajo y, al tocar una, se ve la parte donde se usó."
+  ],
+  "cue": "Termines de decir dónde están las referencias."
+ },
+ {
+  "t": "Gracias",
+  "sec": "Cierre",
+  "s": 10,
+  "say": [
+   "Muchas gracias por su atención. Quedo atento a sus preguntas."
+  ],
+  "cue": "Fin: abre la ronda de preguntas."
+ }
 ];
 
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];

@@ -298,6 +298,19 @@ table.cmp tbody tr.same{transition:opacity .2s}
 @media print{#refpop{display:none!important}}
 body.embed .topbar,body.embed .dock,body.embed .progress{display:none}
 body.embed .stage{top:0;bottom:0}
+#s-thanks .body{display:grid;place-items:center;padding-block:0}
+#s-thanks h1{font-size:clamp(3rem,10vw,7rem);font-weight:800;letter-spacing:-.04em;line-height:1;text-align:center}
+ol.vanc{margin:0;padding-left:2.2em;font-size:.92rem;line-height:1.5;color:var(--ink2)}
+ol.vanc li{margin:0 0 .65em;padding-left:.3em}
+ol.vanc li::marker{color:var(--ink3);font-weight:700}
+ol.vanc a{word-break:break-all}
+.fig{padding:10px}.fig img{width:100%;height:auto;display:block;border-radius:10px;background:#000}
+.fig figcaption,.figslot figcaption{font-size:.8rem;color:var(--ink3);margin-top:8px}
+.figslot img,.figslot .cap{display:none}.figslot.has img,.figslot.has .cap{display:block}.figslot.has .fb{display:none}
+.figslot img{width:100%;height:auto;border-radius:10px}
+#matrix th{width:60%}
+#s-compare .scrollx table{min-width:0}
+table.cmp tr.grp th{background:var(--surface2);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);width:auto;padding:7px 12px}
 @media print{
   .hcard .more{display:block!important}
   @page{size:A4 landscape;margin:12mm}
@@ -416,7 +429,7 @@ body.embed .stage{top:0;bottom:0}
       <ul class="list ink2">
         <li>Ninguno de los 37 estudios del meta-análisis de 2026 es colombiano; el <b>único latinoamericano es de México</b><i class="cm" data-ref="luo2026"></i>.</li>
         <li>Nuestra búsqueda en PubMed (noviembre de 2026) de dolores de crecimiento en Colombia, 2025–2026, no arrojó estudios.</li>
-        <li>La CIE-10, con la que se registran los diagnósticos en las historias de ronda, <b>no tiene código propio</b>: la consulta inicial se codificó como dolor en miembro (M79.6)<i class="cm" data-ref="luo2026"></i><i class="cm" data-ref="casoA"></i>. La CIE-11 sí lo tiene (SE32)<i class="cm" data-ref="luo2026"></i>.</li>
+        <li>La CIE-10, con la que se registra el diagnóstico en la historia del caso de ronda, <b>no tiene código propio</b>: la consulta inicial se codificó como dolor en miembro (M79.6)<i class="cm" data-ref="luo2026"></i><i class="cm" data-ref="casoA"></i>. La CIE-11 sí lo tiene (SE32)<i class="cm" data-ref="luo2026"></i>.</li>
       </ul>
     </div>
     <div class="card">
@@ -686,10 +699,6 @@ body.embed .stage{top:0;bottom:0}
       <h3>Plantillas plantares personalizadas</h3>
       <p class="small ink2" style="margin:0">647 niños evaluados y 178 reevaluados; mayor alivio con mejor cumplimiento. Diseño observacional: no confirma causalidad<i class="cm" data-ref="ionita2025"></i>.</p>
     </div>
-    <div class="card stack">
-      <h3>Láser de baja intensidad + ultrasonido</h3>
-      <p class="small ink2" style="margin:0">Ensayo piloto con placebo (n = 9: 5 vs 4): seguro y con posible eficacia. De 17 niños potencialmente elegibles, 8 se excluyeron porque <b>el diagnóstico no se confirmó</b> y se halló otra causa<i class="cm" data-ref="ferreira2026"></i>.</p>
-    </div>
     <div class="card tint stack">
       <h3>Derivar ante cualquier bandera roja</h3>
       <p class="small ink2" style="margin:0">Cojera, dolor unilateral o diurno, examen o estudios anormales: pasar a estudio dirigido. Ver diapositiva de banderas rojas.</p>
@@ -713,6 +722,11 @@ body.embed .stage{top:0;bottom:0}
       </ol>
     </div>
     <div class="stack">
+      <figure class="card figslot">
+        <img src="img/abdulshafea-rx.jpg" alt="Radiografías de miembros inferiores del caso publicado, con lesiones líticas múltiples" loading="lazy">
+        <figcaption class="cap">Radiografías del caso (Abdulshafea et al., 2025).<i class="cm" data-ref="abdulshafea2025"></i></figcaption>
+        <div class="fb"><h3>Radiografías del caso</h3><p class="small ink2" style="margin:0">Mostraron múltiples lesiones líticas en los huesos de los miembros inferiores. Las imágenes están en el artículo original (BMJ Case Reports, acceso restringido) y no se reproducen aquí. <a href="https://doi.org/10.1136/bcr-2024-262089" target="_blank" rel="noopener">Ver las imágenes en el artículo</a>.<i class="cm" data-ref="abdulshafea2025"></i></p></div>
+      </figure>
       <div class="card crit">
         <h3>Qué no encajaba con dolor de crecimiento</h3>
         <ul class="list crit small">
@@ -742,6 +756,10 @@ body.embed .stage{top:0;bottom:0}
       <div class="callout" style="margin-top:14px"><svg class="ic" data-i="help"></svg><p class="small">Los autores insisten en considerar SCFE ante cualquier cojera o dolor de miembro inferior en un adolescente, <b>aunque esté mal localizado</b>: una radiografía de pelvis lo diagnostica rápido.</p></div>
     </div>
     <div class="stack">
+      <figure class="card fig">
+        <img src="img/ranieri-fig1-recortada.jpg" alt="Radiografías preoperatorias de pelvis y cadera del paciente del caso publicado" width="633" height="192" loading="lazy">
+        <figcaption>Radiografías preoperatorias del caso (Ranieri et al., 2026, figura 1; CC BY 4.0). Imagen recortada para retirar datos del paciente.<i class="cm" data-ref="ranieri2026"></i></figcaption>
+      </figure>
       <div class="card">
         <h3>El costo del retraso<i class="cm" data-ref="abdennebi2026"></i></h3>
         <p class="small muted" style="margin:0 0 8px">Cohorte suiza, 63 pacientes y 71 caderas con SCFE (2000–2024).</p>
@@ -753,67 +771,59 @@ body.embed .stage{top:0;bottom:0}
 </div></div>
 </section>
 
-<section class="slide" id="s-pa" data-title="Caso de ronda · Paciente A" data-sec="Casos">
+<section class="slide" id="s-pa" data-title="Caso de ronda: niña de 10 años" data-sec="Casos">
 <div class="body"><div class="wrap">
-  <header class="sh"><span class="eyebrow">Caso de ronda · Paciente A</span>
-    <h2 class="wide">Niña de 10 años con dolor de ingle y cojera durante meses</h2>
-    </header>
-  <div class="grid g21">
-    <div class="card">
-      <ol class="tl">
-        <li><div class="when">Consulta externa · semana 0</div><p>Dolor inguinal de ~2 meses con <b>cojera de tipo mecánico</b>: diario (a veces muy leve), mejora sentada y <b>empeora al caminar y correr</b>. Sin pérdida de peso ni sudoración nocturna. Examen sin dolor a la movilización de la cadera, sin cambios inflamatorios, Trendelenburg negativo, marcha normal en el momento. Ecografía normal.<i class="cm" data-ref="casoA"></i></p><p>Sin signos de alarma evidentes: <b>prueba terapéutica con AINE</b> (ciclo de 7 días) y control en 2 semanas.<i class="cm" data-ref="casoA"></i></p></li>
-        <li class="alert"><div class="when">≈8 semanas después</div><p>Dolor de ~4 meses y marcha antálgica de ~2 meses, con varias consultas previas. <b>La radiografía de cadera muestra deslizamiento fisario de ~10 mm.</b><i class="cm" data-ref="casoA"></i></p></li>
-        <li><div class="when">Ingreso</div><p>Limitación severa de los arcos de movimiento, dificultad para la bipedestación y la marcha. Leucocitos 9,59 ×10³/µL, PCR 2,5 mg/dL (VR 0–5), VSG 13,75 mm/h (VR 0–10).<i class="cm" data-ref="casoA"></i></p></li>
-        <li><div class="when">Plan</div><p>Valoración por ortopedia y programación quirúrgica: <b>fijación in situ con tornillos canulados</b>.<i class="cm" data-ref="casoA"></i></p></li>
-      </ol>
-    </div>
-    <div class="stack">
-      <div class="card crit">
-        <h3>Lectura didáctica</h3>
-        <ul class="list crit small">
-          <li>Dolor <b>diario y mecánico</b> (peor al caminar y correr): no es el patrón vespertino intermitente.</li>
-          <li><b>Cojera + dolor en ingle/cadera</b> es motivo de imagen de la cadera.</li>
-          <li>Un examen y una ecografía normales <b>en ese momento</b> no excluyen patología de cadera.</li>
-        </ul>
-      </div>
-      <div class="callout"><svg class="ic" data-i="help"></svg><p class="small">Este patrón de retraso es el descrito en la literatura reciente: casi la mitad de las epifisiolisis se diagnosticó entre 3 y 12 semanas de iniciados los síntomas<i class="cm" data-ref="abdennebi2026"></i><i class="cm" data-ref="ranieri2026"></i><i class="cm" data-ref="bhatia2026"></i>.</p></div>
-    </div>
+  <header class="sh"><span class="eyebrow">Caso de ronda</span>
+    <h2 class="wide">Niña de 10 años con dolor de ingle y cojera durante meses</h2></header>
+  <div class="grid g4" style="margin-bottom:clamp(12px,1.6vw,20px)">
+    <div class="tile"><div class="v">10<small>años</small></div><div class="l">niña previamente sana, con antecedente de infección urinaria a los 4 años<i class="cm" data-ref="casoA"></i></div></div>
+    <div class="tile"><div class="v">4<small>meses</small></div><div class="l">de dolor inguinal, con varias consultas previas<i class="cm" data-ref="casoA"></i></div></div>
+    <div class="tile"><div class="v">≈2<small>meses</small></div><div class="l">de marcha antálgica antes del diagnóstico<i class="cm" data-ref="casoA"></i></div></div>
+    <div class="tile"><div class="v">≈10<small>mm</small></div><div class="l">de deslizamiento fisario en la radiografía<i class="cm" data-ref="casoA"></i></div></div>
   </div>
-</div></div>
-</section>
-
-<section class="slide" id="s-pb" data-title="Caso de ronda · Paciente B" data-sec="Casos">
-<div class="body"><div class="wrap">
-  <header class="sh"><span class="eyebrow">Caso de ronda · Paciente B</span>
-    <h2 class="wide">Niño de 3 años con dolor de cadera, derrame y marcadores que no concuerdan</h2>
-    </header>
-  <div class="grid g2">
+  <div class="grid g21" style="align-items:start">
     <div class="card">
       <ol class="tl">
-        <li><div class="when">Antecedentes</div><p>Sinovitis transitoria de cadera (hace ~5 meses) y <b>artritis séptica de cadera</b> sin aislamiento de gérmenes (hace ~3 meses), tratada con lavado y desbridamiento en dos tiempos.<i class="cm" data-ref="casoB"></i></p></li>
-        <li><div class="when">Cuadro actual</div><p>3–5 días de diarrea y fiebre; luego <b>dolor de cadera de alta intensidad irradiado al muslo</b> y marcha antálgica.<i class="cm" data-ref="casoB"></i></p></li>
-        <li class="alert"><div class="when">Clínica de origen</div><p><b>Ecografía con derrame articular</b>, radiografía sin lesiones. Leucocitos 18 460 (81,2 % neutrófilos), VSG 35, procalcitonina 1,05, PCR informada como negativa. <b>Se inició antibiótico.</b> Hemocultivos pendientes.<i class="cm" data-ref="casoB"></i></p></li>
-        <li><div class="when">Ingreso al hospital</div><p>Afebril, estable, sin aspecto séptico; dolor a los arcos de movilidad sin signos locales de inflamación. Radiografía comparativa de caderas normal. <b>Sin antibiótico</b>, con analgesia y seguimiento por ortopedia y pediatría.<i class="cm" data-ref="casoB"></i></p></li>
-        <li><div class="when">Día 2</div><p>Niño irritable, sin buena modulación del dolor. Se solicita <b>resonancia de cadera bajo sedación</b> (simple y con contraste).<i class="cm" data-ref="casoB"></i></p></li>
-        <li><div class="when">Día 3</div><p>Mejor modulación del dolor, marcha antálgica y sin picos febriles. Leucocitos 8 990, VSG 33,6 y PCR 4,7. <b>La resonancia sigue pendiente.</b> La evolución final no está disponible en el registro.<i class="cm" data-ref="casoB"></i></p></li>
+        <li><div class="when">Consulta externa · semana 0</div><p>Dolor inguinal de ~2 meses con <b>cojera de tipo mecánico</b>: diario (a veces muy leve), mejora sentada y <b>empeora al caminar y correr</b>. Sin pérdida de peso, hiporexia ni sudoración nocturna.<i class="cm" data-ref="casoA"></i></p><p>Examen: sin dolor a la movilización de la cadera, sin dolor a la palpación ni cambios inflamatorios, sin ganglios palpables, Trendelenburg negativo y marcha normal en el momento. Ecografía normal.<i class="cm" data-ref="casoA"></i></p><p>Sin signos de alarma evidentes: <b>prueba terapéutica con AINE</b> (naproxeno con protector gástrico, 7 días) y control en 2 semanas.<i class="cm" data-ref="casoA"></i></p></li>
+        <li><div class="when">Entre la consulta y el ingreso</div><p>Varias consultas, incluida pediatría, sin fiebre ni trauma. Ecografía de tejidos blandos de cadera sin hernia inguinal y con ganglio de aspecto normal. El acetaminofén no mejoró el cuadro; el dolor aumentó.<i class="cm" data-ref="casoA"></i></p></li>
+        <li class="alert"><div class="when">≈8 semanas después · radiografía</div><p>En otra institución, la radiografía de cadera muestra <b>deslizamiento fisario de ~10 mm</b>; la cadera contraria se ve conservada.<i class="cm" data-ref="casoA"></i></p></li>
+        <li><div class="when">Ingreso</div><p>Afebril y con signos vitales normales. Dolor a la palpación de la cadera, <b>limitación severa de los arcos de movimiento</b> y dificultad para la bipedestación y la marcha.<i class="cm" data-ref="casoA"></i></p></li>
+        <li><div class="when">Valoración por ortopedia</div><p>Impresión: deslizamiento epifisario de la cabeza femoral. Se solicita TAC de pelvis con reconstrucción 3D para planear la cirugía y se programa <b>fijación in situ con tornillos canulados de 6,5 mm</b>, con consentimiento informado.<i class="cm" data-ref="casoA"></i></p></li>
+        <li><div class="when">Preparación para cirugía</div><p>Valoración anestésica: ASA II, riesgo intermedio para un procedimiento ortopédico mayor. Ayuno, líquidos y analgesia intravenosos; reserva de 1 unidad de glóbulos rojos y cama en cuidado intermedio.<i class="cm" data-ref="casoA"></i></p></li>
+        <li><div class="when">Desenlace</div><p>El resultado de la cirugía no consta en el registro.</p></li>
       </ol>
     </div>
     <div class="stack">
       <div class="card">
-        <div class="kicker">Laboratorio en el tiempo</div>
-        <div class="grid g2">
-          <div class="viz" data-chart="wbc"></div>
-          <div class="viz" data-chart="esr"></div>
-        </div>
-        <p class="small muted" style="margin:10px 0 0">PCR 4,7 mg/dL (VR 0–5) en ambos controles hospitalarios.</p>
+        <h3>Paraclínicos al ingreso</h3>
+        <table class="cmp" style="margin-top:8px">
+          <thead><tr><th>Prueba</th><th>Resultado</th><th>Referencia</th></tr></thead>
+          <tbody>
+            <tr><th>Leucocitos</th><td>9,59 ×10³/µL<i class="cm" data-ref="casoA"></i></td><td>4,5–12</td></tr>
+            <tr><th>Neutrófilos</th><td>51 %<i class="cm" data-ref="casoA"></i></td><td>31–51</td></tr>
+            <tr><th>Eosinófilos</th><td class="x">9,1 % ↑<i class="cm" data-ref="casoA"></i></td><td>0–5</td></tr>
+            <tr><th>Hemoglobina</th><td>14,6 g/dL<i class="cm" data-ref="casoA"></i></td><td>12–15,5</td></tr>
+            <tr><th>Plaquetas</th><td>346 ×10³/µL<i class="cm" data-ref="casoA"></i></td><td>—</td></tr>
+            <tr><th>PCR</th><td>2,5 mg/dL<i class="cm" data-ref="casoA"></i></td><td>0–5</td></tr>
+            <tr><th>VSG</th><td class="x">13,75 mm/h ↑<i class="cm" data-ref="casoA"></i></td><td>0–10</td></tr>
+          </tbody>
+        </table>
       </div>
-      <div class="card tint stack">
-        <h3>Qué dice la literatura reciente</h3>
+      <div class="card crit">
+        <h3>Lectura didáctica</h3>
+        <ul class="list crit small">
+          <li>Dolor <b>diario y mecánico</b> (peor al caminar y correr): no es el patrón vespertino intermitente.</li>
+          <li><b>Cojera + dolor en ingle o cadera</b> es motivo de imagen de la cadera.</li>
+          <li>Un examen y una ecografía normales <b>ese día</b> no excluyen patología de cadera.</li>
+          <li>Sin fiebre ni leucocitosis y con PCR normal, la infección era poco probable; la radiografía orientó el diagnóstico.</li>
+        </ul>
+      </div>
+      <div class="card tint">
+        <h3>Qué dice la literatura</h3>
         <ul class="list small ink2">
-          <li>En 35 niños con artritis séptica de cadera confirmada, el <b>91,4 %</b> tenía puntaje Kocher-Caird ≤1 con marcadores normales, y el <b>82,9 %</b> había recibido antibiótico antes<i class="cm" data-ref="afaque2026"></i>.</li>
-          <li>Con ≥2 criterios de Kocher, el puntaje debe indicar <b>imagen avanzada (RM)</b> y no un algoritmo quirúrgico definitivo<i class="cm" data-ref="rogie2026"></i>.</li>
-          <li>La ecografía a pie de cama detecta derrame con sensibilidad de ~89 % y especificidad de ~99 % por cadera<i class="cm" data-ref="jones2025"></i>; junto con la clínica y los marcadores mejora la diferenciación entre sinovitis transitoria y artritis séptica<i class="cm" data-ref="bhatia2026"></i>.</li>
-          <li>Sinovitis transitoria sin aspiración (n = 220): sin septicemias omitidas, pero 3,2 % terminó con diagnóstico reumatológico o de secuelas<i class="cm" data-ref="smadi2026"></i>.</li>
+          <li>En el niño que cojea, el diferencial incluye sinovitis transitoria, artritis séptica, epifisiolisis y enfermedad de Legg-Calvé-Perthes<i class="cm" data-ref="bhatia2026"></i>.</li>
+          <li>Casi la mitad de las epifisiolisis se diagnosticó entre 3 y 12 semanas de iniciados los síntomas, y el 41 % después de 12 semanas<i class="cm" data-ref="abdennebi2026"></i>.</li>
+          <li>El diagnóstico puede retrasarse aunque la historia sea sugestiva; una radiografía de pelvis lo confirma rápido<i class="cm" data-ref="ranieri2026"></i>.</li>
         </ul>
       </div>
     </div>
@@ -821,38 +831,37 @@ body.embed .stage{top:0;bottom:0}
 </div></div>
 </section>
 
-<section class="slide" id="s-compare" data-title="Comparativo: típico vs pacientes A y B" data-sec="Casos">
+<section class="slide" id="s-compare" data-title="Comparativo: dolor típico vs caso de ronda" data-sec="Casos">
 <div class="body"><div class="wrap">
   <header class="sh"><span class="eyebrow">Casos</span>
-    <h2 class="wide">Comparativo: dolor idiopático típico frente a los dos casos</h2>
-    <p class="lead">La edad no ayuda: 3 y 10 años caen dentro del rango típico (3–12 años)<i class="cm" data-ref="taskin2026"></i>. Lo que separa los casos es el patrón.</p></header>
-  <div class="chipbar"><button class="fchip" id="btnDiff2" aria-pressed="false">Mostrar solo diferencias</button></div>
-  <div id="cmpWrap">
+    <h2 class="wide">Comparativo: dolor idiopático típico frente al caso de ronda</h2>
+    <p class="lead">La edad no ayuda: 10 años cae dentro del rango típico (3–12 años)<i class="cm" data-ref="taskin2026"></i>. Lo que separa el caso es el patrón.</p></header>
+  <div class="grid g21" style="align-items:start">
     <div class="scrollx"><table class="cmp">
-      <thead><tr><th>Aspecto</th><th>Dolor idiopático típico</th><th>Paciente A · niña 10 a</th><th>Paciente B · niño 3 a</th></tr></thead>
+      <thead><tr><th>Aspecto</th><th>Dolor idiopático típico</th><th>Caso de ronda · niña, 10 años</th></tr></thead>
       <tbody>
-        <tr class="same"><th>Edad</th><td>3–12 años</td><td>10 años (dentro del rango)</td><td>3 años (dentro del rango)</td></tr>
-        <tr><th>Localización</th><td class="t">Muslos, poplíteos, pantorrillas; <b>bilateral</b>, extraarticular</td><td class="x"><b>Ingle / cadera</b>, unilateral</td><td class="x"><b>Cadera</b> irradiada al muslo, unilateral</td></tr>
-        <tr><th>Patrón y horario</th><td class="t">Intermitente, vespertino/nocturno, alivio total entre episodios</td><td class="x"><b>Diario</b>, mecánico: peor al caminar y correr, mejora sentada</td><td class="x">Dolor <b>agudo e intenso</b> tras cuadro diarreico y fiebre</td></tr>
-        <tr><th>Duración</th><td class="t">30 min–2 h por episodio</td><td class="x">Meses (2–4)</td><td class="x">Días (3–5), con antecedentes articulares</td></tr>
-        <tr><th>Marcha</th><td class="t">Normal, sin cojera</td><td class="x">Cojera, luego marcha antálgica</td><td class="x">Marcha antálgica</td></tr>
-        <tr><th>Examen</th><td class="t">Normal, sin limitación</td><td class="x">Al inicio normal; luego limitación severa de arcos</td><td class="x">Dolor a los arcos de movilidad</td></tr>
-        <tr><th>Imagen y laboratorio</th><td class="t">Normales</td><td class="x">Radiografía: deslizamiento fisario ~10 mm</td><td class="x">Ecografía con derrame; marcadores discordantes</td></tr>
-        <tr class="same"><th>Dolor nocturno</th><td>Característico</td><td>No documentado en el registro</td><td>No documentado en el registro</td></tr>
-        <tr><th>Conducta</th><td class="t">Explicar, tranquilizar, seguimiento</td><td class="x">Ortopedia y cirugía programada</td><td class="x">Observación, RM bajo sedación, ortopedia</td></tr>
+        <tr class="grp"><th colspan="3">Historia</th></tr>
+        <tr><th>Edad</th><td>3–12 años<i class="cm" data-ref="taskin2026"></i></td><td>10 años (dentro del rango)<i class="cm" data-ref="casoA"></i></td></tr>
+        <tr><th>Localización</th><td class="t">Muslos, poplíteos, pantorrillas; <b>bilateral</b>, extraarticular<i class="cm" data-ref="luo2026"></i><i class="cm" data-ref="guo2026"></i></td><td class="x"><b>Ingle / cadera</b>, unilateral<i class="cm" data-ref="casoA"></i></td></tr>
+        <tr><th>Patrón y horario</th><td class="t">Intermitente, vespertino o nocturno, con alivio total entre episodios<i class="cm" data-ref="guo2026"></i><i class="cm" data-ref="luo2026"></i><i class="cm" data-ref="guoxq2026"></i></td><td class="x"><b>Diario</b>, mecánico: peor al caminar y correr, mejora sentada<i class="cm" data-ref="casoA"></i></td></tr>
+        <tr><th>Duración</th><td class="t">30 min–2 h por episodio<i class="cm" data-ref="luo2026"></i><i class="cm" data-ref="guoxq2026"></i></td><td class="x">Meses (2–4)<i class="cm" data-ref="casoA"></i></td></tr>
+        <tr><th>Dolor nocturno</th><td>Característico<i class="cm" data-ref="guoxq2026"></i></td><td>No documentado en el registro<i class="cm" data-ref="casoA"></i></td></tr>
+        <tr class="grp"><th colspan="3">Examen</th></tr>
+        <tr><th>Marcha</th><td class="t">Normal, sin cojera<i class="cm" data-ref="guo2026"></i></td><td class="x">Cojera, luego marcha antálgica<i class="cm" data-ref="casoA"></i></td></tr>
+        <tr><th>Examen físico</th><td class="t">Normal, sin limitación<i class="cm" data-ref="taskin2026"></i></td><td class="x">Al inicio normal; luego dolor a la palpación y limitación severa de los arcos<i class="cm" data-ref="casoA"></i></td></tr>
+        <tr class="grp"><th colspan="3">Estudios y conducta</th></tr>
+        <tr><th>Imagen y laboratorio</th><td class="t">Normales<i class="cm" data-ref="guo2026"></i></td><td class="x">Radiografía: deslizamiento fisario de ~10 mm; laboratorio con hallazgos menores<i class="cm" data-ref="casoA"></i></td></tr>
+        <tr><th>Conducta</th><td class="t">Explicar, tranquilizar, analgesia puntual y seguimiento<i class="cm" data-ref="luo2026"></i></td><td class="x">Ortopedia y cirugía programada (fijación in situ)<i class="cm" data-ref="casoA"></i></td></tr>
       </tbody>
     </table></div>
-  </div>
-  <div class="card" style="margin-top:clamp(14px,2vw,22px)">
-    <h3>¿Cumplen los criterios operativos de 2026?<i class="cm" data-ref="guo2026"></i></h3>
-    <p class="small muted" style="margin:0 0 8px">Se requieren ≥4 de 7 ítems y estudios normales. Lectura propia de los registros; “sin dato” significa que no está documentado.</p>
-    <div class="scrollx"><table class="cmp">
-      <thead><tr><th>Ítem</th><th>Paciente A</th><th>Paciente B</th></tr></thead>
-      <tbody id="matrix"></tbody>
-    </table></div>
-    <div class="grid g2" style="margin-top:12px">
-      <div class="tile"><div class="v">≤2 <small>de 7</small></div><div class="l">Paciente A: máximo posible aun asumiendo favorables los ítems sin dato</div></div>
-      <div class="tile"><div class="v">≤2 <small>de 7</small></div><div class="l">Paciente B: ídem. Se requieren al menos 4</div></div>
+    <div class="card">
+      <h3>¿Cumple los criterios operativos de 2026?<i class="cm" data-ref="guo2026"></i></h3>
+      <p class="small muted" style="margin:0 0 8px">Se requieren ≥4 de 7 ítems y estudios normales. Lectura propia del registro; “sin dato” significa que no está documentado.</p>
+      <div class="scrollx"><table class="cmp">
+        <thead><tr><th>Ítem</th><th>Caso de ronda</th></tr></thead>
+        <tbody id="matrix"></tbody>
+      </table></div>
+      <div class="tile" style="margin-top:12px"><div class="v">≤2 <small>de 7</small></div><div class="l">máximo posible, aun asumiendo favorables los ítems sin dato. Se requieren al menos 4.</div></div>
     </div>
   </div>
 </div></div>
@@ -891,13 +900,16 @@ body.embed .stage{top:0;bottom:0}
 <div class="body"><div class="wrap">
   <header class="sh"><span class="eyebrow">Cierre</span>
     <h2>Referencias</h2>
-    <p class="lead">Las fuentes son de 2025 en adelante y se verificaron en PubMed o en la página de la revista, salvo tres fuentes colombianas anteriores a 2025 que se usan como excepción solo en la diapositiva de Colombia. Los casos de ronda provienen de registros clínicos anonimizados.</p></header>
-  <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px">
-    <label class="searchbox"><svg class="ic" data-i="search"></svg><input id="refSearch" type="search" placeholder="Buscar por autor, revista o tema" aria-label="Buscar en las referencias"></label>
-    <button class="lnk btn" id="copyAll"><svg class="ic" data-i="copy"></svg> Copiar todas las citas</button>
-  </div>
-  <div class="reflist" id="reflist"></div>
+    <p class="lead">Estilo Vancouver, en orden de primera aparición. Las fuentes son de 2025 en adelante, salvo tres fuentes colombianas anteriores que se usan como excepción solo en la diapositiva de Colombia. El caso de ronda proviene de un registro clínico anonimizado.</p></header>
+  <div style="margin-bottom:14px"><button class="lnk btn" id="copyAll"><svg class="ic" data-i="copy"></svg> Copiar todas las citas</button></div>
+  <ol class="vanc" id="reflist"></ol>
 </div></div>
+</section>
+
+<section class="slide" id="s-thanks" data-title="Gracias" data-sec="Cierre">
+<div class="body">
+  <div class="covertxt"><h1>Gracias</h1></div>
+</div>
 </section>
 
 </main>
@@ -922,10 +934,9 @@ body.embed .stage{top:0;bottom:0}
 <div class="toast" id="toast" role="status"></div>
 
 <script>
-const REFS={"luo2026": {"title": "Risk factors associated with growth pain disorder in children: a systematic review and meta-analysis", "journal": "Front Pediatr", "year": "2026", "epub": "2026-05-18", "vol": "14", "pages": "1806380", "doi": "10.3389/fped.2026.1806380", "pmid": "42232621", "pmc": "PMC13223011", "authorsStr": "Luo T, Huang Y, Guo Y, Lian X"}, "smith2025": {"title": "Assessments, diagnostic criteria and outcome measures for growing pains and persistent pain in the presence of restless leg syndrome in children: a scoping review", "journal": "BMJ Open", "year": "2025", "epub": "2025-12-03", "vol": "15", "issue": "12", "pages": "e101989", "doi": "10.1136/bmjopen-2025-101989", "pmid": "41338633", "pmc": "PMC12684109", "authorsStr": "Smith M, Pacey V, Davies LM, Coventry J, Ilhan E, Williams CM"}, "rosen2025": {"title": "Restless legs syndrome and growing pains in childhood: understanding the link", "journal": "Front Neurol", "year": "2025", "epub": "2025-08-22", "vol": "16", "pages": "1603694", "doi": "10.3389/fneur.2025.1603694", "pmid": "40917655", "pmc": "PMC12411773", "authorsStr": "Rosen AEV, Ursitti F, Stella N, Papetti L, Checchi MP, Voci A, et al."}, "jain2026": {"title": "Does Vitamin D Deficiency Contribute to Growing Pains? A Case-Control Study", "journal": "Clin Pediatr (Phila)", "year": "2026", "epub": "2025-10-06", "vol": "65", "issue": "2", "pages": "196-202", "doi": "10.1177/00099228251379209", "pmid": "41047847", "authorsStr": "Jain I, K A, Agarwal N, Nayak S, Jindal A"}, "guo2026": {"title": "Risk factor analysis for growing pains in children: Results of parental survey", "journal": "J Child Orthop", "year": "2026", "epub": "2025-11-20", "vol": "20", "issue": "1", "pages": "30-39", "doi": "10.1177/18632521251398410", "pmid": "41281413", "pmc": "PMC12634403", "authorsStr": "Guo R, Xiang W, Zhuang H, Wang Y, Zheng P"}, "taskin2026": {"title": "Sleep Habits and Maternal Anxiety in Children with Growing Pains: A Comparative Cross-Sectional Study", "journal": "Children (Basel)", "year": "2026", "epub": "2026-10-18", "vol": "13", "issue": "10", "pages": "1429", "doi": "10.3390/children13101429", "pmid": "42940749", "pmc": "PMC13702860", "authorsStr": "Taşkın SN, Karaca Ahat T, Aydoğan Gedik S, Ayan Karanfil H, Leblebicier ŞP, Boz Öncel E, et al."}, "guoxq2026": {"title": "Clinical Screening and Factors Influencing Growing Pain in Children with Recurrent Lower Limb Pain: A Controlled Study on Symptom Assessment and Motor Load", "journal": "Int J Gen Med", "year": "2026", "epub": "2026-02-02", "vol": "19", "pages": "565653", "doi": "10.2147/IJGM.S565653", "pmid": "41878628", "pmc": "PMC13007668", "authorsStr": "Guo XQ, Cang TS"}, "elvira2025": {"title": "Growing Pains and Dietary Habits in Young Athletes: A Cross-Sectional Survey", "journal": "Nutrients", "year": "2025", "epub": "2025-07-21", "vol": "17", "issue": "14", "pages": "2384", "doi": "10.3390/nu17142384", "pmid": "40733009", "pmc": "PMC12299381", "authorsStr": "Elvira-Aranda C, Pérez-Turpin JA, Suárez-Llorca C, Pérez M, De-Castellar R"}, "ferreira2026": {"title": "Combined Low-Level Laser and Ultrasound Therapy for Growing Pains in Children Aged Four to Twelve Years: A Pilot Study", "journal": "J Biophotonics", "year": "2026", "vol": "19", "issue": "5", "pages": "e70275", "doi": "10.1002/jbio.70275", "pmid": "42057468", "pmc": "PMC13129411", "authorsStr": "Ferreira EAL, Liberal LP, de Aquino Junior AE, de Menezes Reiff RB, Carbinatto FM, Zanatta RP, et al."}, "ionita2025": {"title": "Evaluating plantar correction strategies in pediatric growing pains: a postural and pain analysis in 647 children", "journal": "J Med Life", "year": "2025", "vol": "18", "issue": "5", "pages": "455-462", "doi": "10.25122/jml-2025-0084", "pmid": "40599145", "pmc": "PMC12207701", "authorsStr": "Ionita C, Tiron S, Abdallah S, Gheorghe-Simionesie SA, Simionesie D, Mitoiu BI, et al."}, "archawa2025": {"title": "Identifying the characteristics of and developing a predictive model for differentiating cancer-related musculoskeletal symptoms from juvenile idiopathic arthritis", "journal": "Pediatr Rheumatol Online J", "year": "2025", "epub": "2025-07-15", "vol": "23", "issue": "1", "pages": "73", "doi": "10.1186/s12969-025-01121-3", "pmid": "40665353", "pmc": "PMC12261695", "authorsStr": "Archawanantakul K, Vilaiyuk S, Pakakasama S, Lerkvaleekul B"}, "scott2025": {"title": "Sprains, Strains and Growing Pains: Managing Cognitive Bias to Facilitate Timely Diagnosis in Pediatric Sports Medicine", "journal": "Children (Basel)", "year": "2025", "epub": "2025-06-16", "vol": "12", "issue": "6", "pages": "784", "doi": "10.3390/children12060784", "pmid": "40564742", "pmc": "PMC12191792", "authorsStr": "Scott P, Sim L, Soma D, Madsen BE, Thorsteinsdottir B"}, "chen2026": {"title": "Missing the Malignancy in Primary Care: A Case Study on Pediatric Osteosarcoma", "journal": "J Pediatr Health Care", "year": "2026", "epub": "2025-12-25", "vol": "40", "issue": "3", "pages": "e149-e153", "doi": "10.1016/j.pedhc.2025.11.026", "pmid": "41447371", "authorsStr": "Chen M, Ramchandani N"}, "abdulshafea2025": {"title": "Multifocal epithelioid haemangioma of the lower limb bones in a child: an unusual presentation", "journal": "BMJ Case Rep", "year": "2025", "epub": "2025-03-14", "vol": "18", "issue": "3", "pages": "e262089", "doi": "10.1136/bcr-2024-262089", "pmid": "40086847", "authorsStr": "Abdulshafea M, Ahmed T, Gopala Pillai SK"}, "malvestiti2026": {"title": "Pediatric acute leukemia mimicking osteomyelitis: clinical and MRI features", "journal": "Front Oncol", "year": "2026", "epub": "2026-07-14", "vol": "16", "pages": "1872357", "doi": "10.3389/fonc.2026.1872357", "pmid": "42523625", "pmc": "PMC13407188", "authorsStr": "Malvestiti S, Muratore E, Wiedemann S, Goller-Bruchmann K, Baldazzi M, Abdul-Nour T, et al."}, "lipp2026": {"title": "MRI paving the way to diagnosis of acute lymphoblastic leukemia in children and adolescents - a retrospective observational study", "journal": "Mol Cell Pediatr", "year": "2026", "epub": "2026-08-04", "vol": "13", "issue": "1", "pages": "41", "doi": "10.1186/s40348-026-00253-0", "pmid": "42547612", "pmc": "PMC13433716", "authorsStr": "Lipp J, Schaper J, Rummel F, Kural M, Borkhardt A, Babor F, et al."}, "ramesh2026": {"title": "Eleven-Year-Old Girl With Bilateral Leg Pain: A Case Report on Recognizing Hypoparathyroidism in Pediatric Practice", "journal": "J Pediatr Health Care", "year": "2026", "epub": "2026-01-15", "vol": "40", "issue": "4", "pages": "582-586", "doi": "10.1016/j.pedhc.2025.12.023", "pmid": "41537715", "authorsStr": "Ramesh D, Stepanian L, Parker R, Sorbara J, Duong HH, Kukreti V"}, "silvestri2025": {"title": "Mimics of Childhood Restless Legs Syndrome", "journal": "Sleep Med Clin", "year": "2025", "epub": "2025-04-01", "vol": "20", "issue": "2", "pages": "203-208", "doi": "10.1016/j.jsmc.2025.02.010", "pmid": "40348532", "authorsStr": "Silvestri R, Aricò I"}, "yoganathan2025": {"title": "Epidemiology of Pediatric Restless Leg Syndrome", "journal": "Sleep Med Clin", "year": "2025", "epub": "2025-03-19", "vol": "20", "issue": "2", "pages": "183-192", "doi": "10.1016/j.jsmc.2025.02.001", "pmid": "40348530", "authorsStr": "Yoganathan S, Chakrabarty B"}, "davies2026": {"title": "Prioritising conditions resulting in chronic lower limb musculoskeletal pain in children and adolescents for development of clinical practice guidelines: an Australian Delphi study", "journal": "BMC Pediatr", "year": "2026", "epub": "2026-02-23", "vol": "26", "issue": "1", "pages": "185", "doi": "10.1186/s12887-026-06600-4", "pmid": "41731457", "pmc": "PMC12961776", "authorsStr": "Davies LM, Pacey V, Sturgiss E, Munro J, Haines T, Smith M, et al."}, "abdennebi2026": {"title": "Diagnostic Delay in Slipped Capital Femoral Epiphysis: A Single-Centre Study in Switzerland", "journal": "J Clin Med", "year": "2026", "epub": "2026-09-19", "vol": "15", "issue": "18", "pages": "7294", "doi": "10.3390/jcm15187294", "pmid": "42796066", "pmc": "PMC13607369", "authorsStr": "Abdennebi WB, Tsoupras A, Sbampato V, Dayer R, De Marco G, Vazquez O, et al."}, "ranieri2026": {"title": "Identification and management of unrecognized femoral head epiphysiolysis: a case report", "journal": "Front Pediatr", "year": "2026", "epub": "2026-06-10", "vol": "14", "pages": "1790075", "doi": "10.3389/fped.2026.1790075", "pmid": "42358571", "pmc": "PMC13290694", "authorsStr": "Ranieri M, Rizzo M, Lotito FM, Aprato A, Alessio M, Discepolo V, et al."}, "bhatia2026": {"title": "Current concepts review on the limping child", "journal": "Curr Opin Pediatr", "year": "2026", "epub": "2026-10-27", "doi": "10.1097/MOP.0000000000001625", "pmid": "42944610", "authorsStr": "Bhatia J, Vicioso C, Doyle SM"}, "afaque2026": {"title": "Low Kocher-Caird Scores High Clinical Suspicion: A Diagnostic Dilemma in Pediatric Hip Septic arthritis", "journal": "J Orthop Case Rep", "year": "2026", "vol": "16", "issue": "9", "pages": "522-530", "doi": "10.13107/jocr.2026.v16.i09.8142", "pmid": "42713092", "pmc": "PMC13552155", "authorsStr": "Afaque SF, Agrawal U, Verma V"}, "rogie2026": {"title": "Reassessing the Kocher Criteria: A Prospective Evaluation of Diagnostic Performance in Pediatric Musculoskeletal Infection", "journal": "J Pediatr Orthop", "year": "2026", "epub": "2026-09-28", "doi": "10.1097/BPO.0000000000003481", "pmid": "42802642", "authorsStr": "Rogie GA, Barksdale EM, Braithwaite HC, Mo M, Clever D, Enata N, et al."}, "smadi2026": {"title": "LongTerm Outcomes of Suspected Transient Synovitis of the Hip in NonAspirated Patients", "journal": "J Pediatr Orthop", "year": "2026", "epub": "2026-10-05", "doi": "10.1097/BPO.0000000000003494", "pmid": "42830576", "authorsStr": "Smadi Z, Burnett J, Varghese J, Balaji S, Rosenfeld S"}, "jones2025": {"title": "Diagnostic Accuracy of Point-of-Care Ultrasound for Hip Effusion: A Multicenter Diagnostic Study", "journal": "Ann Emerg Med", "year": "2025", "epub": "2025-06-07", "vol": "86", "issue": "6", "pages": "566-575", "doi": "10.1016/j.annemergmed.2025.04.033", "pmid": "40481828", "authorsStr": "Jones RM, Malia L, Snelling PJ, Riera A, Mak W, Moote D, et al."}, "ozgezmez2025": {"title": "Evaluation of delayed diagnosis of osteoid osteoma in adolescents and young patients with hip pain", "journal": "Jt Dis Relat Surg", "year": "2025", "epub": "2025-07-07", "vol": "36", "issue": "3", "pages": "640-647", "doi": "10.52312/jdrs.2025.2199", "pmid": "40783996", "pmc": "PMC12456355", "authorsStr": "Özgezmez FT, Karabıçak GÖ, Çullu E"}, "haque2025": {"title": "Efficacy of vitamin D therapy for resolution of pain symptoms in growing pain children with hypovitaminosis D", "journal": "Int J Contemp Pediatr", "year": "2025", "epub": "2025-04-24", "vol": "12", "issue": "5", "pages": "773-778", "doi": "10.18203/2349-3291.ijcp20251097", "authorsStr": "Haque M, Ali MA, Islam MM, Islam MI, Talukder MK", "url": "https://www.ijpediatrics.com/index.php/ijcp/article/view/6643"}, "camargo2007": {"title": "Dolor músculo esquelético en adolescentes. Prevalencia y factores asociados", "journal": "Salud UIS", "year": "2007", "vol": "39", "pages": "159-168", "authorsStr": "Camargo DM, Orozco LC, Herrera E", "url": "https://dialnet.unirioja.es/descarga/articulo/8203985.pdf", "exception": "Excepción de fecha: fuente colombiana anterior a 2025, usada solo en la diapositiva de Colombia."}, "vergara2008": {"title": "Dolor de crecimiento. Revisión de la literatura", "journal": "Rev Col Or Tra", "year": "2008", "vol": "22", "issue": "3", "pages": "192-195", "authorsStr": "Vergara Amador E, Perilla R, Álvarez G", "url": "https://sccot.org/pdf/RevistaDigital/22-03-2008/07Dolor.pdf", "exception": "Excepción de fecha: fuente colombiana anterior a 2025, usada solo en la diapositiva de Colombia."}, "ibanez2017": {"title": "Manejo osteopático del dolor de miembros inferiores en niños, asociado al crecimiento", "journal": "Rev Col Med Fis Rehab", "year": "2017", "vol": "27", "issue": "1", "pages": "49-67", "doi": "10.28957/rcmfr.v27n1a4", "authorsStr": "Ibáñez Bustamante L, Hernández Arévalo A, Mejía A", "exception": "Excepción de fecha: fuente colombiana anterior a 2025, usada solo en la diapositiva de Colombia."}};
+const REFS={"luo2026": {"title": "Risk factors associated with growth pain disorder in children: a systematic review and meta-analysis", "journal": "Front Pediatr", "year": "2026", "epub": "2026-05-18", "vol": "14", "pages": "1806380", "doi": "10.3389/fped.2026.1806380", "pmid": "42232621", "pmc": "PMC13223011", "authorsStr": "Luo T, Huang Y, Guo Y, Lian X"}, "smith2025": {"title": "Assessments, diagnostic criteria and outcome measures for growing pains and persistent pain in the presence of restless leg syndrome in children: a scoping review", "journal": "BMJ Open", "year": "2025", "epub": "2025-12-03", "vol": "15", "issue": "12", "pages": "e101989", "doi": "10.1136/bmjopen-2025-101989", "pmid": "41338633", "pmc": "PMC12684109", "authorsStr": "Smith M, Pacey V, Davies LM, Coventry J, Ilhan E, Williams CM"}, "rosen2025": {"title": "Restless legs syndrome and growing pains in childhood: understanding the link", "journal": "Front Neurol", "year": "2025", "epub": "2025-08-22", "vol": "16", "pages": "1603694", "doi": "10.3389/fneur.2025.1603694", "pmid": "40917655", "pmc": "PMC12411773", "authorsStr": "Rosen AEV, Ursitti F, Stella N, Papetti L, Checchi MP, Voci A, et al."}, "jain2026": {"title": "Does vitamin D deficiency contribute to growing pains? A case-control study", "journal": "Clin Pediatr (Phila)", "year": "2026", "epub": "2025-10-06", "vol": "65", "issue": "2", "pages": "196-202", "doi": "10.1177/00099228251379209", "pmid": "41047847", "authorsStr": "Jain I, K A, Agarwal N, Nayak S, Jindal A"}, "guo2026": {"title": "Risk factor analysis for growing pains in children: results of parental survey", "journal": "J Child Orthop", "year": "2026", "epub": "2025-11-20", "vol": "20", "issue": "1", "pages": "30-39", "doi": "10.1177/18632521251398410", "pmid": "41281413", "pmc": "PMC12634403", "authorsStr": "Guo R, Xiang W, Zhuang H, Wang Y, Zheng P"}, "taskin2026": {"title": "Sleep habits and maternal anxiety in children with growing pains: a comparative cross-sectional study", "journal": "Children (Basel)", "year": "2026", "epub": "2026-10-18", "vol": "13", "issue": "10", "pages": "1429", "doi": "10.3390/children13101429", "pmid": "42940749", "pmc": "PMC13702860", "authorsStr": "Taşkın SN, Karaca Ahat T, Aydoğan Gedik S, Ayan Karanfil H, Leblebicier ŞP, Boz Öncel E, et al."}, "guoxq2026": {"title": "Clinical screening and factors influencing growth pain in children with recurrent lower limb pain: a controlled study on symptom assessment and motor load", "journal": "Int J Gen Med", "year": "2026", "epub": "2026-02-02", "vol": "19", "pages": "565653", "doi": "10.2147/IJGM.S565653", "pmid": "41878628", "pmc": "PMC13007668", "authorsStr": "Guo XQ, Cang TS"}, "elvira2025": {"title": "Growing pains and dietary habits in young athletes: a cross-sectional survey", "journal": "Nutrients", "year": "2025", "epub": "2025-07-21", "vol": "17", "issue": "14", "pages": "2384", "doi": "10.3390/nu17142384", "pmid": "40733009", "pmc": "PMC12299381", "authorsStr": "Elvira-Aranda C, Pérez-Turpin JA, Suárez-Llorca C, Pérez M, De-Castellar R"}, "ionita2025": {"title": "Evaluating plantar correction strategies in pediatric growing pains: a postural and pain analysis in 647 children", "journal": "J Med Life", "year": "2025", "vol": "18", "issue": "5", "pages": "455-462", "doi": "10.25122/jml-2025-0084", "pmid": "40599145", "pmc": "PMC12207701", "authorsStr": "Ionita C, Tiron S, Abdallah S, Gheorghe-Simionesie SA, Simionesie D, Mitoiu BI, et al."}, "archawa2025": {"title": "Identifying the characteristics of and developing a predictive model for differentiating cancer-related musculoskeletal symptoms from juvenile idiopathic arthritis", "journal": "Pediatr Rheumatol Online J", "year": "2025", "epub": "2025-07-15", "vol": "23", "issue": "1", "pages": "73", "doi": "10.1186/s12969-025-01121-3", "pmid": "40665353", "pmc": "PMC12261695", "authorsStr": "Archawanantakul K, Vilaiyuk S, Pakakasama S, Lerkvaleekul B"}, "scott2025": {"title": "Sprains, strains and growing pains: managing cognitive bias to facilitate timely diagnosis in pediatric sports medicine", "journal": "Children (Basel)", "year": "2025", "epub": "2025-06-16", "vol": "12", "issue": "6", "pages": "784", "doi": "10.3390/children12060784", "pmid": "40564742", "pmc": "PMC12191792", "authorsStr": "Scott P, Sim L, Soma D, Madsen BE, Thorsteinsdottir B"}, "chen2026": {"title": "Missing the malignancy in primary care: a case study on pediatric osteosarcoma", "journal": "J Pediatr Health Care", "year": "2026", "epub": "2025-12-25", "vol": "40", "issue": "3", "pages": "e149-e153", "doi": "10.1016/j.pedhc.2025.11.026", "pmid": "41447371", "authorsStr": "Chen M, Ramchandani N"}, "abdulshafea2025": {"title": "Multifocal epithelioid haemangioma of the lower limb bones in a child: an unusual presentation", "journal": "BMJ Case Rep", "year": "2025", "epub": "2025-03-14", "vol": "18", "issue": "3", "pages": "e262089", "doi": "10.1136/bcr-2024-262089", "pmid": "40086847", "authorsStr": "Abdulshafea M, Ahmed T, Gopala Pillai SK"}, "malvestiti2026": {"title": "Pediatric acute leukemia mimicking osteomyelitis: clinical and MRI features", "journal": "Front Oncol", "year": "2026", "epub": "2026-07-14", "vol": "16", "pages": "1872357", "doi": "10.3389/fonc.2026.1872357", "pmid": "42523625", "pmc": "PMC13407188", "authorsStr": "Malvestiti S, Muratore E, Wiedemann S, Goller-Bruchmann K, Baldazzi M, Abdul-Nour T, et al."}, "lipp2026": {"title": "MRI paving the way to diagnosis of acute lymphoblastic leukemia in children and adolescents - a retrospective observational study", "journal": "Mol Cell Pediatr", "year": "2026", "epub": "2026-08-04", "vol": "13", "issue": "1", "pages": "41", "doi": "10.1186/s40348-026-00253-0", "pmid": "42547612", "pmc": "PMC13433716", "authorsStr": "Lipp J, Schaper J, Rummel F, Kural M, Borkhardt A, Babor F, et al."}, "ramesh2026": {"title": "Eleven-year-old girl with bilateral leg pain: a case report on recognizing hypoparathyroidism in pediatric practice", "journal": "J Pediatr Health Care", "year": "2026", "epub": "2026-01-15", "vol": "40", "issue": "4", "pages": "582-586", "doi": "10.1016/j.pedhc.2025.12.023", "pmid": "41537715", "authorsStr": "Ramesh D, Stepanian L, Parker R, Sorbara J, Duong HH, Kukreti V"}, "silvestri2025": {"title": "Mimics of Childhood Restless Legs Syndrome", "journal": "Sleep Med Clin", "year": "2025", "epub": "2025-04-01", "vol": "20", "issue": "2", "pages": "203-208", "doi": "10.1016/j.jsmc.2025.02.010", "pmid": "40348532", "authorsStr": "Silvestri R, Aricò I"}, "yoganathan2025": {"title": "Epidemiology of pediatric restless leg syndrome", "journal": "Sleep Med Clin", "year": "2025", "epub": "2025-03-19", "vol": "20", "issue": "2", "pages": "183-192", "doi": "10.1016/j.jsmc.2025.02.001", "pmid": "40348530", "authorsStr": "Yoganathan S, Chakrabarty B"}, "davies2026": {"title": "Prioritising conditions resulting in chronic lower limb musculoskeletal pain in children and adolescents for development of clinical practice guidelines: an Australian Delphi study", "journal": "BMC Pediatr", "year": "2026", "epub": "2026-02-23", "vol": "26", "issue": "1", "pages": "185", "doi": "10.1186/s12887-026-06600-4", "pmid": "41731457", "pmc": "PMC12961776", "authorsStr": "Davies LM, Pacey V, Sturgiss E, Munro J, Haines T, Smith M, et al."}, "abdennebi2026": {"title": "Diagnostic delay in slipped capital femoral epiphysis: a single-centre study in Switzerland", "journal": "J Clin Med", "year": "2026", "epub": "2026-09-19", "vol": "15", "issue": "18", "pages": "7294", "doi": "10.3390/jcm15187294", "pmid": "42796066", "pmc": "PMC13607369", "authorsStr": "Abdennebi WB, Tsoupras A, Sbampato V, Dayer R, De Marco G, Vazquez O, et al."}, "ranieri2026": {"title": "Identification and management of unrecognized femoral head epiphysiolysis: a case report", "journal": "Front Pediatr", "year": "2026", "epub": "2026-06-10", "vol": "14", "pages": "1790075", "doi": "10.3389/fped.2026.1790075", "pmid": "42358571", "pmc": "PMC13290694", "authorsStr": "Ranieri M, Rizzo M, Lotito FM, Aprato A, Alessio M, Discepolo V, et al."}, "bhatia2026": {"title": "Current concepts review on the limping child", "journal": "Curr Opin Pediatr", "year": "2026", "epub": "2026-10-27", "doi": "10.1097/MOP.0000000000001625", "pmid": "42944610", "authorsStr": "Bhatia J, Vicioso C, Doyle SM"}, "afaque2026": {"title": "Low Kocher-Caird scores high clinical suspicion: a diagnostic dilemma in pediatric hip septic arthritis", "journal": "J Orthop Case Rep", "year": "2026", "vol": "16", "issue": "9", "pages": "522-530", "doi": "10.13107/jocr.2026.v16.i09.8142", "pmid": "42713092", "pmc": "PMC13552155", "authorsStr": "Afaque SF, Agrawal U, Verma V"}, "ozgezmez2025": {"title": "Evaluation of delayed diagnosis of osteoid osteoma in adolescents and young patients with hip pain", "journal": "Jt Dis Relat Surg", "year": "2025", "epub": "2025-07-07", "vol": "36", "issue": "3", "pages": "640-647", "doi": "10.52312/jdrs.2025.2199", "pmid": "40783996", "pmc": "PMC12456355", "authorsStr": "Özgezmez FT, Karabıçak GÖ, Çullu E"}, "haque2025": {"title": "Efficacy of vitamin D therapy for resolution of pain symptoms in growing pain children with hypovitaminosis D", "journal": "Int J Contemp Pediatr", "year": "2025", "epub": "2025-04-24", "vol": "12", "issue": "5", "pages": "773-778", "doi": "10.18203/2349-3291.ijcp20251097", "authorsStr": "Haque M, Ali MA, Islam MM, Islam MI, Talukder MK", "url": "https://www.ijpediatrics.com/index.php/ijcp/article/view/6643"}, "camargo2007": {"title": "Dolor músculo esquelético en adolescentes. Prevalencia y factores asociados", "journal": "Salud UIS", "year": "2007", "vol": "39", "pages": "159-168", "authorsStr": "Camargo DM, Orozco LC, Herrera E", "url": "https://dialnet.unirioja.es/descarga/articulo/8203985.pdf", "exception": "Excepción de fecha: fuente colombiana anterior a 2025, usada solo en la diapositiva de Colombia."}, "vergara2008": {"title": "Dolor de crecimiento. Revisión de la literatura", "journal": "Rev Col Or Tra", "year": "2008", "vol": "22", "issue": "3", "pages": "192-195", "authorsStr": "Vergara Amador E, Perilla R, Álvarez G", "url": "https://sccot.org/pdf/RevistaDigital/22-03-2008/07Dolor.pdf", "exception": "Excepción de fecha: fuente colombiana anterior a 2025, usada solo en la diapositiva de Colombia."}, "ibanez2017": {"title": "Manejo osteopático del dolor de miembros inferiores en niños, asociado al crecimiento", "journal": "Rev Col Med Fis Rehab", "year": "2017", "vol": "27", "issue": "1", "pages": "49-67", "doi": "10.28957/rcmfr.v27n1a4", "authorsStr": "Ibáñez Bustamante L, Hernández Arévalo A, Mejía A", "exception": "Excepción de fecha: fuente colombiana anterior a 2025, usada solo en la diapositiva de Colombia."}};
 const INTERNAL={
-  casoA:{short:'Caso de ronda · Paciente A',title:'Registro clínico institucional anonimizado: Paciente A (niña, 10 años), dolor de ingle y cojera',info:'Caso de ronda, 2026. Documento no publicado; sin identificadores.'},
-  casoB:{short:'Caso de ronda · Paciente B',title:'Registro clínico institucional anonimizado: Paciente B (niño, 3 años), dolor de cadera con derrame',info:'Caso de ronda, 2026. Documento no publicado; sin identificadores.'}
+  casoA:{short:'Caso de ronda',title:'Registro clínico institucional anonimizado: caso de ronda (niña, 10 años), dolor de ingle y cojera',info:'Caso de ronda, 2026. Documento no publicado; sin identificadores.'}
 };
 /* Datos usados por cada diapositiva: [referencia, nota] */
 const SLIDE_REFS={
@@ -933,7 +944,7 @@ const SLIDE_REFS={
  's-question':[['luo2026','Una de las causas más comunes de dolor musculoesquelético recurrente en niños; puede causar ansiedad familiar; sin estándar de oro diagnóstico.'],['smith2025','15 criterios diagnósticos distintos; no hay guías conocidas para orientar el examen físico que excluya otras causas de dolor de miembro inferior.'],['davies2026','Delphi australiano (44 profesionales y 16 padres): “growing pains” figura entre las 10 condiciones de dolor crónico de miembro inferior priorizadas para desarrollar guías de práctica clínica.']],
  's-def':[['smith2025','Descripción: dolor benigno, bilateral, intermitente, en músculos o alrededor de articulaciones, sin anomalías en examen físico o laboratorio. 19 806 registros revisados, 61 incluidos; 7 992 niños con “growing pains”; 15 criterios únicos.'],['luo2026','CIE-10 lo codifica como síntoma musculoesquelético inespecífico; CIE-11 lo clasifica como “growth pain disorder” (código SE32). No hay evidencia de asociación con el crecimiento rápido.']],
  's-epi':[['luo2026','Prevalencias de 2,6 % a 36,9 % según edad, país, ámbito y definición; valores por grupo (5–15 años; 6–19 años varones y niñas; 4–12 años; 4–6 años) citados en la introducción. Los 37 estudios incluidos proceden de 16 países: China 8, Australia 6, Israel 5, India 3, Grecia 2, Corea 2, Turquía 2 y uno de cada uno de Bangladesh, Dinamarca, Irak, Japón, México, Pakistán, Rumania, Reino Unido y Estados Unidos.'],['rosen2025','Estimación conservadora de prevalencia de dolores de crecimiento ≈4,7 %.'],['yoganathan2025','SPI pediátrico ≈2 %; los dolores de crecimiento son un diagnóstico diferencial cercano.'],['elvira2025','916 deportistas de 8–17 años (Alicante). Dolor autorreportado 78,5 % en niños y 93,5 % en adolescentes; diagnóstico formal 32,6 % y 51,9 %; 13,7 % usaba analgésicos.']],
- 's-col':[['luo2026','Ninguno de los 37 estudios incluidos (16 países) es colombiano y el único latinoamericano es de México. CIE-10 codifica los dolores de crecimiento como síntoma musculoesquelético inespecífico; CIE-11 sí le da código propio (SE32). El rango internacional de prevalencia es de 2,6 % a 36,9 % según edad, país, ámbito y definición.'],['casoA','En la consulta externa del Paciente A, el diagnóstico se registró con CIE-10 como dolor en miembro (M79.6).'],['camargo2007','Estudio transversal en 30 colegios de Bucaramanga: 468 escolares, edad media 13,8 ± 1,8 años, 52,6 % mujeres. Dolor musculoesquelético el día de la encuesta: 54 % (IC 95 % 47,1–61,0). Asociado a sexo femenino (RP 1,32), fumar (RP 1,33), empleo (RP 1,41) y dolor el mes anterior (RP 1,38). Mide dolor musculoesquelético, no dolores de crecimiento.'],['vergara2008','Revisión de la literatura (Universidad Nacional de Colombia): el dolor de crecimiento ocurre entre los 4 y 12 años, con dolor de piernas o muslos al final del día o nocturno, y examen físico normal. Cita prevalencias internacionales de 2,6 % a 49,4 % (36,9 % en niños de 4 a 6 años del sur de Australia) y de 10 a 20 % en otras series; no aporta cifras colombianas.'],['ibanez2017','Revisión (Universidad Nacional de Colombia): como motivo de consulta, 4–6 % de las consultas en mayores de 3 años, hasta 12 % entre 11 y 14 años; consultas por dolor musculoesquelético 1,6 % en preescolares, 5,4 % en escolares y 11,2 % en adolescentes. Las cifras provienen de literatura internacional citada por la revisión.']],
+ 's-col':[['luo2026','Ninguno de los 37 estudios incluidos (16 países) es colombiano y el único latinoamericano es de México. CIE-10 codifica los dolores de crecimiento como síntoma musculoesquelético inespecífico; CIE-11 sí le da código propio (SE32). El rango internacional de prevalencia es de 2,6 % a 36,9 % según edad, país, ámbito y definición.'],['casoA','En la consulta externa del caso de ronda, el diagnóstico se registró con CIE-10 como dolor en miembro (M79.6).'],['camargo2007','Estudio transversal en 30 colegios de Bucaramanga: 468 escolares, edad media 13,8 ± 1,8 años, 52,6 % mujeres. Dolor musculoesquelético el día de la encuesta: 54 % (IC 95 % 47,1–61,0). Asociado a sexo femenino (RP 1,32), fumar (RP 1,33), empleo (RP 1,41) y dolor el mes anterior (RP 1,38). Mide dolor musculoesquelético, no dolores de crecimiento.'],['vergara2008','Revisión de la literatura (Universidad Nacional de Colombia): el dolor de crecimiento ocurre entre los 4 y 12 años, con dolor de piernas o muslos al final del día o nocturno, y examen físico normal. Cita prevalencias internacionales de 2,6 % a 49,4 % (36,9 % en niños de 4 a 6 años del sur de Australia) y de 10 a 20 % en otras series; no aporta cifras colombianas.'],['ibanez2017','Revisión (Universidad Nacional de Colombia): como motivo de consulta, 4–6 % de las consultas en mayores de 3 años, hasta 12 % entre 11 y 14 años; consultas por dolor musculoesquelético 1,6 % en preescolares, 5,4 % en escolares y 11,2 % en adolescentes. Las cifras provienen de literatura internacional citada por la revisión.']],
  's-clinical':[['luo2026','Molestia intermitente (1–2 veces por semana, rara vez diaria) con alivio completo entre episodios; episodios de 30 min a 2 h; muslos anteriores, huecos poplíteos o pantorrillas; ambos miembros; inicio vespertino o nocturno.'],['taskin2026','Edad típica 3–12 años; dolor intermitente bilateral vespertino/nocturno, sin limitación de la actividad física y con examen normal (criterios de Peterson).'],['guo2026','Ítems de los criterios usados: dolor tardío o nocturno que desaparece por la mañana; intermitente; distribución típica; bilateral; extraarticular; sin limitación ni cojera.'],['guoxq2026','201 niños de 3–12 años (67 con dolor de crecimiento, 62 controles con enfermedad, 72 sanos). Dolor vespertino/nocturno 89,55 % en el grupo con dolor de crecimiento; duración mediana 31 vs 79 min; avance de edad ósea ≥3 meses: 44,78 %, 16,13 % y 25,00 %. Dolor matutino punzante 40,32 % en controles con enfermedad.']],
  's-patho':[['luo2026','Meta-análisis: umbral de dolor menor y más puntos dolorosos; densidad ósea (Z) DM −0,07 (IC 95 % −0,12 a −0,02; p = 0,008); 25(OH)D DME −2,75 (−3,46 a −2,04); hipermovilidad/actividad OR 1,34 (1,14–1,58). Sin evidencia para colecho, perfusión vascular, ácidos grasos ni crecimiento rápido; perinatales, lactancia y selectividad alimentaria con evidencia limitada.'],['rosen2025','Revisión narrativa de 24 estudios: disfunción serotoninérgica, déficit de hierro y vitamina D baja comunes al SPI y a los dolores de crecimiento; antecedente familiar positivo 44,2 % vs 14,5 % (según estudio citado); algunos autores lo consideran un equivalente migrañoso.'],['jain2026','Caso-control de 2025 sin diferencia en vitamina D entre casos y controles.']],
  's-vitd':[['luo2026','25(OH)D menor en niños con dolores de crecimiento: DME −2,75 (IC 95 % −3,46 a −2,04). Los autores señalan heterogeneidad y tamaño muestral de los estudios incluidos.'],['jain2026','Caso-control de 6 meses (publicado en línea en octubre de 2025): 95,6 % del grupo con dolor y 93,3 % de los controles tenían 25-OHD insuficiente o deficiente; sin diferencia significativa; los niños con 25-OHD suficiente mejoraron igual que los suplementados.'],['haque2025','Estudio prospectivo abierto, sin grupo control (n = 30, criterios de Evans 2008). D3 2 000 UI/día ≥12 semanas: 70 % normalizó la 25(OH)D y 70 % quedó con dolor leve; basal 43,33 % dolor severo y 53,33 % moderado (escala de caras de Wong-Baker).']],
@@ -943,12 +954,11 @@ const SLIDE_REFS={
  's-rls':[['rosen2025','Revisión de 24 estudios: características compartidas (inicio 3–12 años, dolor bilateral que empeora por la tarde o noche, intermitente, alivio con movimientos gruesos, sin limitación funcional) y rasgos propios del SPI (urgencia de mover las piernas, alivio con el movimiento, posible unilateralidad, otras regiones, síntomas matutinos). Conclusión: no puede establecerse una clasificación definitiva.'],['smith2025','Los dolores de crecimiento y el dolor persistente con SPI no deben considerarse intercambiables.'],['yoganathan2025','SPI pediátrico ≈2 %, con inicio hacia el final de la primera década; asociado a enfermedad renal crónica, celiaquía, migraña y esclerosis múltiple pediátrica; el diagnóstico diferencial cercano son los dolores de crecimiento.'],['silvestri2025','El diagnóstico diferencial del SPI exige historia, examen físico y laboratorio, para evitar tratamientos erróneos.']],
  's-flags':[['guo2026','Protocolo de exclusión y criterios típicos: sin limitación ni cojera, sin signos locales, estudios normales.'],['rosen2025','Síntomas atribuibles a otra condición, examen o laboratorio anormal, o limitación funcional (cojera, bienestar reducido) deben hacer considerar otros diagnósticos.'],['archawa2025','1 026 pacientes (646 con cáncer, 380 con AIJ): dolor nocturno OR 789,97, dolor óseo de miembros OR 24,11, dolor de espalda OR 15,58 y palidez OR 6,30 asociados a cáncer frente a AIJ. Ojo: la comparación fue contra AIJ, no contra dolores de crecimiento, y los IC son muy amplios.'],['ozgezmez2025','En dolor de cadera pediátrico por osteoma osteoide: dolor de más de 3 semanas amerita evaluación adicional; 83,3 % con dolor nocturno.'],['chen2026','Caso de osteosarcoma de un adolescente cuyo dolor de pierna persistente se atribuyó a causas benignas; el dolor óseo unilateral sin explicación requiere seguimiento estructurado.'],['abdulshafea2025','Dolor y cojera de 1 mes inicialmente etiquetados como dolores de crecimiento; la radiografía mostró lesiones líticas.'],['malvestiti2026','Leucemia aguda con dolor musculoesquelético como síntoma inicial; hemograma normal en 4 de 6.'],['lipp2026','Un hemograma normal no debe retrasar la evaluación oncológica si el cuadro clínico y la RM son sugestivos (35 % con hemograma normal al inicio).'],['afaque2026','Marcadores inflamatorios normales y un puntaje Kocher-Caird bajo no excluyen artritis séptica de cadera.'],['scott2025','Serie de 3 casos: enfermedad celiaca, síndrome compartimental crónico inducido por ejercicio y masa vertebral atribuidos inicialmente a dolores de crecimiento, por sesgo de anclaje, confirmación y verificación.']],
  's-mimics':[['malvestiti2026','Cohorte retrospectiva multicéntrica (2017–2024), 6 pacientes con leucemia aguda que simuló osteomielitis: todos con dolor musculoesquelético, fiebre en 50 %, hemograma normal en 4 y poco alterado en 2; mediana de 17 días (1–53) hasta el diagnóstico.'],['lipp2026','20 niños con LLA y RM previa: 7/20 (35 %) con hemograma normal al presentarse; dolor óseo persistente fue el síntoma principal en 18/20; un hemograma normal no debe retrasar la evaluación oncológica si el cuadro clínico y la RM son sugestivos.'],['ozgezmez2025','18 pacientes (mediana 12 años) con osteoma osteoide y dolor de cadera: dolor nocturno 83,3 %; cojera 61,1 %; mediana de 12 meses hasta el diagnóstico; retraso >6 meses en 72,2 %; 50 % requirió más de 5 consultas; dolor de más de 3 semanas amerita evaluación adicional.'],['ramesh2026','Niña de 11 años con 3 semanas de dolor bilateral de piernas, parestesias y fatiga; CK 995 U/L, calcio bajo (iónico 0,56 mmol/L), PTH inapropiadamente baja; en mialgias agudas o CK elevada inexplicada, medir calcio y PTH.']],
- 's-case1':[['abdulshafea2025','Niña previamente sana con dolor y cojera en la pierna derecha de 1 mes; diagnóstico inicial de dolores de crecimiento; radiografías con múltiples lesiones líticas; RM de cuerpo entero con lesiones multifocales en ambos miembros inferiores; biopsia: hemangioma epitelioide; requiere manejo multidisciplinario.'],['scott2025','Ejemplos de cómo el sesgo cognitivo retrasa el diagnóstico cuando se atribuye el dolor a causas benignas.']],
- 's-case2':[['ranieri2026','Varón de 16 años con cojera persistente de varios meses; estudios previos sin hallazgos; derivado a reumatología, donde se identificó una epifisiolisis femoral; tratado con técnica de Dunn modificada; resistencia a la insulina y pubertad retrasada. Considerar SCFE en adolescente con cojera o dolor de miembro inferior, aun mal localizado; la radiografía de pelvis lo diagnostica rápido.'],['abdennebi2026','63 pacientes y 71 caderas (2000–2024): retraso diagnóstico de 0–3 semanas en 11 %, 3–12 semanas en 48 % y >12 semanas en 41 %; cada semana adicional se asoció con mayor probabilidad de osteotomía (OR 1,11; IC 95 % 1,05–1,17). Asociaciones observacionales.'],['bhatia2026','Revisión del niño que cojea: sinovitis transitoria, artritis séptica, SCFE y Legg-Calvé-Perthes; en SCFE, presentaciones variables del dolor.']],
- 's-pa':[['casoA','Historia clínica anonimizada: niña de 10 años; dolor inguinal de 2–4 meses y cojera; AINE por 7 días; radiografía con deslizamiento fisario de ~10 mm; leucocitos 9,59, PCR 2,5 mg/dL, VSG 13,75 mm/h; plan de fijación in situ. Se omiten lateralidad, fechas e identificadores.'],['abdennebi2026','El 48 % de las epifisiolisis se diagnosticó entre 3 y 12 semanas del inicio de síntomas; el 41 %, después de 12 semanas.'],['ranieri2026','Un SCFE puede retrasarse pese a una historia sugestiva; la radiografía de pelvis permite el diagnóstico rápido.'],['bhatia2026','Presentaciones variables del dolor en SCFE y en el niño que cojea.']],
- 's-pb':[['casoB','Historia clínica anonimizada: niño de 3 años; antecedentes de sinovitis transitoria y de artritis séptica de cadera con lavado en dos tiempos; dolor de cadera irradiado al muslo tras diarrea y fiebre; ecografía con derrame; leucocitos 18 460 (clínica de origen) vs 8 460 y 8 990 en el hospital; VSG 35, 28,5 y 33,6 mm/h; PCR 4,7 mg/dL; radiografía normal; RM bajo sedación solicitada; evolución final no disponible.'],['afaque2026','35 niños con artritis séptica de cadera confirmada en cirugía pese a marcadores normales: 91,4 % con Kocher-Caird ≤1; 82,9 % con antibióticos previos; cultivos positivos 31,0 % tras antibiótico vs 83,3 % sin él. Los síntomas persistentes, el examen seriado y el derrame ecográfico deben guiar la escalada.'],['rogie2026','Cohorte prospectiva de 102 niños: con ≥2 criterios de Kocher la probabilidad de artritis séptica se estabiliza; el puntaje debe indicar RM y no un algoritmo quirúrgico definitivo; mala especificidad frente a osteomielitis.'],['jones2025','Estudio multicéntrico de 161 niños: la ecografía a pie de cama por urgenciólogos pediátricos entrenados tuvo sensibilidad 89,3 % y especificidad 99,2 % por cadera.'],['smadi2026','220 niños con sinovitis transitoria sin aspiración, seguimiento medio de 9,4 años: sin septicemias omitidas; 4,3 % con síntomas residuales; 2,6 % con recurrencia; 3,2 % con diagnóstico reumatológico o de secuelas.'],['bhatia2026','Ecografía a pie de cama junto con clínica y marcadores inflamatorios mejora la diferenciación entre sinovitis transitoria y artritis séptica.']],
- 's-compare':[['casoA','Datos del Paciente A tomados de la historia clínica anonimizada.'],['casoB','Datos del Paciente B tomados de la historia clínica anonimizada.'],['guo2026','Siete ítems y condición de estudios normales; edad 3–18 años. La aplicación a los pacientes A y B es una lectura didáctica propia de sus registros.'],['taskin2026','Edad típica 3–12 años; dolor intermitente bilateral vespertino/nocturno; examen normal.'],['guoxq2026','Dolor vespertino/nocturno y corta duración en dolor de crecimiento frente a dolor matutino y largo en enfermedad orgánica.'],['luo2026','Manifestaciones centrales del cuadro típico: intermitente, 30 min–2 h, bilateral.']],
- 's-manage':[['luo2026','El manejo actual consiste en confort, masaje local durante las crisis y analgesia sintomática; faltan ensayos clínicos robustos que validen la eficacia. Entre los 37 estudios: 1 ensayo aleatorizado y 2 no aleatorizados.'],['rosen2025','Tratamiento sin fármacos: estiramientos o masaje; un ensayo aleatorizado antiguo (1988) mostró utilidad de los estiramientos, que rara vez se recomiendan; no hay tratamientos específicos para equivalentes migrañosos.'],['elvira2025','Solo 13,7 % de los deportistas jóvenes con dolor usaba analgésicos.'],['haque2025','Estudio abierto sin control con vitamina D3 2 000 UI/día.'],['jain2026','Caso-control: mejoría similar con y sin suplemento en niños con 25-OHD suficiente.'],['ionita2025','647 niños de 3–14 años; 178 reevaluados; mayor alivio (hasta 81,8 %) en quienes cumplieron mejor con la plantilla y tenían carga posterior; diseño observacional.'],['ferreira2026','Piloto aleatorizado con placebo (9 niños incluidos: 5 vs 4; 8 excluidos tras evaluación ortopédica porque el diagnóstico no se confirmó): seguro, con posible eficacia analgésica.']],
+ 's-case1':[['abdulshafea2025','Niña previamente sana con dolor y cojera en la pierna derecha de 1 mes; diagnóstico inicial de dolores de crecimiento; radiografías con múltiples lesiones líticas; RM de cuerpo entero con lesiones multifocales en ambos miembros inferiores; biopsia: hemangioma epitelioide; requiere manejo multidisciplinario. Las imágenes del artículo no se reproducen porque no tiene licencia abierta.'],['scott2025','Ejemplos de cómo el sesgo cognitivo retrasa el diagnóstico cuando se atribuye el dolor a causas benignas.']],
+ 's-case2':[['ranieri2026','Varón de 16 años con cojera persistente de varios meses; estudios previos sin hallazgos; derivado a reumatología, donde se identificó una epifisiolisis femoral; tratado con técnica de Dunn modificada; resistencia a la insulina y pubertad retrasada. Considerar SCFE en adolescente con cojera o dolor de miembro inferior, aun mal localizado; la radiografía de pelvis lo diagnostica rápido. La figura 1 (radiografías preoperatorias, CC BY 4.0) se reproduce recortada para retirar datos identificativos del paciente.'],['abdennebi2026','63 pacientes y 71 caderas (2000–2024): retraso diagnóstico de 0–3 semanas en 11 %, 3–12 semanas en 48 % y >12 semanas en 41 %; cada semana adicional se asoció con mayor probabilidad de osteotomía (OR 1,11; IC 95 % 1,05–1,17). Asociaciones observacionales.'],['bhatia2026','Revisión del niño que cojea: sinovitis transitoria, artritis séptica, SCFE y Legg-Calvé-Perthes; en SCFE, presentaciones variables del dolor.']],
+ 's-pa':[['casoA','Historia clínica anonimizada: niña de 10 años con dolor inguinal de ~2 meses y cojera mecánica; examen y ecografía normales; prueba con AINE; ≈8 semanas después la radiografía mostró deslizamiento fisario de ~10 mm; al ingreso afebril, con dolor a la palpación y limitación severa de arcos; leucocitos 9,59, eosinófilos 9,1 %, PCR 2,5 mg/dL, VSG 13,75 mm/h; ortopedia programó fijación in situ con tornillos canulados de 6,5 mm; valoración anestésica ASA II. Se omiten lateralidad, fechas e identificadores; el resultado de la cirugía no consta en el registro.'],['bhatia2026','Revisión del niño que cojea: el diferencial incluye sinovitis transitoria, artritis séptica, epifisiolisis y enfermedad de Legg-Calvé-Perthes; en la epifisiolisis las presentaciones del dolor son variables.'],['abdennebi2026','63 pacientes y 71 caderas (2000–2024): retraso diagnóstico de 0–3 semanas en 11 %, 3–12 semanas en 48 % y >12 semanas en 41 %; cada semana adicional se asoció con mayor probabilidad de osteotomía (OR 1,11; IC 95 % 1,05–1,17). Asociaciones observacionales.'],['ranieri2026','Una epifisiolisis puede retrasarse pese a una historia sugestiva; la radiografía de pelvis permite el diagnóstico rápido.']],
+ 's-compare':[['casoA','Datos del caso de ronda tomados de la historia clínica anonimizada.'],['guo2026','Siete ítems y condición de estudios normales; edad 3–18 años. La aplicación al caso de ronda es una lectura didáctica propia del registro.'],['taskin2026','Edad típica 3–12 años; dolor intermitente bilateral vespertino/nocturno; examen normal.'],['guoxq2026','Dolor vespertino/nocturno y corta duración en dolor de crecimiento frente a dolor matutino y largo en enfermedad orgánica.'],['luo2026','Manifestaciones centrales del cuadro típico: intermitente, 30 min–2 h, bilateral; manejo con confort, masaje local y analgesia sintomática.']],
+ 's-manage':[['luo2026','El manejo actual consiste en confort, masaje local durante las crisis y analgesia sintomática; faltan ensayos clínicos robustos que validen la eficacia. Entre los 37 estudios: 1 ensayo aleatorizado y 2 no aleatorizados.'],['rosen2025','Tratamiento sin fármacos: estiramientos o masaje; un ensayo aleatorizado antiguo (1988) mostró utilidad de los estiramientos, que rara vez se recomiendan; no hay tratamientos específicos para equivalentes migrañosos.'],['elvira2025','Solo 13,7 % de los deportistas jóvenes con dolor usaba analgésicos.'],['haque2025','Estudio abierto sin control con vitamina D3 2 000 UI/día.'],['jain2026','Caso-control: mejoría similar con y sin suplemento en niños con 25-OHD suficiente.'],['ionita2025','647 niños de 3–14 años; 178 reevaluados; mayor alivio (hasta 81,8 %) en quienes cumplieron mejor con la plantilla y tenían carga posterior; diseño observacional.']],
  's-end':[['smith2025','15 criterios diagnósticos; medidas de resultado en solo 8 de 61 registros (13,1 %); falta consenso diagnóstico.'],['luo2026','De 37 estudios, 1 ensayo aleatorizado y 2 no aleatorizados; el nombre “dolor de crecimiento” no tiene respaldo en estos datos.'],['rosen2025','No se hallaron estudios longitudinales prospectivos; no existe clasificación definitiva frente al SPI.'],['davies2026','Los dolores de crecimiento figuran entre las condiciones priorizadas para guías de práctica clínica en Australia.'],['guo2026','Perfil típico bilateral, vespertino e intermitente con estudios normales.'],['abdulshafea2025','Ejemplo de dolor y cojera etiquetados como dolores de crecimiento que eran un tumor.'],['ranieri2026','SCFE debe considerarse ante cojera o dolor de miembro inferior mal localizado; la radiografía lo diagnostica rápido.'],['afaque2026','Marcadores normales y puntaje bajo no excluyen artritis séptica de cadera.'],['lipp2026','Un hemograma normal no debe retrasar la evaluación oncológica.']],
  's-refs':[]
 };
@@ -993,13 +1003,24 @@ function labelFor(k){
   const who=(parts.length===1&&!et)?sn(parts[0]):(parts.length===2&&!et)?`${sn(parts[0])} y ${sn(parts[1])}`:`${sn(parts[0])} et al.`;
   return `${who}, ${r.year}`;
 }
-function citation(k){
-  if(INTERNAL[k]){const r=INTERNAL[k];return `<i>${esc(r.title)}.</i> ${esc(r.info)}`}
+const MES=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const dot=s=>/[.?!]$/.test(s)?s:s+'.';
+/* cita en estilo Vancouver (texto plano): autores. Título. Revista. Año;vol(núm):páginas. doi:… */
+function vanc(k){
+  if(INTERNAL[k]){const r=INTERNAL[k];return `${dot(r.title)} ${r.info}`}
   const r=REFS[k];
-  const where=(r.vol?`;${r.vol}${r.issue?`(${r.issue})`:''}${r.pages?`:${r.pages}`:''}`:(r.epub?`. Epub ${r.epub}`:''));
-  return `${esc(r.authorsStr)}. ${esc(r.title)}. <i>${esc(r.journal)}</i>. ${esc(r.year)}${where}.`+(r.exception?`<span class="xs muted" style="display:block;margin-top:4px">${esc(r.exception)}</span>`:'');
+  let donde;
+  if(r.vol)donde=`${r.year};${r.vol}${r.issue?`(${r.issue})`:''}${r.pages?`:${r.pages}`:''}`;
+  else donde=r.epub?`Epub ${r.epub.slice(0,4)} ${MES[+r.epub.slice(5,7)-1]} ${+r.epub.slice(8,10)}`:r.year;
+  return `${dot(r.authorsStr.replace(/\.$/,''))} ${dot(r.title)} ${dot(r.journal)} ${dot(donde)}`+(r.doi?` doi:${r.doi}`:'');
 }
-function citationText(k){const d=document.createElement('div');d.innerHTML=citation(k);let t=d.textContent;if(!INTERNAL[k]){const r=REFS[k];t+=(r.doi?` doi:${r.doi}`:'')+(r.pmid?` PMID:${r.pmid}`:'')+(!r.doi&&r.url?` ${r.url}`:'')}return t}
+function citation(k){
+  const x=vanc(k),m=x.match(/ doi:(\S+)$/);
+  if(!m)return esc(x);
+  return esc(x.slice(0,m.index))+` doi:<a href="https://doi.org/${esc(m[1])}" target="_blank" rel="noopener">${esc(m[1])}</a>`;
+}
+function citationText(k){return vanc(k)}
+function exceptionNote(k){return(!INTERNAL[k]&&REFS[k]&&REFS[k].exception)?`<p class="xs muted" style="margin:6px 0 0">${esc(REFS[k].exception)}</p>`:''}
 function links(k){
   if(INTERNAL[k])return '';
   const r=REFS[k];const a=[];
@@ -1009,7 +1030,6 @@ function links(k){
   if(r.url)a.push(`<a class="lnk" target="_blank" rel="noopener" href="${esc(r.url)}">${svg('ext',14)} Abrir artículo</a>`);
   return a.join('');
 }
-const allKeys=[...Object.keys(REFS).sort((a,b)=>REFS[a].authorsStr.localeCompare(REFS[b].authorsStr,'es')),...Object.keys(INTERNAL)];
 /* referencias de una diapositiva: las de su lista y las que tengan marcador de uso en el texto */
 function slideRefs(s){
   const keys=[];(SLIDE_REFS[s.id]||[]).forEach(([k])=>keys.push(k));
@@ -1035,7 +1055,7 @@ function closePop(){
 }
 function openPop(btn,k,s){
   const note=((SLIDE_REFS[s.id]||[]).find(x=>x[0]===k)||[])[1]||'';
-  pop.innerHTML=`<button class="iconbtn rp-x" type="button" aria-label="Cerrar referencia">${svg('close',18)}</button><p class="rp-cit">${citation(k)}</p>${note?`<p class="rp-use"><b>Dato usado:</b> ${esc(note)}</p>`:''}<div class="links">${links(k)}</div>`;
+  pop.innerHTML=`<button class="iconbtn rp-x" type="button" aria-label="Cerrar referencia">${svg('close',18)}</button><p class="rp-cit">${citation(k)}</p>${exceptionNote(k)}${note?`<p class="rp-use"><b>Dato usado:</b> ${esc(note)}</p>`:''}<div class="links">${links(k)}</div>`;
   pop.hidden=false;
   $$('.rf[aria-expanded="true"]').forEach(b=>b.setAttribute('aria-expanded','false'));btn.setAttribute('aria-expanded','true');
   const f=btn.closest('.foot').getBoundingClientRect(),b=btn.getBoundingClientRect(),w=pop.offsetWidth;
@@ -1170,7 +1190,7 @@ document.addEventListener('keydown',e=>{
 })();
 
 /* ============ gráficos ============ */
-const tableView=(cols,rows)=>`<details class="tv"><summary>Ver datos en tabla</summary><table><thead><tr>${cols.map(c=>`<th scope="col">${c}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></details>`;
+const tableView=()=>'';
 const legend=items=>`<div class="legend">${items.map(i=>`<span><i style="background:var(--${i.c})"></i>${esc(i.l)}</span>`).join('')}</div>`;
 function hbars({title,sub,rows,max,unit='',dec,leg}){
   const h=rows.map(r=>`<div class="hb-row"><div class="hb-l">${esc(r.l)}${r.s?`<small>${esc(r.s)}</small>`:''}</div><div class="hb-t"><span class="hb-bar" tabindex="0" role="img" aria-label="${esc(r.l)}: ${fmt(r.v,dec)}${unit}" style="--w:${(r.v/max*100).toFixed(2)}%;--c:var(--${r.c||'s1'})" data-tip="${esc(r.tip||(r.l+': '+fmt(r.v,dec)+unit))}"></span><b class="hb-v">${fmt(r.v,dec)}${unit}</b></div></div>`).join('');
@@ -1230,7 +1250,6 @@ $$('[data-chart]').forEach(el=>{el.innerHTML=CHARTS[el.dataset.chart]()});
 })();
 // SPI: solo diferencias
 $('#btnDiff').onclick=function(){const on=this.getAttribute('aria-pressed')!=='true';this.setAttribute('aria-pressed',on);$('#rlsWrap').classList.toggle('only-diff',on)};
-$('#btnDiff2').onclick=function(){const on=this.getAttribute('aria-pressed')!=='true';this.setAttribute('aria-pressed',on);$('#cmpWrap').classList.toggle('only-diff',on)};
 // banderas rojas
 (function(){
   const F=[
@@ -1263,47 +1282,34 @@ $('#btnDiff2').onclick=function(){const on=this.getAttribute('aria-pressed')!=='
   $('#flagReset').onclick=()=>{$$('input',wrap).forEach(i=>i.checked=false);upd()};
   upd();
 })();
-// matriz de criterios
+// matriz de criterios (caso de ronda)
 (function(){
   const M=[
-   ['1. Dolor tardío o nocturno que desaparece por la mañana','na','No documentado','na','No documentado'],
-   ['2. Intermitente, con días sin dolor','no','Dolor diario','na','No documentado'],
-   ['3. Distribución típica (muslo, pantorrilla, hueco poplíteo)','no','Ingle / cadera','no','Cadera irradiada'],
-   ['4. Bilateral','no','Unilateral','no','Unilateral'],
-   ['5. Fuera de la región articular','no','Articulación de la cadera','no','Articulación de la cadera'],
-   ['6. Sin limitación de la movilidad ni cojera','no','Cojera y limitación','no','Marcha antálgica'],
-   ['7. Sin trauma, infección, sensibilidad ni edema','na','Sin signos al inicio; luego dolor a la palpación','no','Derrame y antecedente de infección articular'],
-   ['Estudios (examen, laboratorio, imagen) normales','no','Radiografía anormal','no','Ecografía con derrame']
+   ['1. Dolor tardío o nocturno que desaparece por la mañana','na','No documentado'],
+   ['2. Intermitente, con días sin dolor','no','Dolor diario'],
+   ['3. Distribución típica (muslo, pantorrilla, hueco poplíteo)','no','Ingle / cadera'],
+   ['4. Bilateral','no','Unilateral'],
+   ['5. Fuera de la región articular','no','Articulación de la cadera'],
+   ['6. Sin limitación de la movilidad ni cojera','no','Cojera y limitación'],
+   ['7. Sin trauma, infección, sensibilidad ni edema','na','Sin signos al inicio; luego dolor a la palpación'],
+   ['Estudios (examen, laboratorio, imagen) normales','no','Radiografía anormal']
   ];
   const ic={ok:['check','Cumple'],no:['close','No cumple'],na:['help','Sin dato']};
-  const cell=(k,t,ref)=>`<td><span class="mx ${k}"><span class="dot">${svg(ic[k][0],13)}</span><span><span class="vh">${ic[k][1]}: </span>${t}</span></span><i class="cm" data-ref="${ref}"></i></td>`;
-  $('#matrix').innerHTML=M.map(r=>`<tr><th>${r[0]}<i class="cm" data-ref="guo2026"></i></th>${cell(r[1],r[2],'casoA')}${cell(r[3],r[4],'casoB')}</tr>`).join('');
+  const cell=(k,t)=>`<td><span class="mx ${k}"><span class="dot">${svg(ic[k][0],13)}</span><span><span class="vh">${ic[k][1]}: </span>${t}</span></span><i class="cm" data-ref="casoA"></i></td>`;
+  $('#matrix').innerHTML=M.map(r=>`<tr><th>${r[0]}<i class="cm" data-ref="guo2026"></i></th>${cell(r[1],r[2])}</tr>`).join('');
 })();
-// marcadores de uso en la tabla comparativa
+// figuras opcionales: solo se muestran si el archivo existe
+$$('.figslot img').forEach(img=>{const slot=img.closest('.figslot');const ok=()=>slot.classList.add('has');if(img.complete&&img.naturalWidth)ok();else img.addEventListener('load',ok)});
+// referencias completas (Vancouver, en orden de primera aparición)
 (function(){
-  const typ=[['taskin2026'],['luo2026','guo2026'],['guo2026','luo2026','guoxq2026'],['luo2026','guoxq2026'],['guo2026'],['taskin2026'],['guo2026'],['guoxq2026'],[]];
-  $$('#cmpWrap tbody tr').forEach((tr,i)=>{
-    const td=$$('td',tr);
-    (typ[i]||[]).forEach(k=>td[0].insertAdjacentHTML('beforeend',`<i class="cm" data-ref="${k}"></i>`));
-    td[1]&&td[1].insertAdjacentHTML('beforeend','<i class="cm" data-ref="casoA"></i>');
-    td[2]&&td[2].insertAdjacentHTML('beforeend','<i class="cm" data-ref="casoB"></i>');
-  });
-})();
-// referencias completas
-(function(){
-  const L=$('#reflist');
-  const item=k=>{
-    const used=slides.map((s,i)=>slideRefs(s).includes(k)?i+1:null).filter(Boolean);
-    return `<article class="rcard" id="ref-${k}"><p class="cit">${citation(k)}</p><p class="xs muted" style="margin:8px 0 0">Se usa en las diapositivas: ${used.map(n=>`<button class="lnk btn goto" data-go="${n-1}" aria-label="Ir a la diapositiva ${n}">${n}</button>`).join(' ')}</p><div class="links">${links(k)}<button class="lnk btn" data-copy="${k}">${svg('copy',14)} Copiar cita</button></div></article>`;
-  };
-  L.innerHTML=allKeys.map(item).join('');
-  const q=$('#refSearch');
-  q.addEventListener('input',()=>{const t=q.value.trim().toLowerCase();$$('.rcard',L).forEach(c=>{c.hidden=!!t&&!c.textContent.toLowerCase().includes(t)})});
-  $('#copyAll').onclick=()=>{navigator.clipboard?.writeText(allKeys.map(citationText).join('\n\n')).then(()=>toast('Todas las citas copiadas'),()=>toast('No se pudo copiar'))};
+  const seen=[];slides.forEach(s=>slideRefs(s).forEach(k=>{if(!seen.includes(k))seen.push(k)}));
+  $('#reflist').innerHTML=seen.map(k=>`<li id="ref-${k}">${citation(k)}</li>`).join('');
+  $('#copyAll').onclick=()=>{navigator.clipboard?.writeText(seen.map((k,i)=>`${i+1}. ${citationText(k)}`).join('\n\n')).then(()=>toast('Todas las citas copiadas'),()=>toast('No se pudo copiar'))};
 })();
 
 /* ============ pie de cada diapositiva: lista de referencias ============ */
 slides.forEach(s=>{
+  if(s.id==='s-thanks')return;
   const keys=slideRefs(s);
   const f=document.createElement('div');f.className='foot';
   f.innerHTML=`<div class="src"><span class="lab">Referencias:</span>${keys.map(k=>`<button class="rf" type="button" data-ref="${k}" aria-expanded="false" aria-haspopup="dialog">${esc(labelFor(k))}</button>`).join('')||'<span>Lista completa de referencias</span>'}</div>`;
