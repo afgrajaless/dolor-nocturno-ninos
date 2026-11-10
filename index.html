@@ -1,0 +1,1320 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Dolor nocturno idiopático de miembros inferiores en niños</title>
+<meta name="description" content="Presentación médica basada en literatura 2025–2026 sobre el dolor nocturno idiopático (“dolores de crecimiento”) de miembros inferiores en niños, con casos publicados y casos de ronda anonimizados.">
+<style>
+:root{
+  --bg:#f4f4f1; --surface:#fcfcfb; --surface2:#f6f6f3; --ink:#0b0b0b; --ink2:#52514e; --ink3:#6b6a65;
+  --line:#e1e0d9; --axis:#c3c2b7; --accent:#256abf; --accent-soft:#e8f0fb; --accent-line:#b7d3f6;
+  --btn-bg:#256abf; --btn-ink:#ffffff;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --o300:#6da7ec; --o450:#2a78d6; --o600:#184f95;
+  --crit:#d03b3b; --crit-ink:#a52626; --crit-soft:#fbeaea; --warn:#fab219; --warn-soft:#fdf3da; --warn-ink:#7a5200;
+  --good:#0ca30c; --good-ink:#006300; --good-soft:#e5f5e5; --neutral-soft:#efeee9;
+  --shadow:0 1px 2px rgba(11,11,11,.06),0 10px 30px rgba(11,11,11,.06); --ring:rgba(11,11,11,.10);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:where(:not([data-theme="light"])){
+    --bg:#0d0d0d; --surface:#1a1a19; --surface2:#222221; --ink:#f0efec; --ink2:#c3c2b7; --ink3:#a3a29a;
+    --line:#2c2c2a; --axis:#383835; --accent:#6da7ec; --accent-soft:#152338; --accent-line:#1f3a5c;
+    --btn-bg:#3987e5; --btn-ink:#06121f;
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70;
+    --crit:#e66767; --crit-ink:#f0a0a0; --crit-soft:#2b1818; --warn-soft:#2c2412; --warn-ink:#f1c35a;
+    --good-ink:#0ca30c; --good-soft:#112411; --neutral-soft:#262624;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 30px rgba(0,0,0,.35); --ring:rgba(255,255,255,.10);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0d0d0d; --surface:#1a1a19; --surface2:#222221; --ink:#f0efec; --ink2:#c3c2b7; --ink3:#a3a29a;
+  --line:#2c2c2a; --axis:#383835; --accent:#6da7ec; --accent-soft:#152338; --accent-line:#1f3a5c;
+  --btn-bg:#3987e5; --btn-ink:#06121f;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70;
+  --crit:#e66767; --crit-ink:#f0a0a0; --crit-soft:#2b1818; --warn-soft:#2c2412; --warn-ink:#f1c35a;
+  --good-ink:#0ca30c; --good-soft:#112411; --neutral-soft:#262624;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 30px rgba(0,0,0,.35); --ring:rgba(255,255,255,.10);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.5;overflow:hidden;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:fixed;left:8px;top:-60px;z-index:100;background:var(--btn-bg);color:var(--btn-ink);padding:8px 14px;border-radius:8px;text-decoration:none}
+.skip:focus{top:8px}
+.ic{flex:none;vertical-align:-3px}
+
+/* ---------- chrome ---------- */
+.topbar{position:fixed;inset:0 0 auto 0;height:56px;display:flex;align-items:center;gap:10px;padding:0 max(14px,env(safe-area-inset-left));background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:30}
+.brand{display:flex;align-items:center;gap:10px;font-weight:650;letter-spacing:-.01em;min-width:0}
+.brand .logo{width:28px;height:28px;border-radius:8px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex:none}
+.brand span.t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.crumb{color:var(--ink3);font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;flex:1}
+.crumb b{color:var(--ink2);font-weight:600}
+.iconbtn{width:40px;height:40px;border-radius:10px;border:1px solid transparent;background:transparent;display:grid;place-items:center;color:var(--ink2)}
+.iconbtn:hover{background:var(--surface2);border-color:var(--line);color:var(--ink)}
+.progress{position:fixed;top:56px;left:0;right:0;height:3px;background:var(--line);z-index:30}
+.progress i{display:block;height:100%;width:0;background:var(--accent);transition:width .35s ease}
+.stage{position:fixed;top:59px;bottom:64px;left:0;right:0;outline:none}
+.dock{position:fixed;inset:auto 0 0 0;height:64px;display:flex;align-items:center;justify-content:center;gap:14px;padding:0 14px max(0px,env(safe-area-inset-bottom));background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(10px);border-top:1px solid var(--line);z-index:30}
+.navbtn{display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 16px;border-radius:12px;border:1px solid var(--line);background:var(--surface);font-weight:600}
+.navbtn:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.navbtn.primary{background:var(--btn-bg);color:var(--btn-ink);border-color:transparent}
+.navbtn.primary:hover:not(:disabled){filter:brightness(1.08);color:var(--btn-ink)}
+.navbtn:disabled{opacity:.4;cursor:not-allowed}
+.counter{min-width:92px;text-align:center;font-variant-numeric:tabular-nums;color:var(--ink2);font-size:.95rem}
+.counter b{color:var(--ink)}
+.keys{position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:.76rem;color:var(--ink3);pointer-events:none}
+@media (max-width:1240px){.keys{display:none}}
+@media (max-width:760px){.navbtn span.lbl{display:none}.navbtn{padding:0 14px}.crumb{display:none}}
+
+/* ---------- slides ---------- */
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;opacity:0;visibility:hidden;transform:translateX(28px);transition:opacity .32s ease,transform .32s ease,visibility 0s linear .32s}
+.slide.before{transform:translateX(-28px)}
+.slide.active{opacity:1;visibility:visible;transform:none;transition:opacity .32s ease,transform .32s ease,visibility 0s}
+@media (prefers-reduced-motion:reduce){.slide,.slide.active{transition:none}.progress i{transition:none}}
+.slide .body{flex:1;overflow-y:auto;overflow-x:hidden;padding:clamp(14px,2.2vw,30px) clamp(16px,5vw,72px) 24px;scroll-behavior:smooth}
+@media (max-height:860px){body{font-size:16px}.card{padding:14px 16px}.tile{padding:11px 14px}.hb-row{margin:6px 0}.dp-row{margin:8px 0}}
+.wrap{max-width:1180px;margin:0 auto}
+.foot{flex:none;display:flex;align-items:center;gap:12px;justify-content:space-between;padding:10px clamp(16px,5vw,72px);border-top:1px solid var(--line);background:var(--surface)}
+.foot .src{display:flex;align-items:center;gap:6px;flex-wrap:wrap;min-width:0;font-size:.85rem;color:var(--ink3)}
+.refbtn{display:inline-flex;align-items:center;gap:8px;flex:none;height:40px;padding:0 16px;border-radius:999px;border:1.5px solid var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:650;font-size:.95rem}
+.refbtn:hover{background:var(--btn-bg);color:var(--btn-ink)}
+.cite{display:inline-grid;place-items:center;min-width:24px;height:22px;padding:0 6px;border-radius:7px;border:1px solid var(--accent-line);background:var(--accent-soft);color:var(--accent);font-size:.74rem;font-weight:700;line-height:1;vertical-align:1px;margin:0 1px}
+.cite:hover{background:var(--btn-bg);color:var(--btn-ink);border-color:transparent}
+h1,h2,h3{line-height:1.15;letter-spacing:-.02em;margin:0}
+.sh{margin-bottom:clamp(12px,1.8vw,22px)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.eyebrow::before{content:"";width:18px;height:2px;background:currentColor;border-radius:2px}
+h2{font-size:clamp(1.5rem,2.7vw,2.25rem);font-weight:750;max-width:30ch}
+h2.wide{max-width:50ch}
+.lead{font-size:clamp(.98rem,1.3vw,1.12rem);color:var(--ink2);max-width:72ch;margin:8px 0 0}
+h3{font-size:1.08rem;font-weight:700;margin-bottom:6px}
+.grid{display:grid;gap:clamp(12px,1.6vw,20px)}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.g21{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}
+.g12{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+@media (max-width:900px){.g2,.g3,.g4,.g21,.g12{grid-template-columns:minmax(0,1fr)}}
+@media (min-width:600px) and (max-width:900px){.g4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius,16px);padding:clamp(14px,1.8vw,22px);box-shadow:var(--shadow)}
+.card.flat{box-shadow:none}
+.card.tint{background:var(--accent-soft);border-color:var(--accent-line);box-shadow:none}
+.card.crit{background:var(--crit-soft);border-color:color-mix(in srgb,var(--crit) 35%,var(--line));box-shadow:none}
+.card.warn{background:var(--warn-soft);border-color:color-mix(in srgb,var(--warn) 45%,var(--line));box-shadow:none}
+.muted{color:var(--ink3)} .ink2{color:var(--ink2)}
+.small{font-size:.88rem} .xs{font-size:.8rem}
+.stack>*+*{margin-top:12px}
+ul.list{margin:0;padding:0;list-style:none}
+ul.list li{position:relative;padding-left:22px;margin:8px 0}
+ul.list li::before{content:"";position:absolute;left:3px;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+ul.list.crit li::before{background:var(--crit)}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:999px;font-size:.78rem;font-weight:650;border:1px solid var(--line);background:var(--surface2);color:var(--ink2);white-space:nowrap}
+.pill.good{background:var(--good-soft);color:var(--good-ink);border-color:color-mix(in srgb,var(--good) 35%,var(--line))}
+.pill.warn{background:var(--warn-soft);color:var(--warn-ink);border-color:color-mix(in srgb,var(--warn) 50%,var(--line))}
+.pill.crit{background:var(--crit-soft);color:var(--crit-ink);border-color:color-mix(in srgb,var(--crit) 40%,var(--line))}
+.pill.info{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line)}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.tile .v{font-size:clamp(1.6rem,3vw,2.3rem);font-weight:750;letter-spacing:-.02em;line-height:1.05}
+.tile .l{font-size:.86rem;color:var(--ink2);margin-top:6px}
+.tile .v small{font-size:.5em;font-weight:650;color:var(--ink3);margin-left:4px}
+.callout{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:14px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.callout .ic{color:var(--accent);margin-top:2px}
+.callout.crit{background:var(--crit-soft);border-color:color-mix(in srgb,var(--crit) 35%,var(--line))}.callout.crit .ic{color:var(--crit)}
+.callout.warn{background:var(--warn-soft);border-color:color-mix(in srgb,var(--warn) 45%,var(--line))}.callout.warn .ic{color:var(--warn-ink)}
+.callout p{margin:0}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.84rem;color:var(--ink2);margin-top:10px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:4px;margin-right:6px;vertical-align:-1px}
+.sticky{position:sticky;top:0}
+@media (max-width:900px){.sticky{position:static}}
+.kicker{font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin-bottom:8px}
+
+/* ---------- cover ---------- */
+#s-cover .body{display:grid;place-items:center;padding-block:0}
+#s-cover .covertxt{display:flex;flex-direction:column;align-items:center;gap:clamp(18px,3vw,34px)}
+#s-cover h1{font-size:clamp(2.1rem,6.2vw,4.8rem);font-weight:800;letter-spacing:-.035em;line-height:1.06;max-width:17ch;text-align:center;text-wrap:balance}
+#s-cover .author{margin:0;font-size:clamp(1.05rem,2.1vw,1.55rem);font-weight:600;color:var(--ink2);letter-spacing:.01em;text-align:center}
+
+/* ---------- charts ---------- */
+.viz{margin-top:6px}
+.viz .cap{font-size:.92rem;font-weight:650;margin:0 0 10px}
+.viz .sub{font-size:.82rem;color:var(--ink3);margin:-6px 0 10px}
+.hb-row{display:grid;grid-template-columns:minmax(110px,38%) 1fr;gap:12px;align-items:center;margin:9px 0}
+.hb-l{font-size:.9rem;color:var(--ink2);line-height:1.25}
+.hb-l small{display:block;color:var(--ink3);font-size:.76rem}
+.hb-t{display:flex;align-items:center;gap:8px;border-left:1px solid var(--axis);min-height:24px;padding-left:0}
+.hb-bar{display:block;height:18px;width:calc(var(--w) * .78);min-width:3px;background:var(--c);border-radius:0 4px 4px 0;transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.hb-v{font-size:.92rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+.hb-bar:hover,.hb-bar:focus-visible{filter:brightness(1.12)}
+.dp-row{display:grid;grid-template-columns:minmax(120px,40%) 1fr;gap:12px;align-items:center;margin:11px 0}
+.dp-l{font-size:.9rem;color:var(--ink2);line-height:1.25}
+.dp-t{position:relative;height:26px}
+.dp-t::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:var(--line)}
+.dp-ci{position:absolute;top:50%;height:2px;background:var(--c);transform:translateY(-50%);border-radius:2px}
+.dp-dot{position:absolute;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:var(--c);box-shadow:0 0 0 2px var(--surface)}
+.dp-dot:hover,.dp-dot:focus-visible{transform:scale(1.18)}
+.dp-v{position:absolute;top:50%;transform:translateY(-50%);font-size:.82rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+.dp-axis{display:grid;grid-template-columns:minmax(120px,40%) 1fr;gap:12px;margin-top:2px}
+.dp-axis .axi{position:relative;height:26px}
+.dp-axis .axi span{position:absolute;top:6px;transform:translateX(-50%);font-size:.74rem;color:var(--ink3);font-variant-numeric:tabular-nums}
+.dp-axis .axi span::before{content:"";position:absolute;left:50%;top:-6px;height:5px;width:1px;background:var(--axis)}
+.dp-refline{position:absolute;bottom:20px;width:1px;background:var(--ink3);opacity:.7}
+.dp-wrap{position:relative}
+.seg{display:flex;gap:2px;height:30px}
+.seg>span{display:flex;align-items:center;padding:0 10px;border-radius:4px;font-weight:700;font-size:.85rem;min-width:0;white-space:nowrap}
+.seg>span:hover,.seg>span:focus-visible{filter:brightness(1.1)}
+.spark{width:100%;height:auto;display:block;overflow:visible}
+.spark .ln{fill:none;stroke:var(--s1);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.spark .band{fill:var(--s1);opacity:.1}
+.spark .pt{fill:var(--s1);stroke:var(--surface);stroke-width:2}
+.spark text{fill:var(--ink2);font-size:11px;font-family:inherit}
+.spark .ax{stroke:var(--axis);stroke-width:1}
+.spark .pt:hover,.spark .pt:focus-visible{r:7}
+details.tv{margin-top:10px;font-size:.84rem}
+details.tv summary{cursor:pointer;color:var(--accent);font-weight:600;width:max-content}
+details.tv table{width:100%;border-collapse:collapse;margin-top:8px}
+details.tv th,details.tv td{padding:5px 8px;border-bottom:1px solid var(--line);text-align:left;font-variant-numeric:tabular-nums}
+details.tv th{color:var(--ink3);font-weight:650}
+#tip{position:fixed;z-index:80;pointer-events:none;max-width:260px;padding:8px 11px;border-radius:10px;background:var(--ink);color:var(--bg);font-size:.82rem;line-height:1.35;box-shadow:0 6px 24px rgba(0,0,0,.25);opacity:0;transform:translateY(4px);transition:opacity .12s}
+#tip.on{opacity:1;transform:none}
+
+/* ---------- components ---------- */
+.hcards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+@media (max-width:1000px){.hcards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.hcards{grid-template-columns:1fr}}
+.hcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;display:flex;flex-direction:column;transition:border-color .15s,transform .15s,opacity .2s}
+.hcard:hover{border-color:var(--accent);transform:translateY(-2px)}
+.hcard.open{border-color:var(--accent);box-shadow:var(--shadow)}
+.hcard.dim{opacity:.28}
+.hcard .hc{width:100%;flex:1;text-align:left;background:none;border:0;padding:14px;display:flex;flex-direction:column;align-items:flex-start;gap:8px;border-radius:14px}
+.hcard .ht{font-size:1rem;font-weight:700;line-height:1.2}
+.hcard .go{font-size:.78rem;color:var(--accent);font-weight:650;margin-top:auto}
+.hcard .more{padding:0 14px 14px;font-size:.88rem;color:var(--ink2)}
+.chipbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.fchip{height:34px;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-size:.86rem;font-weight:600;color:var(--ink2)}
+.fchip[aria-pressed="true"]{background:var(--btn-bg);color:var(--btn-ink);border-color:transparent}
+.tl{position:relative;margin:0;padding:0;list-style:none}
+.tl::before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl li{position:relative;padding:0 0 18px 38px}
+.tl li:last-child{padding-bottom:0}
+.tl li::before{content:"";position:absolute;left:4px;top:5px;width:16px;height:16px;border-radius:50%;background:var(--surface);border:3px solid var(--accent)}
+.tl li.alert::before{border-color:var(--crit)}
+.tl .when{font-size:.76rem;font-weight:750;letter-spacing:.07em;text-transform:uppercase;color:var(--accent)}
+.tl li.alert .when{color:var(--crit-ink)}
+.tl p{margin:3px 0 0;font-size:.94rem;color:var(--ink2)}
+.tl p b{color:var(--ink)}
+table.cmp{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+table.cmp th,table.cmp td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+table.cmp thead th{background:var(--surface2);font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;color:var(--ink3)}
+table.cmp tbody th{font-weight:650;color:var(--ink);width:17%}
+table.cmp tr:last-child th,table.cmp tr:last-child td{border-bottom:0}
+table.cmp td.t{background:color-mix(in srgb,var(--good) 7%,var(--surface))}
+table.cmp td.x{background:color-mix(in srgb,var(--crit) 8%,var(--surface))}
+table.cmp tbody tr.same{transition:opacity .2s}
+.only-diff table.cmp tbody tr.same{display:none}
+.scrollx{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.scrollx table{min-width:640px}
+.mx{display:inline-flex;align-items:center;gap:6px;font-weight:650;font-size:.82rem;white-space:nowrap}
+.mx .dot{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;color:#fff}
+.mx.ok .dot{background:var(--good)}.mx.no .dot{background:var(--crit)}.mx.na .dot{background:var(--ink3)}
+.mx.ok{color:var(--good-ink)}.mx.no{color:var(--crit-ink)}.mx.na{color:var(--ink3)}
+.checks{display:grid;gap:8px}
+.chk{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);cursor:pointer;transition:border-color .15s,background .15s}
+.chk:hover{border-color:var(--crit)}
+.chk input{width:20px;height:20px;margin-top:2px;accent-color:var(--crit);flex:none}
+.chk.on{background:var(--crit-soft);border-color:color-mix(in srgb,var(--crit) 45%,var(--line))}
+.chk b{display:block;font-size:.95rem}
+.chk span.d{display:block;font-size:.82rem;color:var(--ink3);margin-top:2px}
+.meter{display:flex;gap:4px;margin:10px 0}
+.meter i{flex:1;height:10px;border-radius:5px;background:var(--line);transition:background .25s}
+.meter i.on1{background:var(--good)}.meter i.on2{background:var(--warn)}.meter i.on3{background:var(--crit)}
+.bigscore{font-size:3rem;font-weight:800;letter-spacing:-.03em;line-height:1}
+.num{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--btn-bg);color:var(--btn-ink);font-weight:750;font-size:.9rem;flex:none}
+.msg{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line)}
+.msg:last-child{border-bottom:0}
+.msg p{margin:0}
+.badge-row{display:flex;gap:6px;flex-wrap:wrap}
+
+/* ---------- panels ---------- */
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:50;opacity:0;visibility:hidden;transition:opacity .2s,visibility 0s linear .2s}
+.scrim.on{opacity:1;visibility:visible;transition:opacity .2s}
+.panel{position:fixed;top:0;bottom:0;right:0;width:min(520px,100vw);background:var(--surface);border-left:1px solid var(--line);box-shadow:var(--shadow);z-index:60;display:flex;flex-direction:column;transform:translateX(105%);visibility:hidden;transition:transform .28s ease,visibility 0s linear .28s}
+.panel.on{transform:none;visibility:visible;transition:transform .28s ease,visibility 0s}
+.panel.left{right:auto;left:0;border-left:0;border-right:1px solid var(--line);transform:translateX(-105%);width:min(400px,100vw)}
+.panel.left.on{transform:none}
+.panel header{display:flex;align-items:flex-start;gap:12px;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--line)}
+.panel header h2{font-size:1.15rem;max-width:none}
+.panel header p{margin:2px 0 0;font-size:.84rem;color:var(--ink3)}
+.panel .pb{flex:1;overflow-y:auto;padding:14px 18px 22px}
+.panel footer{padding:12px 18px;border-top:1px solid var(--line);display:flex;gap:10px;flex-wrap:wrap}
+@media (max-width:760px){.panel:not(.left){top:auto;height:82dvh;width:100%;border-left:0;border-top:1px solid var(--line);border-radius:18px 18px 0 0;transform:translateY(105%)}.panel:not(.left).on{transform:none}}
+.rcard{border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px;background:var(--surface)}
+.rcard.flash{animation:flash 1.6s ease}
+@keyframes flash{0%,40%{background:var(--accent-soft);border-color:var(--accent)}100%{background:var(--surface)}}
+.rcard .n{font-weight:800;color:var(--accent);margin-right:6px}
+.rcard .cit{font-size:.9rem;line-height:1.45;margin:0}
+.rcard .cit i{color:var(--ink2)}
+.rcard .use{margin:10px 0 0;padding:10px 12px;border-radius:10px;background:var(--accent-soft);font-size:.86rem;color:var(--ink)}
+.rcard .use b{color:var(--accent)}
+.rcard .links{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.lnk{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 12px;border-radius:9px;border:1px solid var(--line);background:var(--surface2);font-size:.82rem;font-weight:650;text-decoration:none;color:var(--ink)}
+.lnk:hover{border-color:var(--accent);color:var(--accent)}
+.lnk.btn{cursor:pointer}
+.mlist{list-style:none;margin:0;padding:0}
+.mlist .sec{font-size:.72rem;font-weight:750;letter-spacing:.09em;text-transform:uppercase;color:var(--ink3);margin:16px 0 6px}
+.mlist button{width:100%;display:flex;gap:12px;align-items:center;text-align:left;padding:9px 10px;border-radius:10px;border:1px solid transparent;background:transparent}
+.mlist button:hover{background:var(--surface2)}
+.mlist button[aria-current="true"]{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);font-weight:650}
+.mlist .k{width:26px;text-align:right;font-variant-numeric:tabular-nums;color:var(--ink3);font-size:.85rem}
+.searchbox{display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--surface);border-radius:12px;padding:0 12px;height:44px;max-width:520px}
+.searchbox input{flex:1;border:0;background:transparent;color:var(--ink);font:inherit;outline:none;height:100%}
+.reflist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px;align-items:start}
+@media (max-width:1000px){.reflist{grid-template-columns:1fr}}
+.toast{position:fixed;left:50%;bottom:80px;transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:999px;font-size:.88rem;opacity:0;transition:.25s;z-index:90;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+.cm{display:none}
+.foot .src{gap:6px;font-size:.82rem}
+.foot .src .lab{color:var(--ink3);font-weight:600;margin-right:2px;padding-top:3px}
+.rf{border:1px solid var(--accent-line);background:var(--accent-soft);color:var(--accent);padding:3px 11px;border-radius:8px;font-size:.8rem;font-weight:600;line-height:1.4}
+.rf:hover,.rf[aria-expanded="true"]{background:var(--btn-bg);color:var(--btn-ink);border-color:transparent}
+@media (max-width:760px){.foot .src{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px}.rf{flex:none}}
+#refpop{position:fixed;z-index:70;width:min(520px,calc(100vw - 24px));max-height:46vh;overflow:auto;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:14px 16px}
+#refpop[hidden]{display:none}
+#refpop .rp-x{position:absolute;top:6px;right:6px;width:32px;height:32px}
+#refpop .rp-cit{margin:0 28px 0 0;font-size:.9rem;line-height:1.45}
+#refpop .rp-use{margin:10px 0 0;padding:9px 11px;border-radius:10px;background:var(--accent-soft);font-size:.85rem}
+#refpop .rp-use b{color:var(--accent)}
+#refpop .links{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.used{background:color-mix(in srgb,var(--accent) 20%,transparent)!important;box-shadow:0 0 0 6px color-mix(in srgb,var(--accent) 20%,transparent);border-radius:8px;transition:background .3s,box-shadow .3s}
+.rcard .goto{height:28px;min-width:30px;justify-content:center;padding:0 8px}
+@media print{#refpop{display:none!important}}
+body.embed .topbar,body.embed .dock,body.embed .progress{display:none}
+body.embed .stage{top:0;bottom:0}
+@media print{
+  .hcard .more{display:block!important}
+  @page{size:A4 landscape;margin:12mm}
+  body{overflow:visible;background:#fff;font-size:13px}
+  .topbar,.progress,.dock,.keys,.scrim,.panel,.refbtn,.skip,#tip,.toast,.hint{display:none!important}
+  .stage{position:static}
+  .slide{position:static;display:block;opacity:1;visibility:visible;transform:none;page-break-after:always;break-after:page;min-height:auto}
+  .slide .body{overflow:visible;padding:0}
+  .foot{border:0;padding:8px 0}
+  .card,.tile{box-shadow:none}
+  details.tv{display:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#stage">Saltar al contenido</a>
+
+<header class="topbar">
+  <button class="iconbtn" id="btnMenu" aria-label="Abrir índice de diapositivas" aria-haspopup="dialog" title="Índice (M)"></button>
+  <div class="brand"><span class="logo" aria-hidden="true" id="logo"></span><span class="t">Dolor nocturno idiopático · Pediatría</span></div>
+  <div class="crumb" id="crumb"></div>
+  <button class="iconbtn" id="btnFull" aria-label="Pantalla completa" title="Pantalla completa (F)"></button>
+  <button class="iconbtn" id="btnTheme" aria-label="Cambiar entre tema claro y oscuro" title="Tema (T)"></button>
+</header>
+<div class="progress" aria-hidden="true"><i id="bar"></i></div>
+
+<main class="stage" id="stage" tabindex="-1">
+
+<section class="slide" id="s-cover" data-title="Portada" data-sec="Inicio">
+<div class="body">
+  <div class="covertxt">
+    <h1>Dolor nocturno idiopático de miembros inferiores en niños</h1>
+    <p class="author">Francisco Javier García Folleco</p>
+  </div>
+</div>
+</section>
+
+<section class="slide" id="s-question" data-title="La pregunta clínica" data-sec="Introducción">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Introducción</span>
+    <h2 class="wide">Un niño con dolor de piernas por la noche: ¿benigno o hay algo más?</h2>
+    <p class="lead">El “dolor de crecimiento” es muy frecuente, pero se diagnostica por exclusión y casi sin guías. Esa tensión ordena toda la presentación.</p></header>
+  <div class="grid g3">
+    <div class="card"><div class="kicker">Muy frecuente</div><h3>Una de las causas más comunes de dolor musculoesquelético recurrente en la infancia<i class="cm" data-ref="luo2026"></i></h3><p class="small ink2">Aunque se considera benigno, puede causar ansiedad familiar y alterar el sueño y la calidad de vida.</p></div>
+    <div class="card"><div class="kicker">Sin estándar de oro</div><h3>El diagnóstico es clínico y por exclusión<i class="cm" data-ref="luo2026"></i></h3><p class="small ink2">No existe una prueba ni un criterio único; la literatura usa 15 criterios diferentes<i class="cm" data-ref="smith2025"></i>.</p></div>
+    <div class="card"><div class="kicker">Sin guías</div><h3>No hay guías para orientar el examen que excluye otras causas<i class="cm" data-ref="smith2025"></i></h3><p class="small ink2">Un panel Delphi australiano lo priorizó entre las 10 condiciones que necesitan guías de práctica clínica<i class="cm" data-ref="davies2026"></i>.</p></div>
+  </div>
+</div></div>
+</section>
+
+<section class="slide" id="s-def" data-title="Definición y nomenclatura" data-sec="Introducción">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Introducción</span>
+    <h2>Qué es… y por qué el nombre engaña</h2></header>
+  <div class="grid g2">
+    <div class="card stack">
+      <h3>Descripción clínica</h3>
+      <p class="ink2" style="margin:0">Dolor <b>benigno, bilateral e intermitente</b> en los músculos o alrededor de las articulaciones de los miembros inferiores, <b>sin anomalías</b> en el examen físico ni en el laboratorio<i class="cm" data-ref="smith2025"></i>.</p>
+      <div class="kicker" style="margin-top:14px">Nombres que verás en la literatura</div>
+      <p class="small ink2" style="margin:0">Growing pains · Growth pain disorder · Benign nocturnal limb pains · Dolor recurrente de extremidades</p>
+      <div class="callout warn" style="margin-top:14px"><svg class="ic" data-i="alert"></svg><p class="small"><b>No hay evidencia de asociación con el crecimiento rápido</b>, como se creía originalmente<i class="cm" data-ref="luo2026"></i>.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card">
+        <h3>Clasificación internacional<i class="cm" data-ref="luo2026"></i></h3>
+        <div class="grid g2" style="margin-top:10px">
+          <div class="tile"><div class="kicker" style="margin:0">CIE-10</div><div class="l" style="margin-top:4px">No lo reconoce como entidad: lo codifica como síntoma musculoesquelético inespecífico.</div></div>
+          <div class="tile" style="border-color:var(--accent-line);background:var(--accent-soft)"><div class="kicker" style="margin:0;color:var(--accent)">CIE-11</div><div class="v" style="font-size:1.6rem">SE32</div><div class="l" style="margin-top:4px">“Growth pain disorder”: entidad propia con código único.</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>El problema: no hay un criterio único</h3>
+        <div class="grid g3" style="margin-top:10px">
+          <div class="tile"><div class="v">61</div><div class="l">estudios incluidos en la revisión</div></div>
+          <div class="tile"><div class="v">15</div><div class="l">criterios diagnósticos distintos</div></div>
+          <div class="tile"><div class="v">7 992</div><div class="l">niños con “growing pains” analizados</div></div>
+        </div>
+        <p class="small muted" style="margin:10px 0 0">Los criterios se solapan, a veces se contradicen y casi nunca se aplican igual<i class="cm" data-ref="smith2025"></i>.</p>
+      </div>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section class="slide" id="s-epi" data-title="Epidemiología en el mundo" data-sec="Epidemiología">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Epidemiología · en el mundo</span>
+    <h2 class="wide">Frecuente, pero con cifras que van del 2,6 % al 36,9 %</h2>
+    <p class="lead">La enorme dispersión refleja diferencias de edad, país, ámbito y, sobre todo, de definición<i class="cm" data-ref="luo2026"></i>.</p></header>
+  <div class="grid g2">
+    <div class="card"><div class="viz" data-chart="prev"></div></div>
+    <div class="card"><div class="viz" data-chart="countries"></div></div>
+  </div>
+  <div class="grid g3" style="margin-top:clamp(12px,1.6vw,20px)">
+    <div class="tile"><div class="v">≈4,7<small>%</small></div><div class="l">estimación “conservadora” de prevalencia<i class="cm" data-ref="rosen2025"></i></div></div>
+    <div class="tile"><div class="v">≈2<small>%</small></div><div class="l">prevalencia del síndrome de piernas inquietas pediátrico<i class="cm" data-ref="yoganathan2025"></i></div></div>
+    <div class="card flat">
+      <h3>En deportistas jóvenes (8–17 años, n = 916)<i class="cm" data-ref="elvira2025"></i></h3>
+      <ul class="list small ink2">
+        <li>Dolor musculoesquelético autorreportado: <b>78,5 %</b> en niños y <b>93,5 %</b> en adolescentes.</li>
+        <li>Diagnóstico formal de dolores de crecimiento: 32,6 % y 51,9 %. Solo <b>13,7 %</b> usaba analgésicos.</li>
+      </ul>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section class="slide" id="s-col" data-title="Epidemiología en Colombia" data-sec="Epidemiología">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Epidemiología · en Colombia</span>
+    <h2 class="wide">En Colombia no hay cifras propias de dolores de crecimiento</h2>
+    <p class="lead">Desde 2025 no encontramos ningún estudio colombiano de prevalencia. Por eso se usan, como excepción de fecha, tres fuentes colombianas anteriores a 2025.</p></header>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Qué encontramos (2025–2026)</h3>
+      <ul class="list ink2">
+        <li>Ninguno de los 37 estudios del meta-análisis de 2026 es colombiano; el <b>único latinoamericano es de México</b><i class="cm" data-ref="luo2026"></i>.</li>
+        <li>Nuestra búsqueda en PubMed (noviembre de 2026) de dolores de crecimiento en Colombia, 2025–2026, no arrojó estudios.</li>
+        <li>La CIE-10, con la que se registran los diagnósticos en las historias de ronda, <b>no tiene código propio</b>: la consulta inicial se codificó como dolor en miembro (M79.6)<i class="cm" data-ref="luo2026"></i><i class="cm" data-ref="casoA"></i>. La CIE-11 sí lo tiene (SE32)<i class="cm" data-ref="luo2026"></i>.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Fuentes colombianas anteriores a 2025</h3>
+      <ul class="list ink2">
+        <li><b>Bucaramanga, 2007</b> (n = 468, edad media 13,8 años): dolor musculoesquelético el día de la encuesta en el <b>54 %</b> (IC 95 %: 47,1–61,0). No estudió el dolor de crecimiento en particular<i class="cm" data-ref="camargo2007"></i>.</li>
+        <li><b>Revisión de la Universidad Nacional, 2008:</b> describe el cuadro en niños de 4 a 12 años, con dolor vespertino o nocturno y examen normal, y cita prevalencias internacionales de 2,6 % a 49,4 %<i class="cm" data-ref="vergara2008"></i>.</li>
+        <li><b>Revisión de medicina física, 2017:</b> como motivo de consulta, entre el 4 y el 6 % en mayores de 3 años y hasta el 12 % entre los 11 y 14 años. Son cifras que la revisión toma de la literatura internacional<i class="cm" data-ref="ibanez2017"></i>.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="callout" style="margin-top:clamp(12px,1.6vw,20px)"><svg class="ic" data-i="help"></svg><p class="small"><b>Cómo leerlo:</b> el rango internacional, de 2,6 % a 36,9 %, sigue siendo el marco disponible<i class="cm" data-ref="luo2026"></i>. Ninguna cifra colombiana mide dolores de crecimiento en población general; un estudio local con criterios explícitos sería una oportunidad de investigación.</p></div>
+</div></div>
+</section>
+
+<section class="slide" id="s-patho" data-title="Fisiopatología: hipótesis" data-sec="Fisiopatología">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Fisiopatología</span>
+    <h2 class="wide">Origen multifactorial: muchas asociaciones, ninguna causa demostrada</h2>
+    <p class="lead">Toca cada tarjeta. Los datos vienen de un meta-análisis de 37 estudios (16 086 participantes) y de una revisión de 24 estudios<i class="cm" data-ref="luo2026"></i><i class="cm" data-ref="rosen2025"></i>.</p></header>
+  <div class="hcards" id="hcards">
+    <article class="hcard" data-tag="asoc"><button class="hc" aria-expanded="false"><span class="ht">Umbral del dolor</span><span class="small ink2">Menor umbral y más puntos dolorosos que en niños sanos.</span><span class="go">Ver más</span></button><div class="more" hidden>Hallazgo del meta-análisis; limitado por heterogeneidad y tamaño de los estudios<i class="cm" data-ref="luo2026"></i>.</div></article>
+    <article class="hcard" data-tag="asoc"><button class="hc" aria-expanded="false"><span class="ht">Densidad ósea</span><span class="small ink2">Z de densidad ósea algo menor: DM −0,07.</span><span class="go">Ver más</span></button><div class="more" hidden>IC 95 %: −0,12 a −0,02 (p = 0,008). Diferencia pequeña; no prueba que el hueso cause el dolor<i class="cm" data-ref="luo2026"></i>.</div></article>
+    <article class="hcard" data-tag="asoc"><button class="hc" aria-expanded="false"><span class="ht">Vitamina D</span><span class="small ink2">25(OH)D menor en el meta-análisis (DME −2,75).</span><span class="go">Ver más</span></button><div class="more" hidden>Pero un caso-control de 2025 no halló diferencia con controles. Ver la diapositiva siguiente<i class="cm" data-ref="luo2026"></i><i class="cm" data-ref="jain2026"></i>.</div></article>
+    <article class="hcard" data-tag="asoc"><button class="hc" aria-expanded="false"><span class="ht">Hipermovilidad y actividad</span><span class="small ink2">OR 1,34 (IC 95 %: 1,14–1,58).</span><span class="go">Ver más</span></button><div class="more" hidden>Hipermovilidad articular y sobreactividad son más frecuentes en niños con dolores de crecimiento<i class="cm" data-ref="luo2026"></i>.</div></article>
+    <article class="hcard" data-tag="posible"><button class="hc" aria-expanded="false"><span class="ht">Genética y familia</span><span class="small ink2">Antecedente familiar y factores psicosociales parecen influir.</span><span class="go">Ver más</span></button><div class="more" hidden>Una revisión reporta antecedente familiar positivo en 44,2 % de niños con dolores de crecimiento frente a 14,5 % en síndrome de piernas inquietas; no hay estudios de genoma completo<i class="cm" data-ref="rosen2025"></i><i class="cm" data-ref="luo2026"></i>.</div></article>
+    <article class="hcard" data-tag="posible"><button class="hc" aria-expanded="false"><span class="ht">Serotonina, hierro, migraña</span><span class="small ink2">Mecanismos compartidos con el síndrome de piernas inquietas.</span><span class="go">Ver más</span></button><div class="more" hidden>Disfunción serotoninérgica, déficit de hierro y vitamina D baja se proponen en ambas; algunos autores lo consideran un equivalente migrañoso<i class="cm" data-ref="rosen2025"></i>.</div></article>
+    <article class="hcard" data-tag="posible"><button class="hc" aria-expanded="false"><span class="ht">Perinatales y dieta</span><span class="small ink2">Factores perinatales, lactancia y selectividad alimentaria.</span><span class="go">Ver más</span></button><div class="more" hidden>La evidencia sigue siendo limitada y se necesitan más estudios<i class="cm" data-ref="luo2026"></i>.</div></article>
+    <article class="hcard" data-tag="no"><button class="hc" aria-expanded="false"><span class="ht">Crecimiento rápido, colecho, perfusión, ácidos grasos</span><span class="small ink2">No se ha reportado asociación.</span><span class="go">Ver más</span></button><div class="more" hidden>El nombre “dolor de crecimiento” no tiene respaldo en estos datos<i class="cm" data-ref="luo2026"></i>.</div></article>
+</div>
+</div></div>
+</section>
+
+<section class="slide" id="s-vitd" data-title="Vitamina D: evidencia en conflicto" data-sec="Fisiopatología">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Fisiopatología</span>
+    <h2 class="wide">Vitamina D: tres estudios, tres mensajes</h2>
+    <p class="lead">La asociación existe en el agregado, pero no se sostiene en todos los diseños y el único estudio de tratamiento no tiene grupo control.</p></header>
+  <div class="grid g3">
+    <div class="card stack">
+      <h3>Meta-análisis (2026): 25(OH)D más baja en niños con dolores de crecimiento<i class="cm" data-ref="luo2026"></i></h3>
+      <div class="viz" data-chart="vdforest"></div>
+      <p class="small muted" style="margin:0">Los propios autores piden cautela por heterogeneidad y tamaño muestral.</p>
+    </div>
+    <div class="card stack">
+      <h3>Caso-control (2025): sin diferencia entre casos y controles<i class="cm" data-ref="jain2026"></i></h3>
+      <div class="viz" data-chart="vdcc"></div>
+      <p class="small ink2" style="margin:0">Los niños con vitamina D suficiente mejoraron igual que los que recibieron suplemento.</p>
+    </div>
+    <div class="card stack">
+      <h3>Estudio abierto (2025): mejoría tras suplementar, pero sin control<i class="cm" data-ref="haque2025"></i></h3>
+      <div class="grid g2">
+        <div class="tile"><div class="v">70<small>%</small></div><div class="l">normalizó la 25(OH)D</div></div>
+        <div class="tile"><div class="v">70<small>%</small></div><div class="l">quedó con dolor leve</div></div>
+      </div>
+      <p class="small ink2" style="margin:0">n = 30, D3 2 000 UI/día por ≥12 semanas. Al inicio: 43,3 % dolor severo y 53,3 % moderado.</p>
+    </div>
+  </div>
+  <div class="callout" style="margin-top:clamp(14px,2vw,22px)"><svg class="ic" data-i="help"></svg><p><b>Lectura:</b> la hipovitaminosis D es frecuente también en niños sin dolor, no hay evidencia causal y falta un ensayo aleatorizado. Se necesita más investigación antes de afirmar que suplementar trata el cuadro.</p></div>
+</div></div>
+</section>
+
+<section class="slide" id="s-risk" data-title="Factores de riesgo y protectores" data-sec="Fisiopatología">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Fisiopatología</span>
+    <h2 class="wide">Factores asociados: sueño, fatiga y actividad física</h2>
+    <p class="lead">Caso-control con 290 niños con dolores de crecimiento y 467 controles, más el meta-análisis<i class="cm" data-ref="guo2026"></i><i class="cm" data-ref="luo2026"></i>.</p></header>
+  <div class="grid g21">
+    <div class="card"><div class="viz" data-chart="or"></div></div>
+    <div class="stack">
+      <div class="callout warn"><svg class="ic" data-i="alert"></svg><p class="small"><b>Asociación no es causalidad.</b> Son estudios observacionales con cuestionarios a los padres; el OR de 15,6 para fatiga extrema es una estimación que debe leerse con cautela.</p></div>
+      <div class="card flat">
+        <h3>Qué se asoció</h3>
+        <ul class="list small ink2">
+          <li><b>Más riesgo:</b> latencia de sueño de 30–60 min, fatiga extrema tras el ejercicio y humo de tabaco materno casi diario en el embarazo.</li>
+          <li><b>Menos riesgo:</b> preferencia por legumbres y por los deportes.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section class="slide" id="s-clinical" data-title="Cuadro clínico típico" data-sec="Manifestaciones clínicas">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Manifestaciones clínicas</span>
+    <h2 class="wide">El perfil típico: bilateral, vespertino y con examen normal</h2></header>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Lo que se espera encontrar</h3>
+      <ul class="list ink2">
+        <li><b>Edad:</b> 3 a 12 años<i class="cm" data-ref="taskin2026"></i></li>
+        <li><b>Patrón:</b> intermitente, 1–2 veces por semana, rara vez a diario; <b>sin dolor entre episodios</b><i class="cm" data-ref="luo2026"></i></li>
+        <li><b>Duración:</b> cada episodio dura de 30 min a 2 h<i class="cm" data-ref="luo2026"></i></li>
+        <li><b>Sitio:</b> muslos anteriores, huecos poplíteos o pantorrillas; <b>ambos miembros</b>, fuera de las articulaciones<i class="cm" data-ref="luo2026"></i><i class="cm" data-ref="guo2026"></i></li>
+        <li><b>Horario:</b> inicia al final del día o de noche y desaparece por la mañana<i class="cm" data-ref="guo2026"></i></li>
+        <li><b>Examen:</b> normal, sin limitación de la actividad física ni cojera<i class="cm" data-ref="taskin2026"></i></li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="kicker">Frente a otros dolores de pierna (n = 201, 3–12 años)<i class="cm" data-ref="guoxq2026"></i></div>
+      <div class="viz" data-chart="dur"></div>
+      <div class="viz" data-chart="boneage" style="margin-top:18px"></div>
+      <div class="callout" style="margin-top:14px"><svg class="ic" data-i="help"></svg><p class="small">En el estudio, el <b>89,55 %</b> de los niños con dolores de crecimiento tenía molestia vespertina/nocturna; el grupo con enfermedad orgánica refería más dolor <b>matutino y punzante</b> (40,3 %).</p></div>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section class="slide" id="s-sleep" data-title="Sueño y entorno familiar" data-sec="Manifestaciones clínicas">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Manifestaciones clínicas</span>
+    <h2 class="wide">Los niños con dolores de crecimiento duermen peor</h2>
+    <p class="lead">Estudio transversal de 138 niños de 4–12 años (71 con dolores de crecimiento y 67 controles)<i class="cm" data-ref="taskin2026"></i>.</p></header>
+  <div class="grid g2">
+    <div class="card">
+      <div class="viz" data-chart="sleep"></div>
+      <div class="grid g2" style="margin-top:14px">
+        <div class="tile"><div class="v">49 <small>vs 42</small></div><div class="l">puntaje total mediano del cuestionario de hábitos de sueño (CSHQ), p &lt; 0,001</div></div>
+        <div class="tile"><div class="v">p = 0,53</div><div class="l">la ansiedad materna (GAD-7) no difirió entre grupos</div></div>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="card flat">
+        <h3>Qué implica</h3>
+        <ul class="list small ink2">
+          <li>Dentro del grupo con dolor, <b>mayor intensidad</b> se asoció con <b>peor sueño</b><i class="cm" data-ref="taskin2026"></i>.</li>
+          <li>En otro estudio, tardar 30–60 min en dormirse se asoció con más dolores de crecimiento (OR 3,7)<i class="cm" data-ref="guo2026"></i>.</li>
+          <li>Se sugiere <b>evaluar el sueño</b> en estos niños<i class="cm" data-ref="taskin2026"></i>.</li>
+        </ul>
+      </div>
+      <div class="callout"><svg class="ic" data-i="help"></svg><p class="small">Aun así, las revisiones señalan que casi ningún estudio mide el efecto del dolor y de los tratamientos sobre el sueño, la actividad y la escuela<i class="cm" data-ref="smith2025"></i>.</p></div>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section class="slide" id="s-dx" data-title="Diagnóstico: clínico y sin consenso" data-sec="Diagnóstico">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Diagnóstico</span>
+    <h2 class="wide">Diagnóstico clínico, por exclusión y sin criterio único</h2></header>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Criterios operativos usados en un estudio de 2026<i class="cm" data-ref="guo2026"></i></h3>
+      <p class="small muted" style="margin:0 0 8px">Se requieren al menos 4 de 7 ítems <b>y</b> examen, laboratorio e imagen normales, edad de 3 a 18 años.</p>
+      <ol class="list small ink2" style="counter-reset:c">
+        <li>Dolor tardío o nocturno que desaparece por la mañana.</li>
+        <li>Intermitente, con días y noches sin dolor.</li>
+        <li>Distribución típica: muslo anterior, pantorrilla, hueco poplíteo.</li>
+        <li>Habitualmente en ambas piernas.</li>
+        <li>Fuera de la región articular.</li>
+        <li>Sin limitación de la movilidad ni cojera.</li>
+        <li>Sin trauma, infección, sensibilidad, eritema ni edema locales.</li>
+      </ol>
+      <div class="callout" style="margin-top:12px"><svg class="ic" data-i="help"></svg><p class="small">Además, el protocolo exigía excluir inflamación, enfermedad reumatológica, tumor o fractura con historia, examen, laboratorio e imagen.</p></div>
+    </div>
+    <div class="card">
+      <div class="viz" data-chart="criteria"></div>
+      <div class="viz" data-chart="labs" style="margin-top:16px"></div>
+      <p class="small muted" style="margin:10px 0 0">La CIE-11 le da código propio (SE32); la CIE-10 no<i class="cm" data-ref="luo2026"></i>. Sin criterios explícitos: 23,3 % de los registros (14/60)<i class="cm" data-ref="smith2025"></i>. Una prueba de esfuerzo estandarizada mostró patrones distintos de recuperación del dolor, pero no diferenció con fiabilidad el dolor de crecimiento del orgánico<i class="cm" data-ref="guoxq2026"></i>.</p>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section class="slide" id="s-rls" data-title="Diferencial: síndrome de piernas inquietas" data-sec="Diagnóstico">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Diagnóstico · diferencial</span>
+    <h2 class="wide">El gran imitador: síndrome de piernas inquietas (SPI)</h2>
+    <p class="lead">Comparten edad, horario y patrón intermitente. No son intercambiables, y la evidencia no permite aún clasificarlos como una sola entidad<i class="cm" data-ref="rosen2025"></i><i class="cm" data-ref="smith2025"></i>.</p></header>
+  <div class="chipbar"><button class="fchip" id="btnDiff" aria-pressed="false">Mostrar solo lo que distingue</button></div>
+  <div id="rlsWrap">
+    <div class="scrollx"><table class="cmp">
+      <thead><tr><th>Característica</th><th>Dolor de crecimiento</th><th>SPI pediátrico</th></tr></thead>
+      <tbody>
+        <tr class="same"><th>Inicio</th><td colspan="2">Entre 3 y 12 años en ambos</td></tr>
+        <tr class="same"><th>Horario</th><td colspan="2">Empeora por la tarde o la noche</td></tr>
+        <tr class="same"><th>Curso</th><td colspan="2">Intermitente; alivio con movimientos gruesos</td></tr>
+        <tr class="same"><th>Examen</th><td colspan="2">Sin limitación funcional ni hallazgos objetivos</td></tr>
+        <tr><th>Qué se siente</th><td class="t">Exclusivamente dolor</td><td>Dolor u otras sensaciones desagradables (hormigueo, inquietud)</td></tr>
+        <tr><th>Necesidad de mover las piernas</th><td class="t">Ausente</td><td class="x">Característica central</td></tr>
+        <tr><th>Efecto del movimiento</th><td class="t">No es el rasgo principal</td><td class="x">Alivia parcial o totalmente mientras dura</td></tr>
+        <tr><th>Lateralidad</th><td class="t">Clásicamente bilateral</td><td>Puede ser unilateral o bilateral</td></tr>
+        <tr><th>Otras regiones</th><td class="t">No</td><td class="x">Puede afectar brazos u otras zonas</td></tr>
+        <tr><th>Síntomas matutinos</th><td class="t">No</td><td class="x">Posibles</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+  <p class="small muted" style="margin:12px 0 0">Los ítems verdes orientan a dolor de crecimiento y los rojos a SPI<i class="cm" data-ref="rosen2025"></i>. El SPI pediátrico ronda el 2 % y se asocia a enfermedad renal crónica, celiaquía, migraña y esclerosis múltiple de inicio pediátrico<i class="cm" data-ref="yoganathan2025"></i>; su diagnóstico exige historia, examen y laboratorio<i class="cm" data-ref="silvestri2025"></i>.</p>
+</div></div>
+</section>
+
+<section class="slide" id="s-flags" data-title="Banderas rojas" data-sec="Diagnóstico">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Diagnóstico · banderas rojas</span>
+    <h2 class="wide">Banderas rojas: cuándo NO es dolor de crecimiento</h2>
+    <p class="lead">Marca lo que encuentres en tu paciente. Es una herramienta pedagógica construida con la literatura de esta presentación; no es una escala validada.</p></header>
+  <div class="grid g12" style="align-items:start">
+    <div class="card sticky">
+      <div class="kicker">Banderas marcadas</div>
+      <div class="bigscore" id="flagN" aria-live="polite">0</div>
+      <div class="meter" aria-hidden="true"><i id="m1"></i><i id="m2"></i><i id="m3"></i></div>
+      <p id="flagMsg" class="ink2" style="margin:0" aria-live="polite"></p>
+      <button class="fchip" id="flagReset" style="margin-top:12px">Limpiar</button>
+    </div>
+    <div>
+      <div class="checks" id="flags"></div>
+      <div class="callout warn" style="margin-top:14px"><svg class="ic" data-i="alert"></svg><p class="small"><b>El sesgo cognitivo también es una bandera.</b> En una serie de casos, una enfermedad celiaca, un síndrome compartimental crónico y una masa vertebral se atribuyeron inicialmente a dolores de crecimiento por sesgo de anclaje y de confirmación<i class="cm" data-ref="scott2025"></i>.</p></div>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section class="slide" id="s-mimics" data-title="Lo que imita el cuadro" data-sec="Diagnóstico">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Diagnóstico · diferencial</span>
+    <h2 class="wide">Tres imitadores que no se pueden perder</h2></header>
+  <div class="grid g3">
+    <div class="card stack">
+      <h3>Leucemia aguda</h3>
+      <p class="small ink2" style="margin:0">El dolor musculoesquelético puede ser el <b>único síntoma inicial</b><i class="cm" data-ref="malvestiti2026"></i>.</p>
+      <div class="grid g2">
+        <div class="tile"><div class="v">35<small>%</small></div><div class="l">con hemograma normal al inicio (7/20)<i class="cm" data-ref="lipp2026"></i></div></div>
+        <div class="tile"><div class="v">17<small>días</small></div><div class="l">mediana hasta el diagnóstico (rango 1–53)<i class="cm" data-ref="malvestiti2026"></i></div></div>
+      </div>
+      <p class="small ink2" style="margin:0">Un hemograma normal <b>no debe retrasar</b> la evaluación oncológica si la clínica y la RM son sugestivas<i class="cm" data-ref="lipp2026"></i>.</p>
+    </div>
+    <div class="card stack">
+      <h3>Osteoma osteoide de cadera</h3>
+      <p class="small ink2" style="margin:0">Serie de 18 pacientes con dolor de cadera<i class="cm" data-ref="ozgezmez2025"></i>.</p>
+      <div class="grid g2">
+        <div class="tile"><div class="v">83<small>%</small></div><div class="l">con dolor nocturno</div></div>
+        <div class="tile"><div class="v">12<small>meses</small></div><div class="l">mediana hasta el diagnóstico</div></div>
+      </div>
+      <p class="small ink2" style="margin:0">El 50 % necesitó más de 5 consultas. <b>Dolor de más de 3 semanas</b> amerita evaluación adicional.</p>
+    </div>
+    <div class="card stack">
+      <h3>Hipoparatiroidismo</h3>
+      <p class="small ink2" style="margin:0">Niña de 11 años con 3 semanas de dolor bilateral de piernas, parestesias y fatiga<i class="cm" data-ref="ramesh2026"></i>.</p>
+      <div class="grid g2">
+        <div class="tile"><div class="v">995<small>U/L</small></div><div class="l">CK elevada</div></div>
+        <div class="tile"><div class="v">↓</div><div class="l">calcio total e iónico bajos</div></div>
+      </div>
+      <p class="small ink2" style="margin:0">Ante mialgias agudas o CK elevada inexplicada, medir <b>calcio y PTH</b>.</p>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section class="slide" id="s-manage" data-title="Tratamiento y evidencia" data-sec="Tratamiento">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Tratamiento</span>
+    <h2 class="wide">Tratamiento sintomático, con evidencia débil</h2>
+    <p class="lead">Una vez excluidas otras causas, el manejo habitual es confortar, dar masaje local durante los episodios y analgesia sintomática. No hay ensayos robustos que validen su eficacia<i class="cm" data-ref="luo2026"></i>.</p></header>
+  <div class="grid g3">
+    <div class="card stack">
+      <h3>Explicar, tranquilizar y acompañar</h3>
+      <p class="small ink2" style="margin:0">Masaje local y analgesia puntual durante los episodios. Entre deportistas jóvenes solo el 13,7 % usaba analgésicos<i class="cm" data-ref="elvira2025"></i>.</p>
+    </div>
+    <div class="card stack">
+      <h3>Estiramientos y medidas no farmacológicas</h3>
+      <p class="small ink2" style="margin:0">Una revisión recoge un ensayo aleatorizado antiguo a favor de los estiramientos, aunque rara vez se recomiendan en la práctica<i class="cm" data-ref="rosen2025"></i>.</p>
+    </div>
+    <div class="card stack">
+      <h3>Vitamina D</h3>
+      <p class="small ink2" style="margin:0">Mejoría en un estudio abierto sin control, pero sin diferencia entre niños suplementados y no suplementados en otro<i class="cm" data-ref="haque2025"></i><i class="cm" data-ref="jain2026"></i>.</p>
+    </div>
+    <div class="card stack">
+      <h3>Plantillas plantares personalizadas</h3>
+      <p class="small ink2" style="margin:0">647 niños evaluados y 178 reevaluados; mayor alivio con mejor cumplimiento. Diseño observacional: no confirma causalidad<i class="cm" data-ref="ionita2025"></i>.</p>
+    </div>
+    <div class="card stack">
+      <h3>Láser de baja intensidad + ultrasonido</h3>
+      <p class="small ink2" style="margin:0">Ensayo piloto con placebo (n = 9: 5 vs 4): seguro y con posible eficacia. De 17 niños potencialmente elegibles, 8 se excluyeron porque <b>el diagnóstico no se confirmó</b> y se halló otra causa<i class="cm" data-ref="ferreira2026"></i>.</p>
+    </div>
+    <div class="card tint stack">
+      <h3>Derivar ante cualquier bandera roja</h3>
+      <p class="small ink2" style="margin:0">Cojera, dolor unilateral o diurno, examen o estudios anormales: pasar a estudio dirigido. Ver diapositiva de banderas rojas.</p>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section class="slide" id="s-case1" data-title="Caso publicado: hemangioma epitelioide" data-sec="Casos">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Caso publicado 1 · BMJ Case Reports 2025</span>
+    <h2 class="wide">“Dolores de crecimiento” que eran un tumor óseo multifocal<i class="cm" data-ref="abdulshafea2025"></i></h2></header>
+  <div class="grid g12">
+    <div class="card">
+      <ol class="tl">
+        <li><div class="when">Presentación</div><p>Niña previamente sana, en la mitad de la infancia, con <b>dolor y cojera en la pierna derecha</b> de 1 mes de evolución.</p></li>
+        <li class="alert"><div class="when">Etiqueta inicial</div><p>Se diagnosticó <b>“dolores de crecimiento”</b>.</p></li>
+        <li><div class="when">Radiografía</div><p>Radiografías de miembros inferiores: <b>múltiples lesiones líticas</b>.</p></li>
+        <li><div class="when">RM de cuerpo entero</div><p>Lesiones multifocales en los huesos de ambos miembros inferiores.</p></li>
+        <li><div class="when">Biopsia</div><p><b>Hemangioma epitelioide</b> multifocal: neoplasia localmente agresiva que requiere manejo multidisciplinario continuo.</p></li>
+      </ol>
+    </div>
+    <div class="stack">
+      <div class="card crit">
+        <h3>Qué no encajaba con dolor de crecimiento</h3>
+        <ul class="list crit small">
+          <li><b>Cojera</b> (el examen debe ser normal y sin limitación).</li>
+          <li><b>Unilateral</b> (el cuadro típico es bilateral).</li>
+          <li>Dolor <b>persistente</b> durante un mes (el típico es intermitente).</li>
+        </ul>
+      </div>
+      <div class="callout"><svg class="ic" data-i="help"></svg><p class="small"><b>Lección:</b> una radiografía cambió el diagnóstico. Es fácil recurrir a la etiqueta de “dolor de crecimiento”: es un diagnóstico de exclusión, no un descarte rápido<i class="cm" data-ref="scott2025"></i>.</p></div>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section class="slide" id="s-case2" data-title="Caso publicado: epifisiolisis no reconocida" data-sec="Casos">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Caso publicado 2 · Frontiers in Pediatrics 2026</span>
+    <h2 class="wide">Una cojera de meses que era una epifisiolisis femoral<i class="cm" data-ref="ranieri2026"></i></h2></header>
+  <div class="grid g2">
+    <div class="card">
+      <ol class="tl">
+        <li><div class="when">Presentación</div><p>Varón de 16 años con <b>cojera persistente de varios meses</b>.</p></li>
+        <li class="alert"><div class="when">Estudios previos</div><p>Se buscaron causas ortopédicas, infecciosas e inflamatorias y <b>aparentemente no hubo hallazgos</b>; fue derivado a reumatología.</p></li>
+        <li><div class="when">Diagnóstico</div><p>Se identificó una <b>epifisiolisis femoral proximal (SCFE)</b>.</p></li>
+        <li><div class="when">Tratamiento</div><p>Cirugía con técnica de Dunn modificada. Se hallaron además resistencia a la insulina y pubertad retrasada.</p></li>
+      </ol>
+      <div class="callout" style="margin-top:14px"><svg class="ic" data-i="help"></svg><p class="small">Los autores insisten en considerar SCFE ante cualquier cojera o dolor de miembro inferior en un adolescente, <b>aunque esté mal localizado</b>: una radiografía de pelvis lo diagnostica rápido.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card">
+        <h3>El costo del retraso<i class="cm" data-ref="abdennebi2026"></i></h3>
+        <p class="small muted" style="margin:0 0 8px">Cohorte suiza, 63 pacientes y 71 caderas con SCFE (2000–2024).</p>
+        <div class="viz" data-chart="delay"></div>
+      </div>
+      <div class="callout warn"><svg class="ic" data-i="alert"></svg><p class="small">Cada semana de retraso se asoció con más probabilidad de osteotomía (OR 1,11 por semana). Es un hallazgo observacional, no causal<i class="cm" data-ref="abdennebi2026"></i>. Las presentaciones del dolor son variables<i class="cm" data-ref="bhatia2026"></i>.</p></div>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section class="slide" id="s-pa" data-title="Caso de ronda · Paciente A" data-sec="Casos">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Caso de ronda · Paciente A</span>
+    <h2 class="wide">Niña de 10 años con dolor de ingle y cojera durante meses</h2>
+    </header>
+  <div class="grid g21">
+    <div class="card">
+      <ol class="tl">
+        <li><div class="when">Consulta externa · semana 0</div><p>Dolor inguinal de ~2 meses con <b>cojera de tipo mecánico</b>: diario (a veces muy leve), mejora sentada y <b>empeora al caminar y correr</b>. Sin pérdida de peso ni sudoración nocturna. Examen sin dolor a la movilización de la cadera, sin cambios inflamatorios, Trendelenburg negativo, marcha normal en el momento. Ecografía normal.<i class="cm" data-ref="casoA"></i></p><p>Sin signos de alarma evidentes: <b>prueba terapéutica con AINE</b> (ciclo de 7 días) y control en 2 semanas.<i class="cm" data-ref="casoA"></i></p></li>
+        <li class="alert"><div class="when">≈8 semanas después</div><p>Dolor de ~4 meses y marcha antálgica de ~2 meses, con varias consultas previas. <b>La radiografía de cadera muestra deslizamiento fisario de ~10 mm.</b><i class="cm" data-ref="casoA"></i></p></li>
+        <li><div class="when">Ingreso</div><p>Limitación severa de los arcos de movimiento, dificultad para la bipedestación y la marcha. Leucocitos 9,59 ×10³/µL, PCR 2,5 mg/dL (VR 0–5), VSG 13,75 mm/h (VR 0–10).<i class="cm" data-ref="casoA"></i></p></li>
+        <li><div class="when">Plan</div><p>Valoración por ortopedia y programación quirúrgica: <b>fijación in situ con tornillos canulados</b>.<i class="cm" data-ref="casoA"></i></p></li>
+      </ol>
+    </div>
+    <div class="stack">
+      <div class="card crit">
+        <h3>Lectura didáctica</h3>
+        <ul class="list crit small">
+          <li>Dolor <b>diario y mecánico</b> (peor al caminar y correr): no es el patrón vespertino intermitente.</li>
+          <li><b>Cojera + dolor en ingle/cadera</b> es motivo de imagen de la cadera.</li>
+          <li>Un examen y una ecografía normales <b>en ese momento</b> no excluyen patología de cadera.</li>
+        </ul>
+      </div>
+      <div class="callout"><svg class="ic" data-i="help"></svg><p class="small">Este patrón de retraso es el descrito en la literatura reciente: casi la mitad de las epifisiolisis se diagnosticó entre 3 y 12 semanas de iniciados los síntomas<i class="cm" data-ref="abdennebi2026"></i><i class="cm" data-ref="ranieri2026"></i><i class="cm" data-ref="bhatia2026"></i>.</p></div>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section class="slide" id="s-pb" data-title="Caso de ronda · Paciente B" data-sec="Casos">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Caso de ronda · Paciente B</span>
+    <h2 class="wide">Niño de 3 años con dolor de cadera, derrame y marcadores que no concuerdan</h2>
+    </header>
+  <div class="grid g2">
+    <div class="card">
+      <ol class="tl">
+        <li><div class="when">Antecedentes</div><p>Sinovitis transitoria de cadera (hace ~5 meses) y <b>artritis séptica de cadera</b> sin aislamiento de gérmenes (hace ~3 meses), tratada con lavado y desbridamiento en dos tiempos.<i class="cm" data-ref="casoB"></i></p></li>
+        <li><div class="when">Cuadro actual</div><p>3–5 días de diarrea y fiebre; luego <b>dolor de cadera de alta intensidad irradiado al muslo</b> y marcha antálgica.<i class="cm" data-ref="casoB"></i></p></li>
+        <li class="alert"><div class="when">Clínica de origen</div><p><b>Ecografía con derrame articular</b>, radiografía sin lesiones. Leucocitos 18 460 (81,2 % neutrófilos), VSG 35, procalcitonina 1,05, PCR informada como negativa. <b>Se inició antibiótico.</b> Hemocultivos pendientes.<i class="cm" data-ref="casoB"></i></p></li>
+        <li><div class="when">Ingreso al hospital</div><p>Afebril, estable, sin aspecto séptico; dolor a los arcos de movilidad sin signos locales de inflamación. Radiografía comparativa de caderas normal. <b>Sin antibiótico</b>, con analgesia y seguimiento por ortopedia y pediatría.<i class="cm" data-ref="casoB"></i></p></li>
+        <li><div class="when">Día 2</div><p>Niño irritable, sin buena modulación del dolor. Se solicita <b>resonancia de cadera bajo sedación</b> (simple y con contraste).<i class="cm" data-ref="casoB"></i></p></li>
+        <li><div class="when">Día 3</div><p>Mejor modulación del dolor, marcha antálgica y sin picos febriles. Leucocitos 8 990, VSG 33,6 y PCR 4,7. <b>La resonancia sigue pendiente.</b> La evolución final no está disponible en el registro.<i class="cm" data-ref="casoB"></i></p></li>
+      </ol>
+    </div>
+    <div class="stack">
+      <div class="card">
+        <div class="kicker">Laboratorio en el tiempo</div>
+        <div class="grid g2">
+          <div class="viz" data-chart="wbc"></div>
+          <div class="viz" data-chart="esr"></div>
+        </div>
+        <p class="small muted" style="margin:10px 0 0">PCR 4,7 mg/dL (VR 0–5) en ambos controles hospitalarios.</p>
+      </div>
+      <div class="card tint stack">
+        <h3>Qué dice la literatura reciente</h3>
+        <ul class="list small ink2">
+          <li>En 35 niños con artritis séptica de cadera confirmada, el <b>91,4 %</b> tenía puntaje Kocher-Caird ≤1 con marcadores normales, y el <b>82,9 %</b> había recibido antibiótico antes<i class="cm" data-ref="afaque2026"></i>.</li>
+          <li>Con ≥2 criterios de Kocher, el puntaje debe indicar <b>imagen avanzada (RM)</b> y no un algoritmo quirúrgico definitivo<i class="cm" data-ref="rogie2026"></i>.</li>
+          <li>La ecografía a pie de cama detecta derrame con sensibilidad de ~89 % y especificidad de ~99 % por cadera<i class="cm" data-ref="jones2025"></i>; junto con la clínica y los marcadores mejora la diferenciación entre sinovitis transitoria y artritis séptica<i class="cm" data-ref="bhatia2026"></i>.</li>
+          <li>Sinovitis transitoria sin aspiración (n = 220): sin septicemias omitidas, pero 3,2 % terminó con diagnóstico reumatológico o de secuelas<i class="cm" data-ref="smadi2026"></i>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section class="slide" id="s-compare" data-title="Comparativo: típico vs pacientes A y B" data-sec="Casos">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Casos</span>
+    <h2 class="wide">Comparativo: dolor idiopático típico frente a los dos casos</h2>
+    <p class="lead">La edad no ayuda: 3 y 10 años caen dentro del rango típico (3–12 años)<i class="cm" data-ref="taskin2026"></i>. Lo que separa los casos es el patrón.</p></header>
+  <div class="chipbar"><button class="fchip" id="btnDiff2" aria-pressed="false">Mostrar solo diferencias</button></div>
+  <div id="cmpWrap">
+    <div class="scrollx"><table class="cmp">
+      <thead><tr><th>Aspecto</th><th>Dolor idiopático típico</th><th>Paciente A · niña 10 a</th><th>Paciente B · niño 3 a</th></tr></thead>
+      <tbody>
+        <tr class="same"><th>Edad</th><td>3–12 años</td><td>10 años (dentro del rango)</td><td>3 años (dentro del rango)</td></tr>
+        <tr><th>Localización</th><td class="t">Muslos, poplíteos, pantorrillas; <b>bilateral</b>, extraarticular</td><td class="x"><b>Ingle / cadera</b>, unilateral</td><td class="x"><b>Cadera</b> irradiada al muslo, unilateral</td></tr>
+        <tr><th>Patrón y horario</th><td class="t">Intermitente, vespertino/nocturno, alivio total entre episodios</td><td class="x"><b>Diario</b>, mecánico: peor al caminar y correr, mejora sentada</td><td class="x">Dolor <b>agudo e intenso</b> tras cuadro diarreico y fiebre</td></tr>
+        <tr><th>Duración</th><td class="t">30 min–2 h por episodio</td><td class="x">Meses (2–4)</td><td class="x">Días (3–5), con antecedentes articulares</td></tr>
+        <tr><th>Marcha</th><td class="t">Normal, sin cojera</td><td class="x">Cojera, luego marcha antálgica</td><td class="x">Marcha antálgica</td></tr>
+        <tr><th>Examen</th><td class="t">Normal, sin limitación</td><td class="x">Al inicio normal; luego limitación severa de arcos</td><td class="x">Dolor a los arcos de movilidad</td></tr>
+        <tr><th>Imagen y laboratorio</th><td class="t">Normales</td><td class="x">Radiografía: deslizamiento fisario ~10 mm</td><td class="x">Ecografía con derrame; marcadores discordantes</td></tr>
+        <tr class="same"><th>Dolor nocturno</th><td>Característico</td><td>No documentado en el registro</td><td>No documentado en el registro</td></tr>
+        <tr><th>Conducta</th><td class="t">Explicar, tranquilizar, seguimiento</td><td class="x">Ortopedia y cirugía programada</td><td class="x">Observación, RM bajo sedación, ortopedia</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+  <div class="card" style="margin-top:clamp(14px,2vw,22px)">
+    <h3>¿Cumplen los criterios operativos de 2026?<i class="cm" data-ref="guo2026"></i></h3>
+    <p class="small muted" style="margin:0 0 8px">Se requieren ≥4 de 7 ítems y estudios normales. Lectura propia de los registros; “sin dato” significa que no está documentado.</p>
+    <div class="scrollx"><table class="cmp">
+      <thead><tr><th>Ítem</th><th>Paciente A</th><th>Paciente B</th></tr></thead>
+      <tbody id="matrix"></tbody>
+    </table></div>
+    <div class="grid g2" style="margin-top:12px">
+      <div class="tile"><div class="v">≤2 <small>de 7</small></div><div class="l">Paciente A: máximo posible aun asumiendo favorables los ítems sin dato</div></div>
+      <div class="tile"><div class="v">≤2 <small>de 7</small></div><div class="l">Paciente B: ídem. Se requieren al menos 4</div></div>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section class="slide" id="s-end" data-title="Mensajes clave y vacíos" data-sec="Cierre">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Cierre</span>
+    <h2 class="wide">Cinco mensajes para llevarse y lo que aún no sabemos</h2></header>
+  <div class="grid g21">
+    <div class="card">
+      <div class="msg"><span class="num">1</span><p><b>Es un diagnóstico clínico y de exclusión.</b> El nombre “de crecimiento” no tiene respaldo<i class="cm" data-ref="luo2026"></i><i class="cm" data-ref="smith2025"></i>.</p></div>
+      <div class="msg"><span class="num">2</span><p><b>El perfil típico es bilateral, vespertino, intermitente y con examen normal</b><i class="cm" data-ref="guo2026"></i>.</p></div>
+      <div class="msg"><span class="num">3</span><p><b>Unilateral, diurno, con cojera o examen anormal: no es dolor de crecimiento.</b> Estudiar<i class="cm" data-ref="rosen2025"></i><i class="cm" data-ref="abdulshafea2025"></i>.</p></div>
+      <div class="msg"><span class="num">4</span><p><b>Dolor poco localizado de miembro inferior con cojera: pensar en la cadera</b> y pedir imagen<i class="cm" data-ref="ranieri2026"></i>.</p></div>
+      <div class="msg"><span class="num">5</span><p><b>Marcadores normales no excluyen infección ni leucemia.</b> Seguir y reevaluar<i class="cm" data-ref="afaque2026"></i><i class="cm" data-ref="lipp2026"></i>.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card flat">
+        <h3>Vacíos de evidencia</h3>
+        <ul class="list small ink2">
+          <li>Sin definición consensuada: <b>15 criterios</b> distintos<i class="cm" data-ref="smith2025"></i>.</li>
+          <li>Solo el <b>13 %</b> de los registros usó medidas de resultado<i class="cm" data-ref="smith2025"></i>.</li>
+          <li>De 37 estudios, <b>1 ensayo aleatorizado</b> y 2 no aleatorizados<i class="cm" data-ref="luo2026"></i>.</li>
+          <li>Sin estudios longitudinales prospectivos<i class="cm" data-ref="rosen2025"></i>.</li>
+          <li>Sin guías de práctica clínica<i class="cm" data-ref="davies2026"></i>.</li>
+        </ul>
+      </div>
+      <div class="callout"><svg class="ic" data-i="help"></svg><p class="small">Se necesita un consenso diagnóstico y ensayos aleatorizados para saber qué tratamiento sirve.</p></div>
+    </div>
+  </div>
+</div></div>
+</section>
+
+<section class="slide" id="s-refs" data-title="Referencias" data-sec="Cierre">
+<div class="body"><div class="wrap">
+  <header class="sh"><span class="eyebrow">Cierre</span>
+    <h2>Referencias</h2>
+    <p class="lead">Las fuentes son de 2025 en adelante y se verificaron en PubMed o en la página de la revista, salvo tres fuentes colombianas anteriores a 2025 que se usan como excepción solo en la diapositiva de Colombia. Los casos de ronda provienen de registros clínicos anonimizados.</p></header>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px">
+    <label class="searchbox"><svg class="ic" data-i="search"></svg><input id="refSearch" type="search" placeholder="Buscar por autor, revista o tema" aria-label="Buscar en las referencias"></label>
+    <button class="lnk btn" id="copyAll"><svg class="ic" data-i="copy"></svg> Copiar todas las citas</button>
+  </div>
+  <div class="reflist" id="reflist"></div>
+</div></div>
+</section>
+
+</main>
+
+<nav class="dock" aria-label="Navegación de la presentación">
+  <button class="navbtn" id="btnPrev"><svg class="ic" data-i="left"></svg><span class="lbl">Anterior</span></button>
+  <div class="counter" aria-hidden="true"><b id="cur">1</b> / <span id="tot">22</span></div>
+  <button class="navbtn primary" id="btnNext"><span class="lbl">Siguiente</span><svg class="ic" data-i="right"></svg></button>
+  <div class="keys">← → navegar · M índice · T tema · F pantalla completa</div>
+</nav>
+<div class="vh" role="status" aria-live="polite" id="live"></div>
+
+<!-- índice -->
+<div class="scrim" id="scrim"></div>
+<aside class="panel left" id="menu" role="dialog" aria-modal="true" aria-labelledby="menuT" hidden>
+  <header><div><h2 id="menuT">Índice</h2><p>Salta a cualquier diapositiva</p></div><button class="iconbtn" data-close aria-label="Cerrar índice"></button></header>
+  <div class="pb"><ul class="mlist" id="mlist"></ul></div>
+</aside>
+<!-- detalle de la referencia tocada -->
+<div id="refpop" role="dialog" aria-label="Detalle de la referencia" hidden></div>
+<div id="tip" role="tooltip"></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const REFS={"luo2026": {"title": "Risk factors associated with growth pain disorder in children: a systematic review and meta-analysis", "journal": "Front Pediatr", "year": "2026", "epub": "2026-05-18", "vol": "14", "pages": "1806380", "doi": "10.3389/fped.2026.1806380", "pmid": "42232621", "pmc": "PMC13223011", "authorsStr": "Luo T, Huang Y, Guo Y, Lian X"}, "smith2025": {"title": "Assessments, diagnostic criteria and outcome measures for growing pains and persistent pain in the presence of restless leg syndrome in children: a scoping review", "journal": "BMJ Open", "year": "2025", "epub": "2025-12-03", "vol": "15", "issue": "12", "pages": "e101989", "doi": "10.1136/bmjopen-2025-101989", "pmid": "41338633", "pmc": "PMC12684109", "authorsStr": "Smith M, Pacey V, Davies LM, Coventry J, Ilhan E, Williams CM"}, "rosen2025": {"title": "Restless legs syndrome and growing pains in childhood: understanding the link", "journal": "Front Neurol", "year": "2025", "epub": "2025-08-22", "vol": "16", "pages": "1603694", "doi": "10.3389/fneur.2025.1603694", "pmid": "40917655", "pmc": "PMC12411773", "authorsStr": "Rosen AEV, Ursitti F, Stella N, Papetti L, Checchi MP, Voci A, et al."}, "jain2026": {"title": "Does Vitamin D Deficiency Contribute to Growing Pains? A Case-Control Study", "journal": "Clin Pediatr (Phila)", "year": "2026", "epub": "2025-10-06", "vol": "65", "issue": "2", "pages": "196-202", "doi": "10.1177/00099228251379209", "pmid": "41047847", "authorsStr": "Jain I, K A, Agarwal N, Nayak S, Jindal A"}, "guo2026": {"title": "Risk factor analysis for growing pains in children: Results of parental survey", "journal": "J Child Orthop", "year": "2026", "epub": "2025-11-20", "vol": "20", "issue": "1", "pages": "30-39", "doi": "10.1177/18632521251398410", "pmid": "41281413", "pmc": "PMC12634403", "authorsStr": "Guo R, Xiang W, Zhuang H, Wang Y, Zheng P"}, "taskin2026": {"title": "Sleep Habits and Maternal Anxiety in Children with Growing Pains: A Comparative Cross-Sectional Study", "journal": "Children (Basel)", "year": "2026", "epub": "2026-10-18", "vol": "13", "issue": "10", "pages": "1429", "doi": "10.3390/children13101429", "pmid": "42940749", "pmc": "PMC13702860", "authorsStr": "Taşkın SN, Karaca Ahat T, Aydoğan Gedik S, Ayan Karanfil H, Leblebicier ŞP, Boz Öncel E, et al."}, "guoxq2026": {"title": "Clinical Screening and Factors Influencing Growing Pain in Children with Recurrent Lower Limb Pain: A Controlled Study on Symptom Assessment and Motor Load", "journal": "Int J Gen Med", "year": "2026", "epub": "2026-02-02", "vol": "19", "pages": "565653", "doi": "10.2147/IJGM.S565653", "pmid": "41878628", "pmc": "PMC13007668", "authorsStr": "Guo XQ, Cang TS"}, "elvira2025": {"title": "Growing Pains and Dietary Habits in Young Athletes: A Cross-Sectional Survey", "journal": "Nutrients", "year": "2025", "epub": "2025-07-21", "vol": "17", "issue": "14", "pages": "2384", "doi": "10.3390/nu17142384", "pmid": "40733009", "pmc": "PMC12299381", "authorsStr": "Elvira-Aranda C, Pérez-Turpin JA, Suárez-Llorca C, Pérez M, De-Castellar R"}, "ferreira2026": {"title": "Combined Low-Level Laser and Ultrasound Therapy for Growing Pains in Children Aged Four to Twelve Years: A Pilot Study", "journal": "J Biophotonics", "year": "2026", "vol": "19", "issue": "5", "pages": "e70275", "doi": "10.1002/jbio.70275", "pmid": "42057468", "pmc": "PMC13129411", "authorsStr": "Ferreira EAL, Liberal LP, de Aquino Junior AE, de Menezes Reiff RB, Carbinatto FM, Zanatta RP, et al."}, "ionita2025": {"title": "Evaluating plantar correction strategies in pediatric growing pains: a postural and pain analysis in 647 children", "journal": "J Med Life", "year": "2025", "vol": "18", "issue": "5", "pages": "455-462", "doi": "10.25122/jml-2025-0084", "pmid": "40599145", "pmc": "PMC12207701", "authorsStr": "Ionita C, Tiron S, Abdallah S, Gheorghe-Simionesie SA, Simionesie D, Mitoiu BI, et al."}, "archawa2025": {"title": "Identifying the characteristics of and developing a predictive model for differentiating cancer-related musculoskeletal symptoms from juvenile idiopathic arthritis", "journal": "Pediatr Rheumatol Online J", "year": "2025", "epub": "2025-07-15", "vol": "23", "issue": "1", "pages": "73", "doi": "10.1186/s12969-025-01121-3", "pmid": "40665353", "pmc": "PMC12261695", "authorsStr": "Archawanantakul K, Vilaiyuk S, Pakakasama S, Lerkvaleekul B"}, "scott2025": {"title": "Sprains, Strains and Growing Pains: Managing Cognitive Bias to Facilitate Timely Diagnosis in Pediatric Sports Medicine", "journal": "Children (Basel)", "year": "2025", "epub": "2025-06-16", "vol": "12", "issue": "6", "pages": "784", "doi": "10.3390/children12060784", "pmid": "40564742", "pmc": "PMC12191792", "authorsStr": "Scott P, Sim L, Soma D, Madsen BE, Thorsteinsdottir B"}, "chen2026": {"title": "Missing the Malignancy in Primary Care: A Case Study on Pediatric Osteosarcoma", "journal": "J Pediatr Health Care", "year": "2026", "epub": "2025-12-25", "vol": "40", "issue": "3", "pages": "e149-e153", "doi": "10.1016/j.pedhc.2025.11.026", "pmid": "41447371", "authorsStr": "Chen M, Ramchandani N"}, "abdulshafea2025": {"title": "Multifocal epithelioid haemangioma of the lower limb bones in a child: an unusual presentation", "journal": "BMJ Case Rep", "year": "2025", "epub": "2025-03-14", "vol": "18", "issue": "3", "pages": "e262089", "doi": "10.1136/bcr-2024-262089", "pmid": "40086847", "authorsStr": "Abdulshafea M, Ahmed T, Gopala Pillai SK"}, "malvestiti2026": {"title": "Pediatric acute leukemia mimicking osteomyelitis: clinical and MRI features", "journal": "Front Oncol", "year": "2026", "epub": "2026-07-14", "vol": "16", "pages": "1872357", "doi": "10.3389/fonc.2026.1872357", "pmid": "42523625", "pmc": "PMC13407188", "authorsStr": "Malvestiti S, Muratore E, Wiedemann S, Goller-Bruchmann K, Baldazzi M, Abdul-Nour T, et al."}, "lipp2026": {"title": "MRI paving the way to diagnosis of acute lymphoblastic leukemia in children and adolescents - a retrospective observational study", "journal": "Mol Cell Pediatr", "year": "2026", "epub": "2026-08-04", "vol": "13", "issue": "1", "pages": "41", "doi": "10.1186/s40348-026-00253-0", "pmid": "42547612", "pmc": "PMC13433716", "authorsStr": "Lipp J, Schaper J, Rummel F, Kural M, Borkhardt A, Babor F, et al."}, "ramesh2026": {"title": "Eleven-Year-Old Girl With Bilateral Leg Pain: A Case Report on Recognizing Hypoparathyroidism in Pediatric Practice", "journal": "J Pediatr Health Care", "year": "2026", "epub": "2026-01-15", "vol": "40", "issue": "4", "pages": "582-586", "doi": "10.1016/j.pedhc.2025.12.023", "pmid": "41537715", "authorsStr": "Ramesh D, Stepanian L, Parker R, Sorbara J, Duong HH, Kukreti V"}, "silvestri2025": {"title": "Mimics of Childhood Restless Legs Syndrome", "journal": "Sleep Med Clin", "year": "2025", "epub": "2025-04-01", "vol": "20", "issue": "2", "pages": "203-208", "doi": "10.1016/j.jsmc.2025.02.010", "pmid": "40348532", "authorsStr": "Silvestri R, Aricò I"}, "yoganathan2025": {"title": "Epidemiology of Pediatric Restless Leg Syndrome", "journal": "Sleep Med Clin", "year": "2025", "epub": "2025-03-19", "vol": "20", "issue": "2", "pages": "183-192", "doi": "10.1016/j.jsmc.2025.02.001", "pmid": "40348530", "authorsStr": "Yoganathan S, Chakrabarty B"}, "davies2026": {"title": "Prioritising conditions resulting in chronic lower limb musculoskeletal pain in children and adolescents for development of clinical practice guidelines: an Australian Delphi study", "journal": "BMC Pediatr", "year": "2026", "epub": "2026-02-23", "vol": "26", "issue": "1", "pages": "185", "doi": "10.1186/s12887-026-06600-4", "pmid": "41731457", "pmc": "PMC12961776", "authorsStr": "Davies LM, Pacey V, Sturgiss E, Munro J, Haines T, Smith M, et al."}, "abdennebi2026": {"title": "Diagnostic Delay in Slipped Capital Femoral Epiphysis: A Single-Centre Study in Switzerland", "journal": "J Clin Med", "year": "2026", "epub": "2026-09-19", "vol": "15", "issue": "18", "pages": "7294", "doi": "10.3390/jcm15187294", "pmid": "42796066", "pmc": "PMC13607369", "authorsStr": "Abdennebi WB, Tsoupras A, Sbampato V, Dayer R, De Marco G, Vazquez O, et al."}, "ranieri2026": {"title": "Identification and management of unrecognized femoral head epiphysiolysis: a case report", "journal": "Front Pediatr", "year": "2026", "epub": "2026-06-10", "vol": "14", "pages": "1790075", "doi": "10.3389/fped.2026.1790075", "pmid": "42358571", "pmc": "PMC13290694", "authorsStr": "Ranieri M, Rizzo M, Lotito FM, Aprato A, Alessio M, Discepolo V, et al."}, "bhatia2026": {"title": "Current concepts review on the limping child", "journal": "Curr Opin Pediatr", "year": "2026", "epub": "2026-10-27", "doi": "10.1097/MOP.0000000000001625", "pmid": "42944610", "authorsStr": "Bhatia J, Vicioso C, Doyle SM"}, "afaque2026": {"title": "Low Kocher-Caird Scores High Clinical Suspicion: A Diagnostic Dilemma in Pediatric Hip Septic arthritis", "journal": "J Orthop Case Rep", "year": "2026", "vol": "16", "issue": "9", "pages": "522-530", "doi": "10.13107/jocr.2026.v16.i09.8142", "pmid": "42713092", "pmc": "PMC13552155", "authorsStr": "Afaque SF, Agrawal U, Verma V"}, "rogie2026": {"title": "Reassessing the Kocher Criteria: A Prospective Evaluation of Diagnostic Performance in Pediatric Musculoskeletal Infection", "journal": "J Pediatr Orthop", "year": "2026", "epub": "2026-09-28", "doi": "10.1097/BPO.0000000000003481", "pmid": "42802642", "authorsStr": "Rogie GA, Barksdale EM, Braithwaite HC, Mo M, Clever D, Enata N, et al."}, "smadi2026": {"title": "LongTerm Outcomes of Suspected Transient Synovitis of the Hip in NonAspirated Patients", "journal": "J Pediatr Orthop", "year": "2026", "epub": "2026-10-05", "doi": "10.1097/BPO.0000000000003494", "pmid": "42830576", "authorsStr": "Smadi Z, Burnett J, Varghese J, Balaji S, Rosenfeld S"}, "jones2025": {"title": "Diagnostic Accuracy of Point-of-Care Ultrasound for Hip Effusion: A Multicenter Diagnostic Study", "journal": "Ann Emerg Med", "year": "2025", "epub": "2025-06-07", "vol": "86", "issue": "6", "pages": "566-575", "doi": "10.1016/j.annemergmed.2025.04.033", "pmid": "40481828", "authorsStr": "Jones RM, Malia L, Snelling PJ, Riera A, Mak W, Moote D, et al."}, "ozgezmez2025": {"title": "Evaluation of delayed diagnosis of osteoid osteoma in adolescents and young patients with hip pain", "journal": "Jt Dis Relat Surg", "year": "2025", "epub": "2025-07-07", "vol": "36", "issue": "3", "pages": "640-647", "doi": "10.52312/jdrs.2025.2199", "pmid": "40783996", "pmc": "PMC12456355", "authorsStr": "Özgezmez FT, Karabıçak GÖ, Çullu E"}, "haque2025": {"title": "Efficacy of vitamin D therapy for resolution of pain symptoms in growing pain children with hypovitaminosis D", "journal": "Int J Contemp Pediatr", "year": "2025", "epub": "2025-04-24", "vol": "12", "issue": "5", "pages": "773-778", "doi": "10.18203/2349-3291.ijcp20251097", "authorsStr": "Haque M, Ali MA, Islam MM, Islam MI, Talukder MK", "url": "https://www.ijpediatrics.com/index.php/ijcp/article/view/6643"}, "camargo2007": {"title": "Dolor músculo esquelético en adolescentes. Prevalencia y factores asociados", "journal": "Salud UIS", "year": "2007", "vol": "39", "pages": "159-168", "authorsStr": "Camargo DM, Orozco LC, Herrera E", "url": "https://dialnet.unirioja.es/descarga/articulo/8203985.pdf", "exception": "Excepción de fecha: fuente colombiana anterior a 2025, usada solo en la diapositiva de Colombia."}, "vergara2008": {"title": "Dolor de crecimiento. Revisión de la literatura", "journal": "Rev Col Or Tra", "year": "2008", "vol": "22", "issue": "3", "pages": "192-195", "authorsStr": "Vergara Amador E, Perilla R, Álvarez G", "url": "https://sccot.org/pdf/RevistaDigital/22-03-2008/07Dolor.pdf", "exception": "Excepción de fecha: fuente colombiana anterior a 2025, usada solo en la diapositiva de Colombia."}, "ibanez2017": {"title": "Manejo osteopático del dolor de miembros inferiores en niños, asociado al crecimiento", "journal": "Rev Col Med Fis Rehab", "year": "2017", "vol": "27", "issue": "1", "pages": "49-67", "doi": "10.28957/rcmfr.v27n1a4", "authorsStr": "Ibáñez Bustamante L, Hernández Arévalo A, Mejía A", "exception": "Excepción de fecha: fuente colombiana anterior a 2025, usada solo en la diapositiva de Colombia."}};
+const INTERNAL={
+  casoA:{short:'Caso de ronda · Paciente A',title:'Registro clínico institucional anonimizado: Paciente A (niña, 10 años), dolor de ingle y cojera',info:'Caso de ronda, 2026. Documento no publicado; sin identificadores.'},
+  casoB:{short:'Caso de ronda · Paciente B',title:'Registro clínico institucional anonimizado: Paciente B (niño, 3 años), dolor de cadera con derrame',info:'Caso de ronda, 2026. Documento no publicado; sin identificadores.'}
+};
+/* Datos usados por cada diapositiva: [referencia, nota] */
+const SLIDE_REFS={
+ 's-cover':[['luo2026','Marco general: meta-análisis de 37 estudios y 16 086 participantes, con búsqueda hasta octubre de 2025 (PROSPERO CRD420251150931).'],['smith2025','Scoping review (metodología JBI): 61 registros únicos, 15 criterios diagnósticos distintos para “growing pains”.']],
+ 's-question':[['luo2026','Una de las causas más comunes de dolor musculoesquelético recurrente en niños; puede causar ansiedad familiar; sin estándar de oro diagnóstico.'],['smith2025','15 criterios diagnósticos distintos; no hay guías conocidas para orientar el examen físico que excluya otras causas de dolor de miembro inferior.'],['davies2026','Delphi australiano (44 profesionales y 16 padres): “growing pains” figura entre las 10 condiciones de dolor crónico de miembro inferior priorizadas para desarrollar guías de práctica clínica.']],
+ 's-def':[['smith2025','Descripción: dolor benigno, bilateral, intermitente, en músculos o alrededor de articulaciones, sin anomalías en examen físico o laboratorio. 19 806 registros revisados, 61 incluidos; 7 992 niños con “growing pains”; 15 criterios únicos.'],['luo2026','CIE-10 lo codifica como síntoma musculoesquelético inespecífico; CIE-11 lo clasifica como “growth pain disorder” (código SE32). No hay evidencia de asociación con el crecimiento rápido.']],
+ 's-epi':[['luo2026','Prevalencias de 2,6 % a 36,9 % según edad, país, ámbito y definición; valores por grupo (5–15 años; 6–19 años varones y niñas; 4–12 años; 4–6 años) citados en la introducción. Los 37 estudios incluidos proceden de 16 países: China 8, Australia 6, Israel 5, India 3, Grecia 2, Corea 2, Turquía 2 y uno de cada uno de Bangladesh, Dinamarca, Irak, Japón, México, Pakistán, Rumania, Reino Unido y Estados Unidos.'],['rosen2025','Estimación conservadora de prevalencia de dolores de crecimiento ≈4,7 %.'],['yoganathan2025','SPI pediátrico ≈2 %; los dolores de crecimiento son un diagnóstico diferencial cercano.'],['elvira2025','916 deportistas de 8–17 años (Alicante). Dolor autorreportado 78,5 % en niños y 93,5 % en adolescentes; diagnóstico formal 32,6 % y 51,9 %; 13,7 % usaba analgésicos.']],
+ 's-col':[['luo2026','Ninguno de los 37 estudios incluidos (16 países) es colombiano y el único latinoamericano es de México. CIE-10 codifica los dolores de crecimiento como síntoma musculoesquelético inespecífico; CIE-11 sí le da código propio (SE32). El rango internacional de prevalencia es de 2,6 % a 36,9 % según edad, país, ámbito y definición.'],['casoA','En la consulta externa del Paciente A, el diagnóstico se registró con CIE-10 como dolor en miembro (M79.6).'],['camargo2007','Estudio transversal en 30 colegios de Bucaramanga: 468 escolares, edad media 13,8 ± 1,8 años, 52,6 % mujeres. Dolor musculoesquelético el día de la encuesta: 54 % (IC 95 % 47,1–61,0). Asociado a sexo femenino (RP 1,32), fumar (RP 1,33), empleo (RP 1,41) y dolor el mes anterior (RP 1,38). Mide dolor musculoesquelético, no dolores de crecimiento.'],['vergara2008','Revisión de la literatura (Universidad Nacional de Colombia): el dolor de crecimiento ocurre entre los 4 y 12 años, con dolor de piernas o muslos al final del día o nocturno, y examen físico normal. Cita prevalencias internacionales de 2,6 % a 49,4 % (36,9 % en niños de 4 a 6 años del sur de Australia) y de 10 a 20 % en otras series; no aporta cifras colombianas.'],['ibanez2017','Revisión (Universidad Nacional de Colombia): como motivo de consulta, 4–6 % de las consultas en mayores de 3 años, hasta 12 % entre 11 y 14 años; consultas por dolor musculoesquelético 1,6 % en preescolares, 5,4 % en escolares y 11,2 % en adolescentes. Las cifras provienen de literatura internacional citada por la revisión.']],
+ 's-clinical':[['luo2026','Molestia intermitente (1–2 veces por semana, rara vez diaria) con alivio completo entre episodios; episodios de 30 min a 2 h; muslos anteriores, huecos poplíteos o pantorrillas; ambos miembros; inicio vespertino o nocturno.'],['taskin2026','Edad típica 3–12 años; dolor intermitente bilateral vespertino/nocturno, sin limitación de la actividad física y con examen normal (criterios de Peterson).'],['guo2026','Ítems de los criterios usados: dolor tardío o nocturno que desaparece por la mañana; intermitente; distribución típica; bilateral; extraarticular; sin limitación ni cojera.'],['guoxq2026','201 niños de 3–12 años (67 con dolor de crecimiento, 62 controles con enfermedad, 72 sanos). Dolor vespertino/nocturno 89,55 % en el grupo con dolor de crecimiento; duración mediana 31 vs 79 min; avance de edad ósea ≥3 meses: 44,78 %, 16,13 % y 25,00 %. Dolor matutino punzante 40,32 % en controles con enfermedad.']],
+ 's-patho':[['luo2026','Meta-análisis: umbral de dolor menor y más puntos dolorosos; densidad ósea (Z) DM −0,07 (IC 95 % −0,12 a −0,02; p = 0,008); 25(OH)D DME −2,75 (−3,46 a −2,04); hipermovilidad/actividad OR 1,34 (1,14–1,58). Sin evidencia para colecho, perfusión vascular, ácidos grasos ni crecimiento rápido; perinatales, lactancia y selectividad alimentaria con evidencia limitada.'],['rosen2025','Revisión narrativa de 24 estudios: disfunción serotoninérgica, déficit de hierro y vitamina D baja comunes al SPI y a los dolores de crecimiento; antecedente familiar positivo 44,2 % vs 14,5 % (según estudio citado); algunos autores lo consideran un equivalente migrañoso.'],['jain2026','Caso-control de 2025 sin diferencia en vitamina D entre casos y controles.']],
+ 's-vitd':[['luo2026','25(OH)D menor en niños con dolores de crecimiento: DME −2,75 (IC 95 % −3,46 a −2,04). Los autores señalan heterogeneidad y tamaño muestral de los estudios incluidos.'],['jain2026','Caso-control de 6 meses (publicado en línea en octubre de 2025): 95,6 % del grupo con dolor y 93,3 % de los controles tenían 25-OHD insuficiente o deficiente; sin diferencia significativa; los niños con 25-OHD suficiente mejoraron igual que los suplementados.'],['haque2025','Estudio prospectivo abierto, sin grupo control (n = 30, criterios de Evans 2008). D3 2 000 UI/día ≥12 semanas: 70 % normalizó la 25(OH)D y 70 % quedó con dolor leve; basal 43,33 % dolor severo y 53,33 % moderado (escala de caras de Wong-Baker).']],
+ 's-risk':[['guo2026','Caso-control (sep. 2023–dic. 2024): 290 niños con dolores de crecimiento y 467 controles. Multivariado: humo de tabaco materno casi diario en el embarazo OR 1,926; latencia de sueño 30–60 min OR 3,696; fatiga extrema tras el ejercicio OR 15,554; protectores: legumbres OR 0,442 y deportes OR 0,486. Se publicó una carta al editor sobre este estudio (oct. 2026) cuyo contenido no se evaluó aquí.'],['luo2026','Hipermovilidad/actividad física OR 1,34 (IC 95 % 1,14–1,58). Antecedente familiar y estado psicosocial parecen influir.']],
+ 's-sleep':[['taskin2026','138 niños de 4–12 años (71 con dolores de crecimiento, 67 controles). CSHQ total mediano 49 vs 42 (p < 0,001); sobre el punto de corte 76,1 % vs 52,2 % (p = 0,003); GAD-7 materno sin diferencia (p = 0,531); en el grupo con dolor, mayor intensidad se asoció con mayor CSHQ (p = 0,033). Limitaciones: los niños con ferritina, 25-OH-D, B12 o folato bajos no se incluyeron en el grupo con dolor, y los controles no se estudiaron igual.'],['guo2026','Latencia de sueño de 30–60 min: OR 3,696 para dolores de crecimiento.'],['smith2025','Casi no se midieron resultados sobre sueño, actividad y participación; los dolores de crecimiento pueden alterar el sueño, la asistencia y el rendimiento escolar.']],
+ 's-dx':[['guo2026','Criterios: ≥4 de 7 ítems (dolor tardío/nocturno que desaparece por la mañana; intermitente; distribución típica; bilateral; extraarticular; sin limitación ni cojera; sin trauma, infección, sensibilidad, eritema ni edema) y examen, laboratorio e imagen normales; edad 3–18 años. Protocolo con exclusión de inflamación, enfermedad reumatológica, tumor o fractura.'],['smith2025','Criterios de Peterson en 37,8 % (14/37) de los registros, Evans y Scutter 10,8 % (4/37), Champion 8,1 % (3/37); el 43,2 % restante (16/37) se calculó por diferencia. Diagnóstico clínico sin criterios: 14/60 (23,3 %). Laboratorio más usado (25 registros): VSG 32 %, vitamina D 32 %, hemograma 28 %, fosfatasa alcalina 28 %.'],['guoxq2026','La prueba de esfuerzo estandarizada mostró patrones distintos de recuperación, pero su eficacia para diferenciar dolor de crecimiento de enfermedad orgánica es limitada.'],['luo2026','CIE-11: SE32; no hay estándar de oro diagnóstico.']],
+ 's-rls':[['rosen2025','Revisión de 24 estudios: características compartidas (inicio 3–12 años, dolor bilateral que empeora por la tarde o noche, intermitente, alivio con movimientos gruesos, sin limitación funcional) y rasgos propios del SPI (urgencia de mover las piernas, alivio con el movimiento, posible unilateralidad, otras regiones, síntomas matutinos). Conclusión: no puede establecerse una clasificación definitiva.'],['smith2025','Los dolores de crecimiento y el dolor persistente con SPI no deben considerarse intercambiables.'],['yoganathan2025','SPI pediátrico ≈2 %, con inicio hacia el final de la primera década; asociado a enfermedad renal crónica, celiaquía, migraña y esclerosis múltiple pediátrica; el diagnóstico diferencial cercano son los dolores de crecimiento.'],['silvestri2025','El diagnóstico diferencial del SPI exige historia, examen físico y laboratorio, para evitar tratamientos erróneos.']],
+ 's-flags':[['guo2026','Protocolo de exclusión y criterios típicos: sin limitación ni cojera, sin signos locales, estudios normales.'],['rosen2025','Síntomas atribuibles a otra condición, examen o laboratorio anormal, o limitación funcional (cojera, bienestar reducido) deben hacer considerar otros diagnósticos.'],['archawa2025','1 026 pacientes (646 con cáncer, 380 con AIJ): dolor nocturno OR 789,97, dolor óseo de miembros OR 24,11, dolor de espalda OR 15,58 y palidez OR 6,30 asociados a cáncer frente a AIJ. Ojo: la comparación fue contra AIJ, no contra dolores de crecimiento, y los IC son muy amplios.'],['ozgezmez2025','En dolor de cadera pediátrico por osteoma osteoide: dolor de más de 3 semanas amerita evaluación adicional; 83,3 % con dolor nocturno.'],['chen2026','Caso de osteosarcoma de un adolescente cuyo dolor de pierna persistente se atribuyó a causas benignas; el dolor óseo unilateral sin explicación requiere seguimiento estructurado.'],['abdulshafea2025','Dolor y cojera de 1 mes inicialmente etiquetados como dolores de crecimiento; la radiografía mostró lesiones líticas.'],['malvestiti2026','Leucemia aguda con dolor musculoesquelético como síntoma inicial; hemograma normal en 4 de 6.'],['lipp2026','Un hemograma normal no debe retrasar la evaluación oncológica si el cuadro clínico y la RM son sugestivos (35 % con hemograma normal al inicio).'],['afaque2026','Marcadores inflamatorios normales y un puntaje Kocher-Caird bajo no excluyen artritis séptica de cadera.'],['scott2025','Serie de 3 casos: enfermedad celiaca, síndrome compartimental crónico inducido por ejercicio y masa vertebral atribuidos inicialmente a dolores de crecimiento, por sesgo de anclaje, confirmación y verificación.']],
+ 's-mimics':[['malvestiti2026','Cohorte retrospectiva multicéntrica (2017–2024), 6 pacientes con leucemia aguda que simuló osteomielitis: todos con dolor musculoesquelético, fiebre en 50 %, hemograma normal en 4 y poco alterado en 2; mediana de 17 días (1–53) hasta el diagnóstico.'],['lipp2026','20 niños con LLA y RM previa: 7/20 (35 %) con hemograma normal al presentarse; dolor óseo persistente fue el síntoma principal en 18/20; un hemograma normal no debe retrasar la evaluación oncológica si el cuadro clínico y la RM son sugestivos.'],['ozgezmez2025','18 pacientes (mediana 12 años) con osteoma osteoide y dolor de cadera: dolor nocturno 83,3 %; cojera 61,1 %; mediana de 12 meses hasta el diagnóstico; retraso >6 meses en 72,2 %; 50 % requirió más de 5 consultas; dolor de más de 3 semanas amerita evaluación adicional.'],['ramesh2026','Niña de 11 años con 3 semanas de dolor bilateral de piernas, parestesias y fatiga; CK 995 U/L, calcio bajo (iónico 0,56 mmol/L), PTH inapropiadamente baja; en mialgias agudas o CK elevada inexplicada, medir calcio y PTH.']],
+ 's-case1':[['abdulshafea2025','Niña previamente sana con dolor y cojera en la pierna derecha de 1 mes; diagnóstico inicial de dolores de crecimiento; radiografías con múltiples lesiones líticas; RM de cuerpo entero con lesiones multifocales en ambos miembros inferiores; biopsia: hemangioma epitelioide; requiere manejo multidisciplinario.'],['scott2025','Ejemplos de cómo el sesgo cognitivo retrasa el diagnóstico cuando se atribuye el dolor a causas benignas.']],
+ 's-case2':[['ranieri2026','Varón de 16 años con cojera persistente de varios meses; estudios previos sin hallazgos; derivado a reumatología, donde se identificó una epifisiolisis femoral; tratado con técnica de Dunn modificada; resistencia a la insulina y pubertad retrasada. Considerar SCFE en adolescente con cojera o dolor de miembro inferior, aun mal localizado; la radiografía de pelvis lo diagnostica rápido.'],['abdennebi2026','63 pacientes y 71 caderas (2000–2024): retraso diagnóstico de 0–3 semanas en 11 %, 3–12 semanas en 48 % y >12 semanas en 41 %; cada semana adicional se asoció con mayor probabilidad de osteotomía (OR 1,11; IC 95 % 1,05–1,17). Asociaciones observacionales.'],['bhatia2026','Revisión del niño que cojea: sinovitis transitoria, artritis séptica, SCFE y Legg-Calvé-Perthes; en SCFE, presentaciones variables del dolor.']],
+ 's-pa':[['casoA','Historia clínica anonimizada: niña de 10 años; dolor inguinal de 2–4 meses y cojera; AINE por 7 días; radiografía con deslizamiento fisario de ~10 mm; leucocitos 9,59, PCR 2,5 mg/dL, VSG 13,75 mm/h; plan de fijación in situ. Se omiten lateralidad, fechas e identificadores.'],['abdennebi2026','El 48 % de las epifisiolisis se diagnosticó entre 3 y 12 semanas del inicio de síntomas; el 41 %, después de 12 semanas.'],['ranieri2026','Un SCFE puede retrasarse pese a una historia sugestiva; la radiografía de pelvis permite el diagnóstico rápido.'],['bhatia2026','Presentaciones variables del dolor en SCFE y en el niño que cojea.']],
+ 's-pb':[['casoB','Historia clínica anonimizada: niño de 3 años; antecedentes de sinovitis transitoria y de artritis séptica de cadera con lavado en dos tiempos; dolor de cadera irradiado al muslo tras diarrea y fiebre; ecografía con derrame; leucocitos 18 460 (clínica de origen) vs 8 460 y 8 990 en el hospital; VSG 35, 28,5 y 33,6 mm/h; PCR 4,7 mg/dL; radiografía normal; RM bajo sedación solicitada; evolución final no disponible.'],['afaque2026','35 niños con artritis séptica de cadera confirmada en cirugía pese a marcadores normales: 91,4 % con Kocher-Caird ≤1; 82,9 % con antibióticos previos; cultivos positivos 31,0 % tras antibiótico vs 83,3 % sin él. Los síntomas persistentes, el examen seriado y el derrame ecográfico deben guiar la escalada.'],['rogie2026','Cohorte prospectiva de 102 niños: con ≥2 criterios de Kocher la probabilidad de artritis séptica se estabiliza; el puntaje debe indicar RM y no un algoritmo quirúrgico definitivo; mala especificidad frente a osteomielitis.'],['jones2025','Estudio multicéntrico de 161 niños: la ecografía a pie de cama por urgenciólogos pediátricos entrenados tuvo sensibilidad 89,3 % y especificidad 99,2 % por cadera.'],['smadi2026','220 niños con sinovitis transitoria sin aspiración, seguimiento medio de 9,4 años: sin septicemias omitidas; 4,3 % con síntomas residuales; 2,6 % con recurrencia; 3,2 % con diagnóstico reumatológico o de secuelas.'],['bhatia2026','Ecografía a pie de cama junto con clínica y marcadores inflamatorios mejora la diferenciación entre sinovitis transitoria y artritis séptica.']],
+ 's-compare':[['casoA','Datos del Paciente A tomados de la historia clínica anonimizada.'],['casoB','Datos del Paciente B tomados de la historia clínica anonimizada.'],['guo2026','Siete ítems y condición de estudios normales; edad 3–18 años. La aplicación a los pacientes A y B es una lectura didáctica propia de sus registros.'],['taskin2026','Edad típica 3–12 años; dolor intermitente bilateral vespertino/nocturno; examen normal.'],['guoxq2026','Dolor vespertino/nocturno y corta duración en dolor de crecimiento frente a dolor matutino y largo en enfermedad orgánica.'],['luo2026','Manifestaciones centrales del cuadro típico: intermitente, 30 min–2 h, bilateral.']],
+ 's-manage':[['luo2026','El manejo actual consiste en confort, masaje local durante las crisis y analgesia sintomática; faltan ensayos clínicos robustos que validen la eficacia. Entre los 37 estudios: 1 ensayo aleatorizado y 2 no aleatorizados.'],['rosen2025','Tratamiento sin fármacos: estiramientos o masaje; un ensayo aleatorizado antiguo (1988) mostró utilidad de los estiramientos, que rara vez se recomiendan; no hay tratamientos específicos para equivalentes migrañosos.'],['elvira2025','Solo 13,7 % de los deportistas jóvenes con dolor usaba analgésicos.'],['haque2025','Estudio abierto sin control con vitamina D3 2 000 UI/día.'],['jain2026','Caso-control: mejoría similar con y sin suplemento en niños con 25-OHD suficiente.'],['ionita2025','647 niños de 3–14 años; 178 reevaluados; mayor alivio (hasta 81,8 %) en quienes cumplieron mejor con la plantilla y tenían carga posterior; diseño observacional.'],['ferreira2026','Piloto aleatorizado con placebo (9 niños incluidos: 5 vs 4; 8 excluidos tras evaluación ortopédica porque el diagnóstico no se confirmó): seguro, con posible eficacia analgésica.']],
+ 's-end':[['smith2025','15 criterios diagnósticos; medidas de resultado en solo 8 de 61 registros (13,1 %); falta consenso diagnóstico.'],['luo2026','De 37 estudios, 1 ensayo aleatorizado y 2 no aleatorizados; el nombre “dolor de crecimiento” no tiene respaldo en estos datos.'],['rosen2025','No se hallaron estudios longitudinales prospectivos; no existe clasificación definitiva frente al SPI.'],['davies2026','Los dolores de crecimiento figuran entre las condiciones priorizadas para guías de práctica clínica en Australia.'],['guo2026','Perfil típico bilateral, vespertino e intermitente con estudios normales.'],['abdulshafea2025','Ejemplo de dolor y cojera etiquetados como dolores de crecimiento que eran un tumor.'],['ranieri2026','SCFE debe considerarse ante cojera o dolor de miembro inferior mal localizado; la radiografía lo diagnostica rápido.'],['afaque2026','Marcadores normales y puntaje bajo no excluyen artritis séptica de cadera.'],['lipp2026','Un hemograma normal no debe retrasar la evaluación oncológica.']],
+ 's-refs':[]
+};
+</script>
+<script>
+/* ============ utilidades ============ */
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=(n,d)=>{const v=(d==null?String(n):Number(n).toFixed(d));return v.replace('.',',').replace('-','\u2212')};
+const ICONS={
+ menu:'<line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/>',
+ close:'<line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/>',
+ left:'<polyline points="15 18 9 12 15 6"/>', right:'<polyline points="9 18 15 12 9 6"/>',
+ book:'<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>',
+ ext:'<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>',
+ copy:'<rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>',
+ full:'<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>',
+ alert:'<path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>',
+ check:'<polyline points="20 6 9 17 4 12"/>',
+ help:'<circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>',
+ sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+ moon:'<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',
+ search:'<circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>',
+ link:'<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>'
+};
+const svg=(n,s=18)=>`<svg class="ic" width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[n]||''}</svg>`;
+function hydrateIcons(root=document){
+  $$('svg[data-i]',root).forEach(el=>{const n=el.dataset.i;el.outerHTML=svg(n)});
+  $$('button.iconbtn:empty').forEach(b=>{});
+}
+const toast=(m)=>{const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove('on'),1800)};
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+
+/* ============ referencias ============ */
+const slides=$$('.slide');
+const pop=$('#refpop');
+function labelFor(k){
+  if(INTERNAL[k])return INTERNAL[k].short;
+  const r=REFS[k],raw=r.authorsStr,et=raw.includes('et al.');
+  const parts=raw.split(', ').map(x=>x.replace(/,?\s*et al\.$/,'').trim()).filter(x=>x&&x!=='et al.');
+  const sn=x=>x.split(' ')[0];
+  const who=(parts.length===1&&!et)?sn(parts[0]):(parts.length===2&&!et)?`${sn(parts[0])} y ${sn(parts[1])}`:`${sn(parts[0])} et al.`;
+  return `${who}, ${r.year}`;
+}
+function citation(k){
+  if(INTERNAL[k]){const r=INTERNAL[k];return `<i>${esc(r.title)}.</i> ${esc(r.info)}`}
+  const r=REFS[k];
+  const where=(r.vol?`;${r.vol}${r.issue?`(${r.issue})`:''}${r.pages?`:${r.pages}`:''}`:(r.epub?`. Epub ${r.epub}`:''));
+  return `${esc(r.authorsStr)}. ${esc(r.title)}. <i>${esc(r.journal)}</i>. ${esc(r.year)}${where}.`+(r.exception?`<span class="xs muted" style="display:block;margin-top:4px">${esc(r.exception)}</span>`:'');
+}
+function citationText(k){const d=document.createElement('div');d.innerHTML=citation(k);let t=d.textContent;if(!INTERNAL[k]){const r=REFS[k];t+=(r.doi?` doi:${r.doi}`:'')+(r.pmid?` PMID:${r.pmid}`:'')+(!r.doi&&r.url?` ${r.url}`:'')}return t}
+function links(k){
+  if(INTERNAL[k])return '';
+  const r=REFS[k];const a=[];
+  if(r.doi)a.push(`<a class="lnk" target="_blank" rel="noopener" href="https://doi.org/${esc(r.doi)}">${svg('ext',14)} DOI</a>`);
+  if(r.pmid)a.push(`<a class="lnk" target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/${esc(r.pmid)}/">${svg('ext',14)} PubMed</a>`);
+  if(r.pmc)a.push(`<a class="lnk" target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/${esc(r.pmc)}/">${svg('ext',14)} Texto completo</a>`);
+  if(r.url)a.push(`<a class="lnk" target="_blank" rel="noopener" href="${esc(r.url)}">${svg('ext',14)} Abrir artículo</a>`);
+  return a.join('');
+}
+const allKeys=[...Object.keys(REFS).sort((a,b)=>REFS[a].authorsStr.localeCompare(REFS[b].authorsStr,'es')),...Object.keys(INTERNAL)];
+/* referencias de una diapositiva: las de su lista y las que tengan marcador de uso en el texto */
+function slideRefs(s){
+  const keys=[];(SLIDE_REFS[s.id]||[]).forEach(([k])=>keys.push(k));
+  $$('.cm',s).forEach(m=>{if(!keys.includes(m.dataset.ref))keys.push(m.dataset.ref)});
+  return keys;
+}
+/* resalta en la diapositiva la(s) parte(s) donde se usó la referencia */
+const USED_SEL='li,p,.tile,.msg,.chk,.hcard,h2,h3,td,th';
+function highlight(s,k){
+  $$('.used',s).forEach(x=>x.classList.remove('used'));
+  const blocks=[...new Set($$(`.cm[data-ref="${k}"]`,s).map(m=>m.closest(USED_SEL)||m.parentElement))];
+  blocks.forEach(b=>{
+    if(b.classList.contains('hcard')){const hc=$('.hc',b);if(hc&&hc.getAttribute('aria-expanded')!=='true')hc.click()}
+    b.classList.add('used');
+  });
+  if(blocks[0])blocks[0].scrollIntoView({block:'center',behavior:'smooth'});
+  clearTimeout(highlight._t);highlight._t=setTimeout(()=>blocks.forEach(b=>b.classList.remove('used')),3800);
+  return blocks.length;
+}
+function closePop(){
+  if(!pop||pop.hidden)return;
+  pop.hidden=true;$$('.rf[aria-expanded="true"]').forEach(b=>b.setAttribute('aria-expanded','false'));
+}
+function openPop(btn,k,s){
+  const note=((SLIDE_REFS[s.id]||[]).find(x=>x[0]===k)||[])[1]||'';
+  pop.innerHTML=`<button class="iconbtn rp-x" type="button" aria-label="Cerrar referencia">${svg('close',18)}</button><p class="rp-cit">${citation(k)}</p>${note?`<p class="rp-use"><b>Dato usado:</b> ${esc(note)}</p>`:''}<div class="links">${links(k)}</div>`;
+  pop.hidden=false;
+  $$('.rf[aria-expanded="true"]').forEach(b=>b.setAttribute('aria-expanded','false'));btn.setAttribute('aria-expanded','true');
+  const f=btn.closest('.foot').getBoundingClientRect(),b=btn.getBoundingClientRect(),w=pop.offsetWidth;
+  pop.style.bottom=(innerHeight-f.top+8)+'px';
+  pop.style.left=Math.min(Math.max(12,b.left),innerWidth-w-12)+'px';
+  $('.rp-x',pop).onclick=closePop;
+}
+document.addEventListener('click',e=>{
+  const b=e.target.closest('.rf');
+  if(b){const s=b.closest('.slide'),k=b.dataset.ref;if(b.getAttribute('aria-expanded')==='true'){closePop();return}openPop(b,k,s);highlight(s,k);return}
+  const cp=e.target.closest('[data-copy]');
+  if(cp){navigator.clipboard?.writeText(citationText(cp.dataset.copy)).then(()=>toast('Cita copiada'),()=>toast('No se pudo copiar'));return}
+  const g=e.target.closest('[data-go]');if(g){show(+g.dataset.go);return}
+  if(!e.target.closest('#refpop'))closePop();
+});
+addEventListener('resize',closePop);
+
+/* ============ navegación ============ */
+let cur=0;const N=slides.length;
+const EMBED=/[?&]embed=1/.test(location.search);
+if(EMBED)document.body.classList.add('embed');
+function show(i,push=true,silent=false){
+  i=Math.max(0,Math.min(N-1,i));closePop();
+  slides.forEach((s,j)=>{
+    const active=j===i;
+    s.classList.toggle('active',active);
+    s.classList.toggle('before',j<i);
+    s.toggleAttribute('inert',!active);
+    s.setAttribute('aria-hidden',active?'false':'true');
+  });
+  cur=i;
+  const s=slides[i];
+  $('.body',s).scrollTop=0;
+  $('#cur').textContent=i+1;$('#tot').textContent=N;
+  $('#bar').style.width=((i+1)/N*100)+'%';
+  $('#btnPrev').disabled=i===0;$('#btnNext').disabled=i===N-1;
+  $('#crumb').innerHTML=`<b>${esc(s.dataset.sec)}</b> · ${esc(s.dataset.title)}`;
+  $('#live').textContent=`Diapositiva ${i+1} de ${N}: ${s.dataset.title}`;
+  document.title=`${s.dataset.title} · Dolor nocturno idiopático en niños`;
+  if(push&&location.hash!=='#/'+(i+1))history.replaceState(null,'','#/'+(i+1));
+  $$('#mlist button').forEach(b=>b.setAttribute('aria-current',b.dataset.i==i?'true':'false'));
+  animateBars(s);
+  if(!silent&&!EMBED&&window.opener){try{window.opener.postMessage({t:'at',i},'*')}catch(e){}}
+}
+function animateBars(s){
+  $$('.hb-bar',s).forEach(b=>{const w=b.style.getPropertyValue('--w');b.style.setProperty('--w','0%');requestAnimationFrame(()=>requestAnimationFrame(()=>b.style.setProperty('--w',w)))});
+}
+const next=()=>show(cur+1), prev=()=>show(cur-1);
+$('#btnNext').onclick=next;$('#btnPrev').onclick=prev;
+window.addEventListener('hashchange',()=>{const m=location.hash.match(/#\/(\d+)/);if(m)show(+m[1]-1,false)});
+/* la vista del expositor (ventana que abrió esta o ventana madre del iframe) puede cambiar de diapositiva */
+addEventListener('message',e=>{const d=e.data;if(!d||d.t!=='go')return;if(e.source!==window.parent&&e.source!==window.opener)return;show(+d.i,true,true)});
+
+/* ============ paneles (índice) ============ */
+let lastFocus=null;
+function openPanel(el,focusSel){
+  lastFocus=document.activeElement;
+  el.hidden=false;requestAnimationFrame(()=>el.classList.add('on'));
+  $('#scrim').classList.add('on');
+  $$('.slide.active .body, .topbar, .dock').forEach(x=>x.setAttribute('aria-hidden','true'));
+  setTimeout(()=>{(focusSel?$(focusSel,el):$('[data-close]',el))?.focus()},60);
+}
+function closePanels(){
+  $$('.panel.on').forEach(p=>{p.classList.remove('on');setTimeout(()=>{if(!p.classList.contains('on'))p.hidden=true},300)});
+  $('#scrim').classList.remove('on');
+  $$('.slide.active .body, .topbar, .dock').forEach(x=>x.removeAttribute('aria-hidden'));
+  lastFocus&&lastFocus.focus&&lastFocus.focus();
+}
+$('#scrim').onclick=closePanels;
+$$('[data-close]').forEach(b=>b.onclick=closePanels);
+
+/* ============ índice ============ */
+(function buildMenu(){
+  let sec='',h='';
+  slides.forEach((s,i)=>{
+    if(s.dataset.sec!==sec){sec=s.dataset.sec;h+=`<li class="sec">${esc(sec)}</li>`}
+    h+=`<li><button data-i="${i}"><span class="k">${i+1}</span><span>${esc(s.dataset.title)}</span></button></li>`;
+  });
+  $('#mlist').innerHTML=h;
+  $('#mlist').onclick=e=>{const b=e.target.closest('button');if(!b)return;closePanels();setTimeout(()=>show(+b.dataset.i),120)};
+})();
+$('#btnMenu').innerHTML=svg('menu',20);
+$('#btnMenu').onclick=()=>openPanel($('#menu'),'#mlist button[aria-current="true"]');
+$$('[data-close]').forEach(b=>b.innerHTML=svg('close',20));
+$('#btnFull').innerHTML=svg('full',20);
+$('#logo').innerHTML=svg('moon',16);
+$('#btnFull').onclick=()=>{if(document.fullscreenElement)document.exitFullscreen();else document.documentElement.requestFullscreen?.()};
+
+/* ============ tema ============ */
+function currentTheme(){const t=document.documentElement.dataset.theme;if(t)return t;return matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}
+function applyTheme(t){document.documentElement.dataset.theme=t;$('#btnTheme').innerHTML=svg(t==='dark'?'sun':'moon',20);store.set('theme',t)}
+applyTheme(store.get('theme')||currentTheme());
+$('#btnTheme').onclick=()=>applyTheme(currentTheme()==='dark'?'light':'dark');
+
+/* ============ teclado y gestos ============ */
+document.addEventListener('keydown',e=>{
+  if(e.metaKey||e.ctrlKey||e.altKey)return;
+  const panelOpen=$$('.panel.on').length>0;
+  if(e.key==='Escape'){if(!pop.hidden){closePop();e.preventDefault();return}if(panelOpen){closePanels();e.preventDefault()}return}
+  if(panelOpen)return;
+  const tag=(e.target.tagName||'').toLowerCase();
+  if(['input','textarea','select'].includes(tag))return;
+  const onCtl=e.target.closest&&e.target.closest('button,a,summary,[role=button]');
+  switch(e.key){
+    case 'ArrowRight':case 'PageDown':next();e.preventDefault();break;
+    case 'ArrowLeft':case 'PageUp':prev();e.preventDefault();break;
+    case ' ':if(!onCtl){e.shiftKey?prev():next();e.preventDefault()}break;
+    case 'Home':show(0);e.preventDefault();break;
+    case 'End':show(N-1);e.preventDefault();break;
+    case 'm':case 'M':$('#btnMenu').click();e.preventDefault();break;
+    case 't':case 'T':$('#btnTheme').click();break;
+    case 'f':case 'F':$('#btnFull').click();break;
+  }
+});
+(function swipe(){
+  const st=$('#stage');let x0=0,y0=0,t0=0,ok=false;
+  st.addEventListener('touchstart',e=>{const t=e.touches[0];x0=t.clientX;y0=t.clientY;t0=Date.now();ok=!e.target.closest('.scrollx,input,details')},{passive:true});
+  st.addEventListener('touchend',e=>{if(!ok)return;const t=e.changedTouches[0];const dx=t.clientX-x0,dy=t.clientY-y0;
+    if(Math.abs(dx)>70&&Math.abs(dx)>Math.abs(dy)*1.6&&Date.now()-t0<700){dx<0?next():prev()}},{passive:true});
+})();
+
+/* ============ tooltip ============ */
+(function tip(){
+  const t=$('#tip');
+  const put=(el,x,y)=>{t.textContent=el.dataset.tip;t.classList.add('on');
+    const w=t.offsetWidth,h=t.offsetHeight;let L=x+14,T=y+16;
+    if(L+w>innerWidth-8)L=x-w-14;if(T+h>innerHeight-8)T=y-h-14;t.style.left=Math.max(8,L)+'px';t.style.top=Math.max(8,T)+'px'};
+  document.addEventListener('pointermove',e=>{const el=e.target.closest('[data-tip]');if(el)put(el,e.clientX,e.clientY);else t.classList.remove('on')});
+  document.addEventListener('focusin',e=>{const el=e.target.closest('[data-tip]');if(el){const r=el.getBoundingClientRect();put(el,r.left+r.width/2,r.top)}});
+  document.addEventListener('focusout',()=>t.classList.remove('on'));
+  document.addEventListener('scroll',()=>t.classList.remove('on'),true);
+})();
+
+/* ============ gráficos ============ */
+const tableView=(cols,rows)=>`<details class="tv"><summary>Ver datos en tabla</summary><table><thead><tr>${cols.map(c=>`<th scope="col">${c}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></details>`;
+const legend=items=>`<div class="legend">${items.map(i=>`<span><i style="background:var(--${i.c})"></i>${esc(i.l)}</span>`).join('')}</div>`;
+function hbars({title,sub,rows,max,unit='',dec,leg}){
+  const h=rows.map(r=>`<div class="hb-row"><div class="hb-l">${esc(r.l)}${r.s?`<small>${esc(r.s)}</small>`:''}</div><div class="hb-t"><span class="hb-bar" tabindex="0" role="img" aria-label="${esc(r.l)}: ${fmt(r.v,dec)}${unit}" style="--w:${(r.v/max*100).toFixed(2)}%;--c:var(--${r.c||'s1'})" data-tip="${esc(r.tip||(r.l+': '+fmt(r.v,dec)+unit))}"></span><b class="hb-v">${fmt(r.v,dec)}${unit}</b></div></div>`).join('');
+  return `${title?`<p class="cap">${title}</p>`:''}${sub?`<p class="sub">${sub}</p>`:''}${h}${leg?legend(leg):''}${tableView(['Categoría','Valor'],rows.map(r=>[esc(r.l),fmt(r.v,dec)+unit]))}`;
+}
+function dotplot({title,sub,rows,min,max,log,ticks,ref,refLabel,unit='',leg,dec}){
+  const P=v=>{const a=log?Math.log(v):v,lo=log?Math.log(min):min,hi=log?Math.log(max):max;return Math.max(0,Math.min(100,(a-lo)/(hi-lo)*100))};
+  const h=rows.map(r=>{
+    const p=P(r.v),right=p<70;
+    const ci=(r.lo!=null)?`<span class="dp-ci" style="left:${P(r.lo)}%;width:${P(r.hi)-P(r.lo)}%;--c:var(--${r.c||'s1'})"></span>`:'';
+    const posL=right?`left:calc(${(r.hi!=null?P(r.hi):p)}% + ${r.hi!=null?10:14}px)`:`right:calc(${100-(r.lo!=null?P(r.lo):p)}% + ${r.lo!=null?10:14}px)`;
+    return `<div class="dp-row"><div class="dp-l">${esc(r.l)}</div><div class="dp-t">${ci}<span class="dp-dot" tabindex="0" role="img" aria-label="${esc(r.l)}: ${fmt(r.v,dec)}${unit}" style="left:${p}%;--c:var(--${r.c||'s1'})" data-tip="${esc(r.tip||(r.l+': '+fmt(r.v,dec)+unit))}"></span><span class="dp-v" style="${posL}">${fmt(r.v,dec)}${unit}</span></div></div>`}).join('');
+  const rh=rows.length*(26+11)+8;
+  const ax=`<div class="dp-axis"><div></div><div class="axi">${ticks.map(t=>`<span style="left:${P(t)}%">${fmt(t)}</span>`).join('')}${ref!=null?`<i class="dp-refline" style="left:${P(ref)}%;height:${rh}px"></i>`:''}</div></div>`;
+  return `${title?`<p class="cap">${title}</p>`:''}${sub?`<p class="sub">${sub}</p>`:''}<div class="dp-wrap">${h}${ax}</div>${refLabel?`<p class="xs muted" style="margin:6px 0 0">${refLabel}</p>`:''}${leg?legend(leg):''}${tableView(['Categoría','Valor','Intervalo'],rows.map(r=>[esc(r.l),fmt(r.v,dec)+unit,r.lo!=null?`${fmt(r.lo,dec)} a ${fmt(r.hi,dec)}`:'—']))}`;
+}
+function segbar({title,sub,parts,leg,unit='%'}){
+  const tot=parts.reduce((a,p)=>a+p.v,0);
+  const bar=`<div class="seg" role="img" aria-label="${esc(title||'Distribución')}">${parts.map(p=>`<span tabindex="0" style="flex:${p.v};background:var(${p.bg});color:${p.fg||'#fff'}" data-tip="${esc(p.l+': '+p.v+unit)}">${p.v} ${unit}</span>`).join('')}</div>`;
+  const lg=`<div class="legend">${parts.map(p=>`<span><i style="background:var(${p.bg})"></i>${esc(p.l)}</span>`).join('')}</div>`;
+  return `${title?`<p class="cap">${title}</p>`:''}${sub?`<p class="sub">${sub}</p>`:''}${bar}${lg}${tableView(['Tramo','Porcentaje'],parts.map(p=>[esc(p.l),p.v+unit]))}`;
+}
+function spark({title,unit,pts,ymin,ymax,band,names}){
+  const W=250,H=130,L=14,R=14,T=22,B=30;const xs=pts.map((_,i)=>L+i*(W-L-R)/(pts.length-1));
+  const Y=v=>T+(1-(v-ymin)/(ymax-ymin))*(H-T-B);
+  const d=pts.map((p,i)=>`${i?'L':'M'}${xs[i]},${Y(p.y)}`).join(' ');
+  const bandEl=band?`<rect class="band" x="${L}" width="${W-L-R}" y="${Y(band[1])}" height="${Y(band[0])-Y(band[1])}"/>`:'';
+  const dots=pts.map((p,i)=>`<circle class="pt" tabindex="0" role="img" aria-label="${esc(p.x)}: ${fmt(p.y)} ${unit}" cx="${xs[i]}" cy="${Y(p.y)}" r="5" data-tip="${esc(p.x+': '+fmt(p.y)+' '+unit)}"/><text x="${xs[i]}" y="${Y(p.y)-11}" text-anchor="middle">${fmt(p.y)}</text><text x="${xs[i]}" y="${H-10}" text-anchor="middle" style="fill:var(--ink3);font-size:10px">${esc(p.x)}</text>`).join('');
+  return `<p class="cap">${title}</p><svg class="spark" viewBox="0 0 ${W} ${H}" role="group" aria-label="${esc(title)}">${bandEl}<line class="ax" x1="${L}" x2="${W-R}" y1="${H-B}" y2="${H-B}"/><path class="ln" d="${d}"/>${dots}</svg>${band?`<p class="xs muted" style="margin:2px 0 0">Banda: valor de referencia ${fmt(band[0])}–${fmt(band[1])}</p>`:''}${tableView(['Momento','Valor'],pts.map(p=>[esc(p.x),fmt(p.y)+' '+unit]))}`;
+}
+const CHARTS={
+ prev:()=>dotplot({title:'Prevalencia reportada según grupo de estudio',sub:'Puntos de la introducción del meta-análisis de 2026',min:0,max:40,ticks:[0,10,20,30,40],unit:' %',dec:1,
+   rows:[{l:'Escolares 5–15 años',v:2.6},{l:'Varones 6–19 años',v:12.5},{l:'Niñas 6–19 años',v:18.4},{l:'Niños 4–12 años',v:24.5},{l:'Niños 4–6 años',v:36.9}]}),
+ countries:()=>hbars({title:'Estudios del meta-análisis de 2026 según país',sub:'37 estudios de 16 países; ninguno de Colombia',rows:[{l:'China',v:8},{l:'Australia',v:6},{l:'Israel',v:5},{l:'India',v:3},{l:'Grecia',v:2},{l:'Corea',v:2},{l:'Turquía',v:2},{l:'9 países con un estudio cada uno',v:9,c:'ink3',s:'Bangladesh, Dinamarca, Irak, Japón, México, Pakistán, Rumania, Reino Unido, EE. UU.'}],max:10,dec:0,unit:' estudios'}),
+ dur:()=>hbars({title:'Duración mediana del episodio (min)',rows:[{l:'Dolor de crecimiento',v:31,c:'s1'},{l:'Controles con enfermedad',v:79,c:'s2'}],max:90,dec:0,unit:' min'}),
+ boneage:()=>hbars({title:'Avance de edad ósea ≥3 meses (%)',rows:[{l:'Dolor de crecimiento',v:44.78,c:'s1'},{l:'Controles con enfermedad',v:16.13,c:'s2'},{l:'Controles sanos',v:25.0,c:'s3'}],max:60,dec:1,unit:' %',leg:[{c:'s1',l:'Dolor de crecimiento'},{c:'s2',l:'Controles con enfermedad'},{c:'s3',l:'Controles sanos'}]}),
+ vdforest:()=>dotplot({title:'Diferencia estandarizada en 25(OH)D',sub:'Niños con dolor − controles; cero = sin diferencia',min:-4,max:1,ticks:[-4,-3,-2,-1,0,1],ref:0,dec:2,
+   rows:[{l:'Meta-análisis',v:-2.75,lo:-3.46,hi:-2.04,tip:'DME −2,75 (IC 95 % −3,46 a −2,04)'}]}),
+ vdcc:()=>hbars({title:'Con 25-OHD insuficiente o deficiente',rows:[{l:'Con dolor',v:95.6,c:'s1'},{l:'Controles',v:93.3,c:'s2'}],max:100,dec:1,unit:' %',leg:[{c:'s1',l:'Niños con dolores de crecimiento'},{c:'s2',l:'Controles sanos'}]}),
+ or:()=>dotplot({title:'Razón de momios (OR) de cada factor',sub:'Escala logarítmica; 1 = sin asociación',min:0.25,max:20,log:true,ticks:[0.25,0.5,1,2,4,8,16],ref:1,dec:2,
+   refLabel:'Naranja: aumenta la probabilidad · Azul: protector. Filas 1–3 y 5–6: estudio caso-control de 2026; fila 4: meta-análisis de 2026 (con IC 95 %).',
+   rows:[{l:'Fatiga extrema tras el ejercicio',v:15.55,c:'s2'},{l:'Latencia de sueño de 30–60 min',v:3.70,c:'s2'},{l:'Humo de tabaco materno casi diario (embarazo)',v:1.93,c:'s2'},{l:'Hipermovilidad o actividad física',v:1.34,lo:1.14,hi:1.58,c:'s2'},{l:'Preferencia por los deportes',v:0.49,c:'s1'},{l:'Preferencia por las legumbres',v:0.44,c:'s1'}]}),
+ sleep:()=>hbars({title:'Sobre el punto de corte de problemas de sueño (CSHQ)',rows:[{l:'Con dolores de crecimiento',v:76.1,c:'s1',s:'n = 71'},{l:'Controles sanos',v:52.2,c:'s2',s:'n = 67'}],max:100,dec:1,unit:' %',leg:[{c:'s1',l:'Con dolores de crecimiento'},{c:'s2',l:'Controles sanos'}]}),
+ criteria:()=>hbars({title:'Criterios diagnósticos usados en los estudios',sub:'% de 37 registros con criterios',rows:[{l:'Peterson',v:37.8,s:'14 registros'},{l:'Evans y Scutter',v:10.8,s:'4 registros'},{l:'Champion',v:8.1,s:'3 registros'},{l:'Otras variantes o criterios propios',v:43.2,c:'s2',s:'16 registros (por diferencia)'}],max:50,dec:1,unit:' %'}),
+ labs:()=>hbars({title:'Pruebas de laboratorio más reportadas',sub:'% de 25 registros que usaron laboratorio',rows:[{l:'VSG',v:32},{l:'Vitamina D',v:32},{l:'Hemograma',v:28},{l:'Fosfatasa alcalina',v:28}],max:50,dec:0,unit:' %'}),
+ delay:()=>segbar({title:'Retraso diagnóstico en epifisiolisis (71 caderas)',parts:[{l:'0–3 semanas',v:11,bg:'--o300',fg:'#0b0b0b'},{l:'3–12 semanas',v:48,bg:'--o450'},{l:'Más de 12 semanas',v:41,bg:'--o600'}]}),
+ wbc:()=>spark({title:'Leucocitos (×10³/µL)',unit:'×10³/µL',ymin:0,ymax:22,band:[4.5,10],pts:[{x:'Origen',y:18.46},{x:'Ingreso',y:8.46},{x:'Día 3',y:8.99}]}),
+ esr:()=>spark({title:'VSG (mm/h)',unit:'mm/h',ymin:0,ymax:45,pts:[{x:'Origen',y:35},{x:'Ingreso',y:28.5},{x:'Día 3',y:33.6}]})
+};
+$$('[data-chart]').forEach(el=>{el.innerHTML=CHARTS[el.dataset.chart]()});
+
+/* ============ interacciones por diapositiva ============ */
+// tarjetas de fisiopatología
+(function(){
+  const cards=$$('#hcards .hcard');
+  cards.forEach(c=>$('.hc',c).addEventListener('click',()=>{const b=$('.hc',c),o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',!o);$('.more',c).hidden=o;c.classList.toggle('open',!o);$('.go',c).textContent=o?'Ver más':'Ver menos'}));
+})();
+// SPI: solo diferencias
+$('#btnDiff').onclick=function(){const on=this.getAttribute('aria-pressed')!=='true';this.setAttribute('aria-pressed',on);$('#rlsWrap').classList.toggle('only-diff',on)};
+$('#btnDiff2').onclick=function(){const on=this.getAttribute('aria-pressed')!=='true';this.setAttribute('aria-pressed',on);$('#cmpWrap').classList.toggle('only-diff',on)};
+// banderas rojas
+(function(){
+  const F=[
+    ['Dolor unilateral o localizado en un punto o hueso','Un dolor óseo unilateral persistente se atribuyó a causas benignas en un caso de osteosarcoma; los dolores de crecimiento son bilaterales.',['chen2026','guo2026']],
+    ['Cojera, marcha antálgica o limitación funcional','Los criterios exigen ausencia de limitación y cojera; el caso publicado con tumor óseo tenía cojera.',['rosen2025','abdulshafea2025']],
+    ['Dolor diurno, mecánico o que empeora al apoyar','El patrón típico es vespertino/nocturno y se resuelve por la mañana.',['guo2026']],
+    ['Dolor persistente o progresivo (más de 3 semanas)','En dolor de cadera pediátrico, más de 3 semanas amerita evaluación adicional.',['ozgezmez2025']],
+    ['Dolor nocturno que despierta, con palidez, fiebre o síntomas generales','En una cohorte, el dolor nocturno y la palidez se asociaron a cáncer frente a AIJ (no frente a dolores de crecimiento).',['archawa2025','malvestiti2026']],
+    ['Examen anormal: hinchazón, calor, eritema, derrame, menor movilidad o masa','El examen debe ser normal y sin signos locales de inflamación.',['guo2026','rosen2025']],
+    ['Laboratorio o imagen anormales, o síntomas persistentes con hemograma normal','Un hemograma normal no descarta leucemia ni artritis séptica.',['lipp2026','afaque2026']]
+  ];
+  const wrap=$('#flags');
+  wrap.innerHTML=F.map((f,i)=>`<label class="chk"><input type="checkbox" data-i="${i}"><span><b>${f[0]}</b><span class="d">${f[1]} ${f[2].map(k=>`<i class="cm" data-ref="${k}"></i>`).join('')}</span></span></label>`).join('');
+  const msgs=[
+   'Sin banderas marcadas. Aun así, el diagnóstico exige el perfil típico completo (≥4 de 7 ítems y examen y estudios normales).',
+   'Una bandera: no asumas benignidad. Reexamina, amplía la historia y define estudios dirigidos.',
+   'Dos o más banderas: es poco probable que sea dolor idiopático benigno. Estudio dirigido y valoración por especialista.'
+  ];
+  const upd=()=>{
+    const n=$$('input:checked',wrap).length;
+    $('#flagN').textContent=n;
+    $$('.chk',wrap).forEach(c=>c.classList.toggle('on',$('input',c).checked));
+    const lvl=n===0?0:n===1?1:2;
+    $('#flagMsg').textContent=msgs[lvl];
+    const segs=['m1','m2','m3'].map(id=>$('#'+id));segs.forEach(s=>s.className='');
+    if(n===1)segs[0].className='on2';
+    else if(n>=2){segs[0].className=segs[1].className='on3';if(n>=3)segs[2].className='on3'}
+  };
+  wrap.addEventListener('change',upd);
+  $('#flagReset').onclick=()=>{$$('input',wrap).forEach(i=>i.checked=false);upd()};
+  upd();
+})();
+// matriz de criterios
+(function(){
+  const M=[
+   ['1. Dolor tardío o nocturno que desaparece por la mañana','na','No documentado','na','No documentado'],
+   ['2. Intermitente, con días sin dolor','no','Dolor diario','na','No documentado'],
+   ['3. Distribución típica (muslo, pantorrilla, hueco poplíteo)','no','Ingle / cadera','no','Cadera irradiada'],
+   ['4. Bilateral','no','Unilateral','no','Unilateral'],
+   ['5. Fuera de la región articular','no','Articulación de la cadera','no','Articulación de la cadera'],
+   ['6. Sin limitación de la movilidad ni cojera','no','Cojera y limitación','no','Marcha antálgica'],
+   ['7. Sin trauma, infección, sensibilidad ni edema','na','Sin signos al inicio; luego dolor a la palpación','no','Derrame y antecedente de infección articular'],
+   ['Estudios (examen, laboratorio, imagen) normales','no','Radiografía anormal','no','Ecografía con derrame']
+  ];
+  const ic={ok:['check','Cumple'],no:['close','No cumple'],na:['help','Sin dato']};
+  const cell=(k,t,ref)=>`<td><span class="mx ${k}"><span class="dot">${svg(ic[k][0],13)}</span><span><span class="vh">${ic[k][1]}: </span>${t}</span></span><i class="cm" data-ref="${ref}"></i></td>`;
+  $('#matrix').innerHTML=M.map(r=>`<tr><th>${r[0]}<i class="cm" data-ref="guo2026"></i></th>${cell(r[1],r[2],'casoA')}${cell(r[3],r[4],'casoB')}</tr>`).join('');
+})();
+// marcadores de uso en la tabla comparativa
+(function(){
+  const typ=[['taskin2026'],['luo2026','guo2026'],['guo2026','luo2026','guoxq2026'],['luo2026','guoxq2026'],['guo2026'],['taskin2026'],['guo2026'],['guoxq2026'],[]];
+  $$('#cmpWrap tbody tr').forEach((tr,i)=>{
+    const td=$$('td',tr);
+    (typ[i]||[]).forEach(k=>td[0].insertAdjacentHTML('beforeend',`<i class="cm" data-ref="${k}"></i>`));
+    td[1]&&td[1].insertAdjacentHTML('beforeend','<i class="cm" data-ref="casoA"></i>');
+    td[2]&&td[2].insertAdjacentHTML('beforeend','<i class="cm" data-ref="casoB"></i>');
+  });
+})();
+// referencias completas
+(function(){
+  const L=$('#reflist');
+  const item=k=>{
+    const used=slides.map((s,i)=>slideRefs(s).includes(k)?i+1:null).filter(Boolean);
+    return `<article class="rcard" id="ref-${k}"><p class="cit">${citation(k)}</p><p class="xs muted" style="margin:8px 0 0">Se usa en las diapositivas: ${used.map(n=>`<button class="lnk btn goto" data-go="${n-1}" aria-label="Ir a la diapositiva ${n}">${n}</button>`).join(' ')}</p><div class="links">${links(k)}<button class="lnk btn" data-copy="${k}">${svg('copy',14)} Copiar cita</button></div></article>`;
+  };
+  L.innerHTML=allKeys.map(item).join('');
+  const q=$('#refSearch');
+  q.addEventListener('input',()=>{const t=q.value.trim().toLowerCase();$$('.rcard',L).forEach(c=>{c.hidden=!!t&&!c.textContent.toLowerCase().includes(t)})});
+  $('#copyAll').onclick=()=>{navigator.clipboard?.writeText(allKeys.map(citationText).join('\n\n')).then(()=>toast('Todas las citas copiadas'),()=>toast('No se pudo copiar'))};
+})();
+
+/* ============ pie de cada diapositiva: lista de referencias ============ */
+slides.forEach(s=>{
+  const keys=slideRefs(s);
+  const f=document.createElement('div');f.className='foot';
+  f.innerHTML=`<div class="src"><span class="lab">Referencias:</span>${keys.map(k=>`<button class="rf" type="button" data-ref="${k}" aria-expanded="false" aria-haspopup="dialog">${esc(labelFor(k))}</button>`).join('')||'<span>Lista completa de referencias</span>'}</div>`;
+  s.appendChild(f);
+});
+hydrateIcons();
+$('#tot').textContent=N;
+const m=location.hash.match(/#\/(\d+)/);
+show(m?+m[1]-1:0,false);
+</script>
+</body>
+</html>

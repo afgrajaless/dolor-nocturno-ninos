@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Vista del expositor · Dolor nocturno idiopático en niños</title>
+<style>
+:root{
+  --bg:#f4f4f1; --surface:#fcfcfb; --surface2:#f6f6f3; --ink:#0b0b0b; --ink2:#52514e; --ink3:#6b6a65;
+  --line:#e1e0d9; --accent:#256abf; --accent-soft:#e8f0fb; --accent-line:#b7d3f6; --btn-bg:#256abf; --btn-ink:#fff;
+  --good:#0ca30c; --good-ink:#006300; --good-soft:#e5f5e5; --crit:#d03b3b; --crit-ink:#a52626; --crit-soft:#fbeaea;
+  --warn:#fab219; --warn-soft:#fdf3da; --warn-ink:#7a5200; --shadow:0 1px 2px rgba(11,11,11,.06),0 10px 30px rgba(11,11,11,.06);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:where(:not([data-theme="light"])){
+    --bg:#0d0d0d; --surface:#1a1a19; --surface2:#222221; --ink:#f0efec; --ink2:#c3c2b7; --ink3:#a3a29a; --line:#2c2c2a;
+    --accent:#6da7ec; --accent-soft:#152338; --accent-line:#1f3a5c; --btn-bg:#3987e5; --btn-ink:#06121f;
+    --good-ink:#0ca30c; --good-soft:#112411; --crit:#e66767; --crit-ink:#f0a0a0; --crit-soft:#2b1818; --warn-soft:#2c2412; --warn-ink:#f1c35a;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 30px rgba(0,0,0,.35); color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0d0d0d; --surface:#1a1a19; --surface2:#222221; --ink:#f0efec; --ink2:#c3c2b7; --ink3:#a3a29a; --line:#2c2c2a;
+  --accent:#6da7ec; --accent-soft:#152338; --accent-line:#1f3a5c; --btn-bg:#3987e5; --btn-ink:#06121f;
+  --good-ink:#0ca30c; --good-soft:#112411; --crit:#e66767; --crit-ink:#f0a0a0; --crit-soft:#2b1818; --warn-soft:#2c2412; --warn-ink:#f1c35a;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 30px rgba(0,0,0,.35); color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:8px}
+.top{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:10px 16px;background:color-mix(in srgb,var(--surface) 94%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.brand .logo{width:30px;height:30px;border-radius:9px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex:none}
+.brand b{font-size:1rem}
+.brand .sec{color:var(--ink3);font-size:.88rem}
+.timer{display:flex;align-items:center;gap:10px;margin-left:auto;font-variant-numeric:tabular-nums}
+.timer .el{font-size:1.6rem;font-weight:800;letter-spacing:-.02em}
+.timer .pl{color:var(--ink3);font-size:.9rem}
+.status{font-size:.82rem;font-weight:700;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:var(--surface2);color:var(--ink2);white-space:nowrap}
+.status.ok{background:var(--good-soft);color:var(--good-ink);border-color:color-mix(in srgb,var(--good) 35%,var(--line))}
+.status.late{background:var(--crit-soft);color:var(--crit-ink);border-color:color-mix(in srgb,var(--crit) 40%,var(--line))}
+.actions{display:flex;flex-wrap:wrap;gap:8px}
+.btn{height:38px;padding:0 14px;border-radius:10px;border:1px solid var(--line);background:var(--surface);font-weight:650;font-size:.9rem;display:inline-flex;align-items:center;gap:8px}
+.btn:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.btn.primary{background:var(--btn-bg);color:var(--btn-ink);border-color:transparent}
+.btn.primary:hover:not(:disabled){filter:brightness(1.08);color:var(--btn-ink)}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+main{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:16px;padding:16px;max-width:1500px;margin:0 auto}
+@media (max-width:980px){main{grid-template-columns:1fr}}
+.left,.right{display:flex;flex-direction:column;gap:14px;min-width:0}
+.frame{position:relative;width:100%;aspect-ratio:16/9;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+.frame iframe{position:absolute;top:0;left:0;width:1280px;height:720px;border:0;transform-origin:0 0;background:var(--surface)}
+.navrow{display:flex;align-items:center;gap:12px}
+.navrow .count{flex:1;text-align:center;min-width:0;color:var(--ink2);font-size:.95rem}
+.navrow .count b{color:var(--ink)}
+.navrow .count .t{display:block;font-size:.82rem;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar{position:relative;height:10px;border-radius:6px;background:var(--line);overflow:hidden}
+.bar i{position:absolute;left:0;top:0;bottom:0;display:block}
+.bar .plan{background:color-mix(in srgb,var(--accent) 28%,transparent)}
+.bar .real{background:var(--accent);height:5px;top:auto}
+.barlbl{display:flex;justify-content:space-between;font-size:.76rem;color:var(--ink3);margin-top:4px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
+.card .hd{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+.card h2{margin:0;font-size:1.05rem;letter-spacing:-.01em}
+.fs{display:flex;gap:6px}
+.fs .btn{height:32px;padding:0 10px}
+#sayText p{margin:0 0 .75em}
+#sayText p:last-child{margin-bottom:0}
+.cue{border:2px solid var(--accent);background:var(--accent-soft);border-radius:14px;padding:14px 16px}
+.kicker{font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.cue p{margin:0;font-size:1.12rem;font-weight:650}
+.act{border:1px dashed var(--warn);background:var(--warn-soft);border-radius:14px;padding:12px 16px}
+.act .kicker{color:var(--warn-ink)}
+.act p{margin:0;color:var(--ink)}
+.meta{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:.92rem;color:var(--ink2)}
+.meta b{color:var(--ink);font-variant-numeric:tabular-nums}
+.next{margin-top:8px;font-size:.92rem;color:var(--ink2)}
+.chips{padding:0 16px 24px;max-width:1500px;margin:0 auto}
+.chips .grp{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:8px 0}
+.chips .gl{font-size:.74rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--ink3);min-width:170px}
+.chip{min-width:36px;height:34px;padding:0 10px;border-radius:9px;border:1px solid var(--line);background:var(--surface);font-weight:700;font-size:.88rem;font-variant-numeric:tabular-nums}
+.chip:hover{border-color:var(--accent);color:var(--accent)}
+.chip[aria-current="true"]{background:var(--btn-bg);color:var(--btn-ink);border-color:transparent}
+.help{max-width:1500px;margin:0 auto;padding:0 16px 28px;color:var(--ink3);font-size:.86rem}
+.help ol{margin:6px 0 0;padding-left:20px}
+kbd{font:600 .76rem ui-monospace,Menlo,monospace;padding:2px 6px;border-radius:6px;border:1px solid var(--line);background:var(--surface2)}
+.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:999px;font-size:.88rem;opacity:0;transition:.25s;z-index:50;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media print{.top,.chips,.help,.navrow,.actions{display:none}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></span><div><b>Vista del expositor</b><div class="sec" id="secLabel">&nbsp;</div></div></div>
+  <div class="timer" role="timer" aria-live="off"><span class="el" id="elapsed">0:00</span><span class="pl">de <span id="planTotal">15:55</span> previstos</span><span class="status" id="status">Sin iniciar</span></div>
+  <div class="actions">
+    <button class="btn primary" id="btnTimer" type="button">Iniciar cronómetro</button>
+    <button class="btn" id="btnReset" type="button">Reiniciar</button>
+    <button class="btn" id="btnAud" type="button">Abrir ventana del público</button>
+    <button class="btn" id="btnTheme" type="button" aria-label="Cambiar entre tema claro y oscuro">Tema</button>
+  </div>
+</header>
+
+<main>
+  <section class="left" aria-label="Diapositiva actual">
+    <div class="frame" id="frame"><iframe id="pv" title="Vista previa de la diapositiva actual" src="index.html?embed=1#/1"></iframe></div>
+    <div class="navrow">
+      <button class="btn" id="prev" type="button">← Anterior</button>
+      <div class="count"><b id="n">1</b> / <span id="N">22</span><span class="t" id="ttl"></span></div>
+      <button class="btn primary" id="next" type="button">Siguiente →</button>
+    </div>
+    <div>
+      <div class="bar" aria-hidden="true"><i class="plan" id="barPlan"></i><i class="real" id="barReal"></i></div>
+      <div class="barlbl"><span>Plan hasta esta diapositiva</span><span>Tiempo real</span></div>
+    </div>
+  </section>
+
+  <section class="right" aria-label="Guion">
+    <article class="card">
+      <div class="hd"><h2>Qué decir</h2><div class="fs"><button class="btn" id="fsm" type="button" aria-label="Letra más pequeña">A−</button><button class="btn" id="fsp" type="button" aria-label="Letra más grande">A+</button></div></div>
+      <div id="sayText"></div>
+    </article>
+    <article class="cue"><div class="kicker">Pasa a la siguiente cuando…</div><p id="cueText"></p></article>
+    <article class="act" id="actCard" hidden><div class="kicker">Acción en la diapositiva</div><p id="actText"></p></article>
+    <article class="card">
+      <div class="meta"><span>Tiempo sugerido: <b id="slideTime"></b></span><span>Acumulado previsto: <b id="cum"></b></span></div>
+      <div class="next">Siguiente: <b id="nextTitle"></b></div>
+    </article>
+  </section>
+</main>
+
+<nav class="chips" id="chips" aria-label="Ir a una diapositiva"></nav>
+
+<div class="help">
+  <b>Cómo usarla</b>
+  <ol>
+    <li>Pulsa <b>Abrir ventana del público</b> y proyecta esa ventana (en ella, <kbd>F</kbd> para pantalla completa).</li>
+    <li>Cambia de diapositiva desde aquí con <kbd>←</kbd> <kbd>→</kbd> o <kbd>Espacio</kbd>; la ventana del público se sincroniza. También funciona al revés.</li>
+    <li><kbd>P</kbd> inicia o pausa el cronómetro (arranca solo al pasar de la portada). <kbd>+</kbd> y <kbd>−</kbd> cambian el tamaño del guion.</li>
+  </ol>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* Guion por diapositiva. El orden y los títulos coinciden con index.html. s = segundos sugeridos. */
+const SLIDES=[
+ {t:'Portada',sec:'Inicio',s:10,
+  say:['Buenos días. Hoy voy a hablar del dolor nocturno idiopático de miembros inferiores en niños, lo que muchos conocen como «dolores de crecimiento».'],
+  cue:'Termines de presentar el tema.'},
+ {t:'La pregunta clínica',sec:'Introducción',s:40,
+  say:['Empiezo con una pregunta práctica: un niño llega con dolor de piernas por la noche, ¿es benigno o hay algo más?','Es una de las causas más comunes de dolor musculoesquelético recurrente en niños. Pero se diagnostica por exclusión, sin estándar de oro, y la literatura usa 15 criterios distintos.','Ni siquiera hay guías: un panel Delphi australiano lo priorizó entre las diez condiciones que más las necesitan.'],
+  cue:'Hayas dicho que no existen guías.'},
+ {t:'Definición y nomenclatura',sec:'Introducción',s:40,
+  say:['Lo definimos como dolor benigno, bilateral e intermitente en miembros inferiores, sin hallazgos en el examen ni en el laboratorio.','Ojo con el nombre: no hay evidencia de que esté asociado al crecimiento rápido. En la CIE-10 no tiene código propio; la CIE-11 sí lo reconoce, con el código SE32.','Y el problema de fondo: una revisión de 61 registros encontró 15 criterios diagnósticos distintos.'],
+  cue:'Menciones los 15 criterios distintos.'},
+ {t:'Epidemiología en el mundo',sec:'Epidemiología',s:45,
+  say:['La prevalencia reportada va del 2,6 % al 36,9 %. Esa dispersión es el mensaje: depende de la edad, el país, el ámbito y, sobre todo, de la definición.','A la derecha, de dónde vienen los datos: 37 estudios de 16 países, sobre todo China, Australia e Israel. Ninguno es colombiano.','En deportistas jóvenes en España, entre el 78 y el 93 % reportó dolor musculoesquelético, pero solo el 13,7 % usaba analgésicos.'],
+  cue:'Digas que ninguno de los estudios es colombiano: eso abre la siguiente.'},
+ {t:'Epidemiología en Colombia',sec:'Epidemiología',s:40,
+  say:['En Colombia no hay cifras propias de dolores de crecimiento. Ninguno de los 37 estudios es colombiano y mi búsqueda en PubMed de 2025 y 2026 no encontró estudios.','Como excepción de fecha, usé tres fuentes colombianas anteriores a 2025: un estudio de Bucaramanga con 54 % de dolor musculoesquelético en adolescentes, que no es dolor de crecimiento, y dos revisiones nacionales que repiten cifras internacionales.','Además, la CIE-10 que usamos en las historias no tiene código propio para este cuadro.'],
+  cue:'Cierres con la oportunidad de hacer un estudio local.',
+  act:'Toca «Camargo et al., 2007» en la lista de referencias para mostrar la fuente y la parte resaltada.'},
+ {t:'Fisiopatología: hipótesis',sec:'Fisiopatología',s:50,
+  say:['¿Por qué ocurre? No lo sabemos. Hay asociaciones, no causas demostradas.','Los niños tienden a tener menor umbral del dolor, una densidad ósea algo menor, más hipermovilidad y actividad física, y antecedente familiar. También se proponen mecanismos compartidos con el síndrome de piernas inquietas, como serotonina y hierro.','Y no hay evidencia para crecimiento rápido, colecho, perfusión vascular ni ácidos grasos.'],
+  cue:'Hayas dicho que no hay evidencia del crecimiento rápido.',
+  act:'Toca las tarjetas para abrir el detalle de cada hipótesis.'},
+ {t:'Vitamina D: evidencia en conflicto',sec:'Fisiopatología',s:45,
+  say:['La vitamina D es el mejor ejemplo de evidencia en conflicto.','El meta-análisis de 2026 encuentra niveles más bajos en los niños con dolor. Pero un caso-control de 2025 no halló diferencia con los controles: casi todos tenían déficit.','Y el único estudio de tratamiento, con 30 niños, no tiene grupo control. Falta un ensayo aleatorizado.'],
+  cue:'Concluyas que falta un ensayo aleatorizado.'},
+ {t:'Factores de riesgo y protectores',sec:'Fisiopatología',s:30,
+  say:['En un caso-control con 290 niños, tardar entre 30 y 60 minutos en dormirse, la fatiga extrema tras el ejercicio y el humo de tabaco materno en el embarazo se asociaron a más riesgo; las legumbres y los deportes, a menos.','Son asociaciones observacionales con cuestionarios a los padres: no demuestran causalidad.'],
+  cue:'Recalques que asociación no es causalidad.'},
+ {t:'Cuadro clínico típico',sec:'Manifestaciones clínicas',s:50,
+  say:['El perfil típico: entre 3 y 12 años, dolor intermitente una o dos veces por semana, de 30 minutos a 2 horas, en muslos, huecos poplíteos o pantorrillas, en ambas piernas, al final del día o de noche, y con examen normal.','En un estudio con 201 niños, casi el 90 % de los que tenían dolor de crecimiento refería dolor vespertino o nocturno; el grupo con enfermedad orgánica refería más dolor matutino y punzante.'],
+  cue:'Contrastes el dolor vespertino con el matutino y punzante.'},
+ {t:'Sueño y entorno familiar',sec:'Manifestaciones clínicas',s:30,
+  say:['Estos niños duermen peor: el 76 % supera el punto de corte del cuestionario de sueño, frente al 52 % de los controles. A mayor dolor, peor sueño.','La ansiedad materna no explicó la diferencia. Por eso conviene preguntar siempre por el sueño.'],
+  cue:'Recomiendes evaluar el sueño.'},
+ {t:'Diagnóstico: clínico y sin consenso',sec:'Diagnóstico',s:50,
+  say:['El diagnóstico es clínico y por exclusión. En un estudio de 2026 se pedían al menos 4 de 7 ítems y examen, laboratorio e imagen normales.','Pero en la literatura solo el 37,8 % usó los criterios de Peterson, el 43 % usó otras variantes o criterios propios, y casi una cuarta parte diagnosticó sin criterios explícitos.','La CIE-11 le da código propio; la CIE-10 no.'],
+  cue:'Termines de explicar que no hay un criterio único.'},
+ {t:'Diferencial: síndrome de piernas inquietas',sec:'Diagnóstico',s:35,
+  say:['El gran imitador es el síndrome de piernas inquietas: comparte edad, horario y patrón intermitente.','Lo distingue la urgencia de mover las piernas, el alivio con el movimiento, que puede ser unilateral y que puede dar síntomas por la mañana. No son intercambiables, pero la evidencia aún no permite unificarlos.'],
+  cue:'Menciones que no son intercambiables.',
+  act:'Activa «Mostrar solo lo que distingue» para ver únicamente las diferencias.'},
+ {t:'Banderas rojas',sec:'Diagnóstico',s:60,
+  say:['Esta es la parte más práctica: las banderas rojas. Es una checklist pedagógica, no validada.','Dolor unilateral, cojera, dolor diurno o mecánico, dolor de más de tres semanas, dolor nocturno con palidez o fiebre, examen anormal, laboratorio anormal. Con dos o más banderas es poco probable que sea benigno.','Y cuidado con el sesgo de anclaje: una serie publicada mostró enfermedad celiaca, síndrome compartimental y una masa vertebral rotulados al inicio como dolor de crecimiento.'],
+  cue:'Hayas demostrado la checklist y mencionado el sesgo de anclaje.',
+  act:'Marca dos o tres casillas para mostrar cómo cambian el medidor y el mensaje.'},
+ {t:'Lo que imita el cuadro',sec:'Diagnóstico',s:45,
+  say:['Tres imitadores que no se pueden perder. Leucemia: el dolor puede ser el único síntoma y el 35 % tenía hemograma normal al inicio; un hemograma normal no debe retrasar la evaluación.','Osteoma osteoide de cadera: 83 % con dolor nocturno y una mediana de 12 meses hasta el diagnóstico.','Y el hipoparatiroidismo: una niña con dolor bilateral de piernas, CK elevada y calcio bajo.'],
+  cue:'Cierres con el hipoparatiroidismo.'},
+ {t:'Tratamiento y evidencia',sec:'Tratamiento',s:60,
+  say:['Sobre el tratamiento: una vez excluidas otras causas, es sintomático. Explicar, tranquilizar, masaje local y analgesia puntual. No hay ensayos robustos que lo validen.','Los estiramientos tienen un ensayo antiguo a favor; la vitamina D es contradictoria; las plantillas son observacionales sin control; y el láser con ultrasonido es un piloto con nueve niños, donde ocho de diecisiete se excluyeron porque el diagnóstico no se confirmó.','Ante cualquier bandera roja, derivar.'],
+  cue:'Digas que, ante una bandera roja, se deriva.'},
+ {t:'Caso publicado: hemangioma epitelioide',sec:'Casos',s:45,
+  say:['Pasemos a los casos. Primer caso publicado, BMJ Case Reports 2025: una niña con dolor y cojera en una pierna durante un mes, etiquetada como dolores de crecimiento.','La radiografía mostró lesiones líticas múltiples; la resonancia, lesiones en ambos miembros; la biopsia, un hemangioma epitelioide.','Lo que no encajaba: la cojera, que fuera unilateral y que fuera persistente.'],
+  cue:'Enumeres lo que no encajaba.'},
+ {t:'Caso publicado: epifisiolisis no reconocida',sec:'Casos',s:45,
+  say:['Segundo caso publicado, de 2026: un adolescente de 16 años con cojera de meses; los estudios previos no mostraron nada hasta que se identificó una epifisiolisis femoral.','A la derecha, una cohorte suiza: el 41 % se diagnosticó después de 12 semanas, y cada semana de retraso se asoció con más probabilidad de osteotomía; es un hallazgo observacional.','La lección: ante cojera o dolor mal localizado de miembro inferior en un adolescente, pensar en la cadera y pedir una radiografía de pelvis.'],
+  cue:'Des la lección de pensar en la cadera.'},
+ {t:'Caso de ronda · Paciente A',sec:'Casos',s:60,
+  say:['Ahora dos casos de ronda, anonimizados. Paciente A: niña de 10 años con dolor inguinal de unos dos meses y cojera de tipo mecánico, diaria, peor al caminar y correr.','El examen y la ecografía fueron normales, así que se dio una prueba con AINE. Ocho semanas después, la radiografía mostró un deslizamiento fisario de unos 10 milímetros y quedó programada para fijación in situ.','La lectura: el dolor diario y mecánico no es el patrón vespertino intermitente, y un examen normal ese día no excluye patología de cadera.'],
+  cue:'Des la lectura del caso.'},
+ {t:'Caso de ronda · Paciente B',sec:'Casos',s:60,
+  say:['Paciente B: niño de 3 años con antecedente de sinovitis transitoria y de artritis séptica de cadera tratada con lavado en dos tiempos.','Ahora, dolor de cadera irradiado al muslo tras diarrea y fiebre, con derrame en la ecografía. En la clínica de origen tenía 18 460 leucocitos y recibió antibiótico; al ingreso, 8 460, con PCR y VSG que no concuerdan. Se pidió resonancia bajo sedación; la evolución final no está en el registro.','La literatura reciente: marcadores normales y antibiótico previo no descartan artritis séptica, y con dos o más criterios de Kocher hay que pensar en resonancia.'],
+  cue:'Cites que los marcadores normales no descartan infección.'},
+ {t:'Comparativo: típico vs pacientes A y B',sec:'Casos',s:60,
+  say:['Para cerrar los casos, el comparativo. La edad no ayuda: 3 y 10 años caen dentro del rango típico.','Lo que los separa es el patrón: dolor unilateral en la cadera, diario o agudo, con cojera e imagen anormal, frente al dolor bilateral, vespertino y con examen normal.','Aplicando los siete criterios, ninguno de los dos llega a cuatro, ni siquiera asumiendo favorables los datos que no están documentados. El dolor nocturno no está documentado en ninguno.'],
+  cue:'Des la conclusión de los siete criterios.',
+  act:'Activa «Mostrar solo diferencias» para quitar las filas iguales.'},
+ {t:'Mensajes clave y vacíos',sec:'Cierre',s:45,
+  say:['Cinco mensajes: es un diagnóstico clínico y de exclusión; el perfil típico es bilateral, vespertino e intermitente con examen normal; si es unilateral, diurno, con cojera o con examen anormal, no es dolor de crecimiento; ante dolor poco localizado con cojera, pensar en la cadera; y los marcadores normales no excluyen infección ni leucemia.','Y lo que aún no sabemos: no hay definición consensuada, hay un solo ensayo aleatorizado entre 37 estudios y no hay guías.'],
+  cue:'Termines los cinco mensajes y los vacíos.'},
+ {t:'Referencias',sec:'Cierre',s:10,
+  say:['Todas las referencias están aquí. Cada diapositiva tiene su lista abajo y, al tocar una, se ve la parte donde se usó. Gracias.'],
+  cue:'Fin: abre la ronda de preguntas.'}
+];
+
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const N=SLIDES.length;
+const fmt=s=>{s=Math.max(0,Math.round(s));return Math.floor(s/60)+':'+String(s%60).padStart(2,'0')};
+const cum=[];SLIDES.reduce((a,x,i)=>(cum[i]=a+x.s),0);
+const total=cum[N-1];
+$('#N').textContent=N;$('#planTotal').textContent=fmt(total);
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove('on'),2200)};
+
+let cur=0,ready=false,aud=null;
+const pv=$('#pv');
+
+/* ---- vista previa a escala ---- */
+function fit(){const w=$('#frame').clientWidth;pv.style.transform=`scale(${w/1280})`}
+new ResizeObserver(fit).observe($('#frame'));fit();
+pv.addEventListener('load',()=>{ready=true;pv.contentWindow.postMessage({t:'go',i:cur},'*')});
+function send(){
+  if(ready)pv.contentWindow.postMessage({t:'go',i:cur},'*');
+  if(aud&&!aud.closed)aud.postMessage({t:'go',i:cur},'*');
+}
+
+/* ---- cronómetro ---- */
+let running=false,t0=0,acc=0;
+const elapsed=()=>acc+(running?(Date.now()-t0)/1000:0);
+function setTimerBtn(){$('#btnTimer').textContent=running?'Pausar cronómetro':(elapsed()>0?'Reanudar cronómetro':'Iniciar cronómetro')}
+function startTimer(){if(running)return;running=true;t0=Date.now();setTimerBtn()}
+function pauseTimer(){if(!running)return;acc=elapsed();running=false;setTimerBtn()}
+function toggleTimer(){running?pauseTimer():startTimer()}
+function resetTimer(){running=false;acc=0;t0=0;setTimerBtn();tick()}
+function tick(){
+  const e=elapsed();$('#elapsed').textContent=fmt(e);
+  const st=$('#status');const start=cum[cur]-SLIDES[cur].s,end=cum[cur];
+  st.className='status';
+  if(e===0&&!running){st.textContent='Sin iniciar'}
+  else if(e>end+1){st.textContent='Atrasado '+fmt(e-end);st.classList.add('late')}
+  else if(e<start-1){st.textContent='Adelantado '+fmt(start-e);st.classList.add('ok')}
+  else{st.textContent='A tiempo';st.classList.add('ok')}
+  $('#barReal').style.width=Math.min(100,e/total*100)+'%';
+}
+setInterval(tick,500);
+
+/* ---- render ---- */
+function render(){
+  const s=SLIDES[cur];
+  $('#n').textContent=cur+1;$('#ttl').textContent=s.t;$('#secLabel').textContent=s.sec+' · '+s.t;
+  $('#sayText').innerHTML=s.say.map(p=>`<p>${p}</p>`).join('');
+  $('#cueText').textContent=s.cue;
+  const a=$('#actCard');a.hidden=!s.act;if(s.act)$('#actText').textContent=s.act;
+  $('#slideTime').textContent=fmt(s.s);$('#cum').textContent=fmt(cum[cur])+' de '+fmt(total);
+  $('#nextTitle').textContent=cur<N-1?SLIDES[cur+1].t:'— (última diapositiva)';
+  $('#prev').disabled=cur===0;$('#next').disabled=cur===N-1;
+  $('#barPlan').style.width=(cum[cur]/total*100)+'%';
+  $$('#chips .chip').forEach(c=>c.setAttribute('aria-current',(+c.dataset.i===cur)?'true':'false'));
+  document.title=`${cur+1}/${N} · ${s.t} · Expositor`;
+  tick();
+}
+function go(i,opt={}){
+  i=Math.max(0,Math.min(N-1,i));
+  if(i>cur&&cur===0&&!running&&elapsed()===0)startTimer();
+  cur=i;render();
+  if(opt.fromAud){if(ready)pv.contentWindow.postMessage({t:'go',i:cur},'*')}else send();
+}
+$('#next').onclick=()=>go(cur+1);$('#prev').onclick=()=>go(cur-1);
+
+/* ---- ventana del público ---- */
+$('#btnAud').onclick=()=>{
+  if(aud&&!aud.closed){aud.focus();send();return}
+  aud=window.open('index.html#/'+(cur+1),'audiencia');
+  if(!aud){toast('El navegador bloqueó la ventana. Permite las ventanas emergentes para este sitio.');return}
+  toast('Ventana del público abierta: arrástrala al proyector y pulsa F para pantalla completa.');
+};
+addEventListener('message',e=>{const d=e.data;if(d&&d.t==='at'&&aud&&e.source===aud)go(+d.i,{fromAud:true})});
+
+/* ---- índice de diapositivas ---- */
+(function(){
+  let h='',sec='';
+  SLIDES.forEach((s,i)=>{
+    if(s.sec!==sec){if(sec)h+='</div>';sec=s.sec;h+=`<div class="grp"><span class="gl">${sec}</span>`}
+    h+=`<button class="chip" data-i="${i}" title="${s.t}" type="button">${i+1}</button>`;
+  });
+  $('#chips').innerHTML=h+'</div>';
+  $('#chips').onclick=e=>{const b=e.target.closest('.chip');if(b)go(+b.dataset.i)};
+})();
+
+/* ---- tamaño del guion ---- */
+let fs=parseFloat(store.get('expositor-fs'))||1.25;
+function setFs(v){fs=Math.max(.95,Math.min(2.2,v));$('#sayText').style.fontSize=fs+'rem';store.set('expositor-fs',fs)}
+$('#fsm').onclick=()=>setFs(fs-.1);$('#fsp').onclick=()=>setFs(fs+.1);setFs(fs);
+
+/* ---- tema ---- */
+const curTheme=()=>document.documentElement.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+function applyTheme(t){document.documentElement.dataset.theme=t;store.set('theme',t)}
+applyTheme(store.get('theme')||curTheme());
+$('#btnTheme').onclick=()=>applyTheme(curTheme()==='dark'?'light':'dark');
+$('#btnTimer').onclick=toggleTimer;$('#btnReset').onclick=resetTimer;
+
+/* ---- teclado ---- */
+document.addEventListener('keydown',e=>{
+  if(e.metaKey||e.ctrlKey||e.altKey)return;
+  const tag=(e.target.tagName||'').toLowerCase();if(['input','textarea','select'].includes(tag))return;
+  const onCtl=e.target.closest&&e.target.closest('button,a,summary');
+  switch(e.key){
+    case 'ArrowRight':case 'PageDown':go(cur+1);e.preventDefault();break;
+    case 'ArrowLeft':case 'PageUp':go(cur-1);e.preventDefault();break;
+    case ' ':if(!onCtl){e.shiftKey?go(cur-1):go(cur+1);e.preventDefault()}break;
+    case 'Home':go(0);e.preventDefault();break;
+    case 'End':go(N-1);e.preventDefault();break;
+    case 'p':case 'P':toggleTimer();break;
+    case '+':case '=':setFs(fs+.1);break;
+    case '-':case '_':setFs(fs-.1);break;
+  }
+});
+const m=location.hash.match(/#\/(\d+)/);if(m)cur=Math.max(0,Math.min(N-1,+m[1]-1));
+render();setTimerBtn();
+</script>
+</body>
+</html>
